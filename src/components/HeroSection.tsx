@@ -16,12 +16,10 @@ export default function HeroSection({ isVisible, parallaxOffset, scrollToSection
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.15]">
               <span className="animate-word mr-4">Что</span>
               <span className="animate-word mr-4">если</span>
-              <span className="text-book-gold animate-word mr-2">«добро»</span>
-              <span className="animate-word mr-2">,</span>
+              <span className="text-book-gold animate-word">«добро»<span className="mr-4">,</span></span>
               <span className="animate-word mr-4">которому</span>
               <span className="animate-word mr-4">вас</span>
-              <span className="animate-word mr-2">учили</span>
-              <span className="animate-word mr-2">,</span>
+              <span className="animate-word">учили<span className="mr-4">,</span></span>
               <br className="hidden md:block" />
               <span className="animate-word mr-4">на</span>
               <span className="animate-word mr-4">самом</span>
