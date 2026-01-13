@@ -77,6 +77,14 @@ export default function ReaderInsightsSection({ scrollToSection }: ReaderInsight
               </CardContent>
             </Card>
           </div>
+          <div className="text-center mt-12">
+            <button 
+              onClick={() => handleScroll('insights')}
+              className="text-book-gold hover:text-book-red transition-colors text-lg font-semibold"
+            >
+              Читать дальше ↓
+            </button>
+          </div>
         </div>
       </section>
 
@@ -167,6 +175,14 @@ export default function ReaderInsightsSection({ scrollToSection }: ReaderInsight
               ПОЛУЧИТЬ СВОЙ ИНСАЙТ → Откройте книгу
             </Button>
           </div>
+          <div className="text-center mt-12">
+            <button 
+              onClick={() => handleScroll('quotes')}
+              className="text-book-gold hover:text-book-red transition-colors text-lg font-semibold"
+            >
+              Читать дальше ↓
+            </button>
+          </div>
         </div>
       </section>
 
@@ -231,6 +247,14 @@ export default function ReaderInsightsSection({ scrollToSection }: ReaderInsight
                 </blockquote>
               </CardContent>
             </Card>
+          </div>
+          <div className="text-center mt-12">
+            <button 
+              onClick={() => handleScroll('community')}
+              className="text-book-gold hover:text-book-red transition-colors text-lg font-semibold"
+            >
+              Читать дальше ↓
+            </button>
           </div>
         </div>
       </section>

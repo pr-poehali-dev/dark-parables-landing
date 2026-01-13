@@ -1,6 +1,17 @@
 import { Card, CardContent } from "@/components/ui/card";
 
-export default function PhilosophySections() {
+interface PhilosophySectionsProps {
+  scrollToSection?: (id: string) => void;
+}
+
+export default function PhilosophySections({ scrollToSection }: PhilosophySectionsProps = {}) {
+  const handleScroll = (id: string) => {
+    if (scrollToSection) {
+      scrollToSection(id);
+    } else {
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   const painPoints = [
     "Почему послушание считается добродетелью, если именно оно делает возможными геноциды?",
     "Почему мы восхищаемся успешными и презираем неудачников — и при чём здесь Бог?",
@@ -34,7 +45,10 @@ export default function PhilosophySections() {
               Эта книга не даёт утешительных ответов.<br />
               Она показывает, как мораль служит не добру, а власти.
             </p>
-            <button className="text-book-gold hover:text-book-red transition-colors text-lg font-semibold">
+            <button 
+              onClick={() => handleScroll('about')}
+              className="text-book-gold hover:text-book-red transition-colors text-lg font-semibold"
+            >
               Читать дальше ↓
             </button>
           </div>
@@ -73,6 +87,14 @@ export default function PhilosophySections() {
               </p>
             </div>
           </div>
+          <div className="text-center mt-12">
+            <button 
+              onClick={() => handleScroll('thesis')}
+              className="text-book-gold hover:text-book-red transition-colors text-lg font-semibold"
+            >
+              Читать дальше ↓
+            </button>
+          </div>
         </div>
       </section>
 
@@ -100,6 +122,14 @@ export default function PhilosophySections() {
               </div>
             </CardContent>
           </Card>
+          <div className="text-center mt-12">
+            <button 
+              onClick={() => handleScroll('topics')}
+              className="text-book-gold hover:text-book-red transition-colors text-lg font-semibold"
+            >
+              Читать дальше ↓
+            </button>
+          </div>
         </div>
       </section>
     </>

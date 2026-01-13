@@ -1,6 +1,17 @@
 import { Card, CardContent } from "@/components/ui/card";
 
-export default function BookTopicsSection() {
+interface BookTopicsSectionProps {
+  scrollToSection?: (id: string) => void;
+}
+
+export default function BookTopicsSection({ scrollToSection }: BookTopicsSectionProps = {}) {
+  const handleScroll = (id: string) => {
+    if (scrollToSection) {
+      scrollToSection(id);
+    } else {
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   const bookTopics = [
     {
       title: "Почему «традиционные ценности» — это заповеди зла",
@@ -52,6 +63,14 @@ export default function BookTopicsSection() {
               </CardContent>
             </Card>
           ))}
+        </div>
+        <div className="text-center mt-12">
+          <button 
+            onClick={() => handleScroll('author')}
+            className="text-book-gold hover:text-book-red transition-colors text-lg font-semibold"
+          >
+            Читать дальше ↓
+          </button>
         </div>
       </div>
     </section>

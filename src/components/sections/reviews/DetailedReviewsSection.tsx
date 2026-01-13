@@ -8,7 +8,18 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-export default function DetailedReviewsSection() {
+interface DetailedReviewsSectionProps {
+  scrollToSection?: (id: string) => void;
+}
+
+export default function DetailedReviewsSection({ scrollToSection }: DetailedReviewsSectionProps = {}) {
+  const handleScroll = (id: string) => {
+    if (scrollToSection) {
+      scrollToSection(id);
+    } else {
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   const detailedReviews = [
     {
       title: "Читается запойно",
@@ -111,6 +122,14 @@ export default function DetailedReviewsSection() {
             <CarouselPrevious className="hidden md:flex" />
             <CarouselNext className="hidden md:flex" />
           </Carousel>
+          <div className="text-center mt-12">
+            <button 
+              onClick={() => handleScroll('opinions')}
+              className="text-book-gold hover:text-book-red transition-colors text-lg font-semibold"
+            >
+              Читать дальше ↓
+            </button>
+          </div>
         </div>
       </section>
 
@@ -165,6 +184,14 @@ export default function DetailedReviewsSection() {
             <p className="text-xl font-semibold text-book-gold">
               Но даже критики не могут отрицать: здесь поднимаются вопросы, которые нельзя игнорировать.
             </p>
+          </div>
+          <div className="text-center mt-12">
+            <button 
+              onClick={() => handleScroll('reader-types')}
+              className="text-book-gold hover:text-book-red transition-colors text-lg font-semibold"
+            >
+              Читать дальше ↓
+            </button>
           </div>
         </div>
       </section>

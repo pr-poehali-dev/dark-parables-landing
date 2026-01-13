@@ -10,8 +10,8 @@ interface ReviewsSectionsProps {
 export default function ReviewsSections({ scrollToSection }: ReviewsSectionsProps = {}) {
   return (
     <>
-      <AuthorAndStatsSection />
-      <DetailedReviewsSection />
+      <AuthorAndStatsSection scrollToSection={scrollToSection} />
+      <DetailedReviewsSection scrollToSection={scrollToSection} />
       <ReaderInsightsSection scrollToSection={scrollToSection} />
       <TargetAudienceSection />
     </>

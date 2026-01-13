@@ -11,8 +11,7 @@ export default function Navigation({ scrolled, scrollToSection }: NavigationProp
     { label: "О книге", id: "about" },
     { label: "Об авторе", id: "author" },
     { label: "Отзывы", id: "stats" },
-    { label: "Частые вопросы", id: "faq" },
-    { label: "Купить", id: "formats" }
+    { label: "Частые вопросы", id: "faq" }
   ];
 
   return (

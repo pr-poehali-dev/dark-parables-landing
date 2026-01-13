@@ -1,7 +1,18 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
-export default function AuthorAndStatsSection() {
+interface AuthorAndStatsSectionProps {
+  scrollToSection?: (id: string) => void;
+}
+
+export default function AuthorAndStatsSection({ scrollToSection }: AuthorAndStatsSectionProps = {}) {
+  const handleScroll = (id: string) => {
+    if (scrollToSection) {
+      scrollToSection(id);
+    } else {
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <>
       <section id="author" className="py-16 md:py-24 px-4">
@@ -42,6 +53,14 @@ export default function AuthorAndStatsSection() {
                 </Button>
               </div>
             </div>
+          </div>
+          <div className="text-center mt-12">
+            <button 
+              onClick={() => handleScroll('stats')}
+              className="text-book-gold hover:text-book-red transition-colors text-lg font-semibold"
+            >
+              Читать дальше ↓
+            </button>
           </div>
         </div>
       </section>
@@ -102,6 +121,14 @@ export default function AuthorAndStatsSection() {
                 <p className="text-gray-400">читатель в закрытом чате</p>
               </CardContent>
             </Card>
+          </div>
+          <div className="text-center mt-12">
+            <button 
+              onClick={() => handleScroll('reviews')}
+              className="text-book-gold hover:text-book-red transition-colors text-lg font-semibold"
+            >
+              Читать дальше ↓
+            </button>
           </div>
         </div>
       </section>

@@ -10,8 +10,8 @@ interface ContentSectionsProps {
 export default function ContentSections({ scrollToSection }: ContentSectionsProps = {}) {
   return (
     <>
-      <PhilosophySections />
-      <BookTopicsSection />
+      <PhilosophySections scrollToSection={scrollToSection} />
+      <BookTopicsSection scrollToSection={scrollToSection} />
       <ReviewsSections scrollToSection={scrollToSection} />
       <AudienceSections scrollToSection={scrollToSection} />
     </>

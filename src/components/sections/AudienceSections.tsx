@@ -105,6 +105,14 @@ export default function AudienceSections({ scrollToSection }: AudienceSectionsPr
 
             </CardContent>
           </Card>
+          <div className="text-center mt-12">
+            <button 
+              onClick={() => handleScroll('topics')}
+              className="text-book-gold hover:text-book-red transition-colors text-lg font-semibold"
+            >
+              Читать дальше ↓
+            </button>
+          </div>
         </div>
       </section>
 
@@ -140,6 +148,14 @@ export default function AudienceSections({ scrollToSection }: AudienceSectionsPr
             >
               ПРИСОЕДИНИТЬСЯ К РАЗГОВОРУ
             </Button>
+          </div>
+          <div className="text-center mt-12">
+            <button 
+              onClick={() => handleScroll('structure')}
+              className="text-book-gold hover:text-book-red transition-colors text-lg font-semibold"
+            >
+              Читать дальше ↓
+            </button>
           </div>
         </div>
       </section>
@@ -187,10 +203,18 @@ export default function AudienceSections({ scrollToSection }: AudienceSectionsPr
               </CardContent>
             </Card>
           </div>
+          <div className="text-center mt-12">
+            <button 
+              onClick={() => handleScroll('faq')}
+              className="text-book-gold hover:text-book-red transition-colors text-lg font-semibold"
+            >
+              Читать дальше ↓
+            </button>
+          </div>
         </div>
       </section>
 
-      <section id="formats" className="py-16 md:py-24 px-4 bg-black/30">
+      <section id="faq" className="py-16 md:py-24 px-4 bg-black/30">
         <div className="container mx-auto max-w-6xl space-y-12">
           <h2 className="text-3xl md:text-5xl font-bold text-center">
             Выберите формат
@@ -264,6 +288,14 @@ export default function AudienceSections({ scrollToSection }: AudienceSectionsPr
               </Card>
             ))}
           </div>
+          <div className="text-center mt-12">
+            <button 
+              onClick={() => handleScroll('final-cta')}
+              className="text-book-gold hover:text-book-red transition-colors text-lg font-semibold"
+            >
+              Читать дальше ↓
+            </button>
+          </div>
         </div>
       </section>
 
@@ -286,9 +318,64 @@ export default function AudienceSections({ scrollToSection }: AudienceSectionsPr
           </div>
 
           <div className="text-center space-y-6">
-            <Button size="lg" className="bg-book-red hover:bg-book-red/90 text-white font-bold text-xl px-12 py-8 animate-pulse">
+            <Button 
+              size="lg" 
+              className="bg-book-red hover:bg-book-red/90 text-white font-bold text-xl px-12 py-8 animate-pulse"
+              onClick={() => handleScroll('formats')}
+            >
               КУПИТЬ КНИГУ И ВЫБРАТЬ КРАСНУЮ ТАБЛЕТКУ
             </Button>
+            
+            <div id="formats" className="py-12">
+              <h2 className="text-3xl md:text-5xl font-bold text-center mb-12">
+                Выберите формат
+              </h2>
+              <div className="grid md:grid-cols-2 gap-8 justify-items-center max-w-4xl mx-auto">
+                <Card className="bg-gradient-to-br from-gray-900 to-black border-2 border-book-gold">
+                  <CardContent className="p-8 space-y-6">
+                    <div className="text-center space-y-4">
+                      <div className="text-6xl">📖</div>
+                      <h3 className="text-2xl font-bold text-book-gold">БУМАЖНАЯ КНИГА</h3>
+                    </div>
+                    <ul className="space-y-2 text-gray-300">
+                      <li>• 272 страницы</li>
+                      <li>• Твёрдый переплёт</li>
+                      <li>• Доставка по России</li>
+                    </ul>
+                    <div className="space-y-3 pt-4">
+                      <Button 
+                        className="w-full bg-book-red hover:bg-book-red/90 text-white font-bold text-lg py-6"
+                        onClick={() => window.open('https://wildberries.ru/catalog/0/search.aspx?search=WW268963', '_blank')}
+                      >
+                        КУПИТЬ НА WILDBERRIES
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-gradient-to-br from-gray-900 to-black border-2 border-book-blue">
+                  <CardContent className="p-8 space-y-6">
+                    <div className="text-center space-y-4">
+                      <div className="text-6xl">📱</div>
+                      <h3 className="text-2xl font-bold text-book-blue">ЭЛЕКТРОННАЯ ВЕРСИЯ</h3>
+                    </div>
+                    <ul className="space-y-2 text-gray-300">
+                      <li>• Моментальная доставка</li>
+                      <li>• Чтение на любом устройстве</li>
+                      <li>• Можно делать заметки</li>
+                    </ul>
+                    <div className="pt-4">
+                      <Button 
+                        className="w-full bg-book-blue hover:bg-book-blue/90 text-white font-bold text-lg py-6"
+                        onClick={() => window.open('https://www.litres.ru/book/darya-serp/zapovedi-zla-bog-protiv-tradicionnyh-cennostey-72952082/', '_blank')}
+                      >
+                        СКАЧАТЬ НА ЛИТРЕС
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
             
             <div className="pt-6 space-y-3">
               <p className="text-xl text-gray-400 flex items-center justify-center gap-3">
