@@ -14,12 +14,15 @@ import {
 export default function Index() {
   const [isVisible, setIsVisible] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [parallaxOffset, setParallaxOffset] = useState(0);
 
   useEffect(() => {
     setIsVisible(true);
     
     const handleScroll = () => {
-      setScrolled(window.scrollY > 100);
+      const scrollY = window.scrollY;
+      setScrolled(scrollY > 100);
+      setParallaxOffset(scrollY * 0.3);
     };
     
     window.addEventListener('scroll', handleScroll);
@@ -172,7 +175,13 @@ export default function Index() {
             <div className="md:col-span-2 flex justify-center animate-fade-in">
               <div className="relative w-full max-w-sm">
                 <div className="absolute inset-0 bg-book-gold/30 blur-3xl rounded-full scale-110"></div>
-                <div className="relative">
+                <div 
+                  className="relative"
+                  style={{
+                    transform: `translateY(-${parallaxOffset}px)`,
+                    transition: 'transform 0.1s ease-out'
+                  }}
+                >
                   <img 
                     src="https://cdn.poehali.dev/files/photo_2025-12-14_20-17-50_2.jpg" 
                     alt="Заповеди зла - обложка книги" 
