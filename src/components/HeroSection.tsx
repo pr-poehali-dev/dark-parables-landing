@@ -34,7 +34,7 @@ export default function HeroSection({ isVisible, parallaxOffset, scrollToSection
               <Button 
                 size="lg" 
                 className="bg-book-red hover:bg-book-gold text-white font-bold text-xl px-12 py-7 transition-all hover:scale-105 shadow-lg hover:shadow-book-red/50"
-                onClick={() => scrollToSection('formats')}
+                onClick={() => scrollToSection('questions')}
               >
                 УЗНАТЬ →
               </Button>
