@@ -135,8 +135,21 @@ export default function Index() {
         <div className="container mx-auto max-w-7xl">
           <div className="grid md:grid-cols-5 gap-12 md:gap-16 items-center">
             <div className="md:col-span-3 space-y-8 md:space-y-10">
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.15] animate-fade-in">
-                Что если <span className="text-book-gold">«добро»</span>, которому вас учили,<br className="hidden md:block" /> на самом деле <span className="text-book-red">зло</span>?
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.15]">
+                <span className="animate-word">Что </span>
+                <span className="animate-word">если </span>
+                <span className="text-book-gold animate-word">«добро»</span>
+                <span className="animate-word">, </span>
+                <span className="animate-word">которому </span>
+                <span className="animate-word">вас </span>
+                <span className="animate-word">учили</span>
+                <span className="animate-word">,</span>
+                <br className="hidden md:block" />
+                <span className="animate-word">на </span>
+                <span className="animate-word">самом </span>
+                <span className="animate-word">деле </span>
+                <span className="text-book-red animate-word">зло</span>
+                <span className="animate-word">?</span>
               </h1>
               <p className="text-xl md:text-2xl text-gray-200 leading-relaxed animate-slide-up">
                 Почему послушные граждане становятся палачами,<br className="hidden md:block" /> а евангельский Христос — враг семейных ценностей<br className="hidden md:block" /> и патриотизма
