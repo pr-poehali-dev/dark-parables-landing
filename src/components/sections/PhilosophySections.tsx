@@ -124,7 +124,7 @@ export default function PhilosophySections({ scrollToSection }: PhilosophySectio
           </Card>
           <div className="text-center mt-12">
             <button 
-              onClick={() => handleScroll('topics')}
+              onClick={() => handleScroll('book-topics')}
               className="text-book-gold hover:text-book-red transition-colors text-lg font-semibold"
             >
               Читать дальше ↓
