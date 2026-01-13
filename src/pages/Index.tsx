@@ -34,7 +34,7 @@ export default function Index() {
       <Navigation scrolled={scrolled} scrollToSection={scrollToSection} />
       <HeroSection isVisible={isVisible} parallaxOffset={parallaxOffset} scrollToSection={scrollToSection} />
       <ContentSections />
-      <BuySection scrollToSection={scrollToSection} />
+      <BuySection />
     </div>
   );
 }
