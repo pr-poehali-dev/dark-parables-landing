@@ -36,16 +36,17 @@ export default function BuySection({ scrollToSection }: BuySectionProps) {
             </Card>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-            <Button size="lg" className="bg-book-gold hover:bg-book-gold/90 text-black font-bold text-lg px-8">
-              КУПИТЬ НА WILDBERRIES
-            </Button>
-            <Button size="lg" variant="outline" className="border-book-gold text-book-gold hover:bg-book-gold hover:text-black font-bold text-lg px-8">
-              OZON
-            </Button>
-            <Button size="lg" variant="outline" className="border-book-gold text-book-gold hover:bg-book-gold hover:text-black font-bold text-lg px-8">
-              ЛИТРЕС
+            <Button 
+              size="lg" 
+              className="bg-book-gold hover:bg-book-gold/90 text-black font-bold text-lg px-8"
+              onClick={() => scrollToSection('buy')}
+            >
+              КУПИТЬ КНИГУ
             </Button>
           </div>
+          <p className="text-gray-400 text-sm">
+            Узнать, где проходит граница между добром и злом
+          </p>
         </div>
       </section>
 
