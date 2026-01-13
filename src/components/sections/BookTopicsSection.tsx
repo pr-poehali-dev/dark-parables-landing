@@ -1,0 +1,59 @@
+import { Card, CardContent } from "@/components/ui/card";
+
+export default function BookTopicsSection() {
+  const bookTopics = [
+    {
+      title: "Почему «традиционные ценности» — это заповеди зла",
+      description: "Как семейственность становится кумовством, патриотизм — ксенофобией, а послушание — соучастием в преступлениях."
+    },
+    {
+      title: "Архитектор Холокоста был образцовым семьянином",
+      description: "История Адольфа Эйхмана и концепция \"банальности зла\" Ханны Арендт: как обычные люди творят чудовищное."
+    },
+    {
+      title: "Ницше vs Христос: два взгляда на мораль",
+      description: "Ницше проклинает христианство за любовь к слабым. Но именно поэтому его философия — лучшее доказательство правоты Евангелия."
+    },
+    {
+      title: "Богатые злее бедных — научные доказательства",
+      description: "Эксперименты показывают: власть и деньги буквально делают людей жестокими. И это объясняет евангельские проклятия богатству."
+    },
+    {
+      title: "Смирение как инструмент насилия",
+      description: "Как превращённое в покорность смирение поддерживает иерархию и позволяет сильным безнаказанно угнетать слабых."
+    },
+    {
+      title: "\"Продавцы страдания\" и стокгольмский синдром",
+      description: "Почему религия часто оправдывает страдание и учит жертв любить мучителей."
+    }
+  ];
+
+  return (
+    <section id="topics" className="py-16 md:py-24 px-4">
+      <div className="container mx-auto max-w-6xl">
+        <h2 className="text-3xl md:text-5xl font-bold text-center mb-12">
+          Что вы узнаете
+        </h2>
+        <div className="space-y-4">
+          {bookTopics.map((topic, index) => (
+            <Card key={index} className="bg-gray-900/80 border-gray-800 hover:border-book-gold transition-all duration-300 cursor-pointer group">
+              <CardContent className="p-6 md:p-8">
+                <div className="flex items-start gap-4">
+                  <span className="text-2xl flex-shrink-0 font-bold text-book-gold">{index + 1}️⃣</span>
+                  <div className="space-y-2">
+                    <h3 className="text-xl md:text-2xl font-bold text-white group-hover:text-book-gold transition-colors">
+                      {topic.title}
+                    </h3>
+                    <p className="text-base md:text-lg text-gray-400 leading-relaxed">
+                      {topic.description}
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
