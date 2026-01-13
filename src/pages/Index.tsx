@@ -13,9 +13,17 @@ import {
 
 export default function Index() {
   const [isVisible, setIsVisible] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     setIsVisible(true);
+    
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 100);
+    };
+    
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const scrollToSection = (id: string) => {
@@ -73,9 +81,54 @@ export default function Index() {
     { icon: "Zap", text: "Почему праведность опаснее греха?" }
   ];
 
+  const navItems = [
+    { label: "О книге", id: "about" },
+    { label: "Отзывы", id: "reviews" },
+    { label: "Для кого?", id: "audience" },
+    { label: "Купить", id: "buy" }
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#1a1a2e] to-black text-white overflow-x-hidden">
-      <section id="hero" className={`min-h-screen flex items-center justify-center px-4 py-12 md:py-20 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled ? 'bg-black/95 backdrop-blur-md py-4 shadow-lg' : 'bg-transparent py-6'
+      }`}>
+        <div className="container mx-auto max-w-7xl px-4">
+          <div className="flex items-center justify-between">
+            <button 
+              onClick={() => scrollToSection('hero')} 
+              className="text-xl md:text-2xl font-bold text-book-red hover:text-book-gold transition-colors cursor-pointer"
+            >
+              ЗАПОВЕДИ ЗЛА
+            </button>
+            <div className="hidden md:flex items-center gap-6">
+              {navItems.map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
+                  className="text-sm font-semibold text-gray-300 hover:text-book-red transition-colors cursor-pointer uppercase tracking-wider"
+                >
+                  {item.label}
+                </button>
+              ))}
+              <Button 
+                size="sm" 
+                className="bg-book-red hover:bg-book-red/90 text-white font-bold"
+                onClick={() => scrollToSection('buy')}
+              >
+                КУПИТЬ
+              </Button>
+            </div>
+            <button 
+              onClick={() => scrollToSection('buy')}
+              className="md:hidden"
+            >
+              <Icon name="ShoppingCart" size={24} className="text-book-red" />
+            </button>
+          </div>
+        </div>
+      </nav>
+      <section id="hero" className={`min-h-screen flex items-center justify-center px-4 py-12 md:py-20 pt-24 md:pt-32 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <div className="container mx-auto max-w-7xl">
           <div className="grid md:grid-cols-5 gap-8 md:gap-12 items-center">
             <div className="md:col-span-3 space-y-6 md:space-y-8">
