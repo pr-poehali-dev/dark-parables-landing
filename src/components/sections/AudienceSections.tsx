@@ -3,7 +3,18 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
 
-export default function AudienceSections() {
+interface AudienceSectionsProps {
+  scrollToSection?: (id: string) => void;
+}
+
+export default function AudienceSections({ scrollToSection }: AudienceSectionsProps = {}) {
+  const handleScroll = (id: string) => {
+    if (scrollToSection) {
+      scrollToSection(id);
+    } else {
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   const topics = [
     "🔥 Эволюция и христианство — совместимо?",
     "🔥 Почему Бог не вмешался в грехопадение?",
@@ -122,7 +133,11 @@ export default function AudienceSections() {
               <p className="text-2xl font-bold text-book-gold">НЕТ ГОТОВЫХ ОТВЕТОВ</p>
               <p className="text-2xl font-bold text-book-red">ЕСТЬ ЧЕСТНЫЙ РАЗГОВОР</p>
             </div>
-            <Button size="lg" className="bg-book-red hover:bg-book-red/90 text-white font-bold text-lg px-10 py-6">
+            <Button 
+              size="lg" 
+              className="bg-book-red hover:bg-book-red/90 text-white font-bold text-lg px-10 py-6"
+              onClick={() => handleScroll('formats')}
+            >
               ПРИСОЕДИНИТЬСЯ К РАЗГОВОРУ
             </Button>
           </div>
@@ -180,7 +195,7 @@ export default function AudienceSections() {
           <h2 className="text-3xl md:text-5xl font-bold text-center">
             Выберите формат
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 justify-items-center max-w-4xl mx-auto">
             <Card className="bg-gradient-to-br from-gray-900 to-black border-2 border-book-gold">
               <CardContent className="p-8 space-y-6">
                 <div className="text-center space-y-4">
@@ -194,7 +209,7 @@ export default function AudienceSections() {
                 </ul>
                 <div className="space-y-3 pt-4">
                   <Button 
-                    className="w-full bg-book-red hover:bg-book-red/90 text-white font-bold"
+                    className="w-full bg-book-red hover:bg-book-red/90 text-white font-bold text-lg py-6"
                     onClick={() => window.open('https://wildberries.ru/catalog/0/search.aspx?search=WW268963', '_blank')}
                   >
                     КУПИТЬ НА WILDBERRIES
@@ -216,7 +231,7 @@ export default function AudienceSections() {
                 </ul>
                 <div className="pt-4">
                   <Button 
-                    className="w-full bg-book-blue hover:bg-book-blue/90 text-white font-bold"
+                    className="w-full bg-book-blue hover:bg-book-blue/90 text-white font-bold text-lg py-6"
                     onClick={() => window.open('https://www.litres.ru/book/darya-serp/zapovedi-zla-bog-protiv-tradicionnyh-cennostey-72952082/', '_blank')}
                   >
                     СКАЧАТЬ НА ЛИТРЕС

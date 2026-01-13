@@ -2,7 +2,18 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
-export default function ReaderInsightsSection() {
+interface ReaderInsightsSectionProps {
+  scrollToSection?: (id: string) => void;
+}
+
+export default function ReaderInsightsSection({ scrollToSection }: ReaderInsightsSectionProps = {}) {
+  const handleScroll = (id: string) => {
+    if (scrollToSection) {
+      scrollToSection(id);
+    } else {
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <>
       <section id="reader-types" className="py-16 md:py-24 px-4">
@@ -148,7 +159,11 @@ export default function ReaderInsightsSection() {
             </Card>
           </div>
           <div className="text-center pt-6">
-            <Button size="lg" className="bg-book-gold hover:bg-book-gold/90 text-black font-bold text-lg px-10 py-6">
+            <Button 
+              size="lg" 
+              className="bg-book-gold hover:bg-book-gold/90 text-black font-bold text-lg px-10 py-6"
+              onClick={() => handleScroll('formats')}
+            >
               ПОЛУЧИТЬ СВОЙ ИНСАЙТ → Откройте книгу
             </Button>
           </div>

@@ -9,9 +9,10 @@ interface NavigationProps {
 export default function Navigation({ scrolled, scrollToSection }: NavigationProps) {
   const navItems = [
     { label: "О книге", id: "about" },
-    { label: "Отзывы", id: "reviews" },
-    { label: "Для кого?", id: "audience" },
-    { label: "Купить", id: "buy" }
+    { label: "Об авторе", id: "author" },
+    { label: "Отзывы", id: "stats" },
+    { label: "Частые вопросы", id: "faq" },
+    { label: "Купить", id: "formats" }
   ];
 
   return (
@@ -39,13 +40,13 @@ export default function Navigation({ scrolled, scrollToSection }: NavigationProp
             <Button 
               size="sm" 
               className="bg-book-red hover:bg-book-red/90 text-white font-bold"
-              onClick={() => scrollToSection('buy')}
+              onClick={() => scrollToSection('formats')}
             >
               КУПИТЬ
             </Button>
           </div>
           <button 
-            onClick={() => scrollToSection('buy')}
+            onClick={() => scrollToSection('formats')}
             className="md:hidden"
           >
             <Icon name="ShoppingCart" size={24} className="text-book-red" />

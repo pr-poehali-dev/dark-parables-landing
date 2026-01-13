@@ -3,13 +3,17 @@ import BookTopicsSection from "./sections/BookTopicsSection";
 import ReviewsSections from "./sections/ReviewsSections";
 import AudienceSections from "./sections/AudienceSections";
 
-export default function ContentSections() {
+interface ContentSectionsProps {
+  scrollToSection?: (id: string) => void;
+}
+
+export default function ContentSections({ scrollToSection }: ContentSectionsProps = {}) {
   return (
     <>
       <PhilosophySections />
       <BookTopicsSection />
-      <ReviewsSections />
-      <AudienceSections />
+      <ReviewsSections scrollToSection={scrollToSection} />
+      <AudienceSections scrollToSection={scrollToSection} />
     </>
   );
 }

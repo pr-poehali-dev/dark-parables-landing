@@ -33,7 +33,7 @@ export default function Index() {
     <div className="min-h-screen bg-gradient-to-b from-[#1a1a2e] to-black text-white overflow-x-hidden">
       <Navigation scrolled={scrolled} scrollToSection={scrollToSection} />
       <HeroSection isVisible={isVisible} parallaxOffset={parallaxOffset} scrollToSection={scrollToSection} />
-      <ContentSections />
+      <ContentSections scrollToSection={scrollToSection} />
       <BuySection />
     </div>
   );

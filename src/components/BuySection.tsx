@@ -21,9 +21,10 @@ export default function BuySection() {
               <div className="flex flex-col gap-2 text-gray-400">
                 <a href="#about" className="hover:text-book-blue transition-colors">О книге</a>
                 <a href="#author" className="hover:text-book-blue transition-colors">Об авторе</a>
-                <a href="#reviews" className="hover:text-book-blue transition-colors">Отзывы</a>
-                <a href="#faq" className="hover:text-book-blue transition-colors">FAQ</a>
-                <a href="#buy" className="hover:text-book-blue transition-colors">Купить</a>
+                <a href="#stats" className="hover:text-book-blue transition-colors">Отзывы</a>
+                <a href="#community" className="hover:text-book-blue transition-colors">Сообщество</a>
+                <a href="#faq" className="hover:text-book-blue transition-colors">Частые вопросы</a>
+                <a href="#formats" className="hover:text-book-blue transition-colors">Купить</a>
               </div>
             </div>
             

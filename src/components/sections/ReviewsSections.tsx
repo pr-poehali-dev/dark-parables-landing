@@ -3,12 +3,16 @@ import DetailedReviewsSection from "./reviews/DetailedReviewsSection";
 import ReaderInsightsSection from "./reviews/ReaderInsightsSection";
 import TargetAudienceSection from "./reviews/TargetAudienceSection";
 
-export default function ReviewsSections() {
+interface ReviewsSectionsProps {
+  scrollToSection?: (id: string) => void;
+}
+
+export default function ReviewsSections({ scrollToSection }: ReviewsSectionsProps = {}) {
   return (
     <>
       <AuthorAndStatsSection />
       <DetailedReviewsSection />
-      <ReaderInsightsSection />
+      <ReaderInsightsSection scrollToSection={scrollToSection} />
       <TargetAudienceSection />
     </>
   );

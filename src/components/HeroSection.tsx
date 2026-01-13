@@ -34,7 +34,7 @@ export default function HeroSection({ isVisible, parallaxOffset, scrollToSection
               <Button 
                 size="lg" 
                 className="bg-book-red hover:bg-book-gold text-white font-bold text-xl px-12 py-7 transition-all hover:scale-105 shadow-lg hover:shadow-book-red/50"
-                onClick={() => scrollToSection('about')}
+                onClick={() => scrollToSection('formats')}
               >
                 УЗНАТЬ →
               </Button>
@@ -57,7 +57,7 @@ export default function HeroSection({ isVisible, parallaxOffset, scrollToSection
               <span className="text-gray-500">|</span>
               <div className="flex items-center gap-2">
                 <Icon name="Users" size={20} className="text-book-blue" />
-                <span>71+ участник в чате</span>
+                <span>71 участник в чате</span>
               </div>
             </div>
           </div>
@@ -72,7 +72,7 @@ export default function HeroSection({ isVisible, parallaxOffset, scrollToSection
                 }}
               >
                 <img 
-                  src="https://cdn.poehali.dev/files/photo_2025-12-14_20-17-50_2.jpg" 
+                  src="https://cdn.poehali.dev/files/photo_2025-11-06_13-35-24 (3).jpg" 
                   alt="Заповеди зла - обложка книги" 
                   className="w-full h-auto rounded-lg shadow-2xl border-2 border-gray-700/50 hover:scale-105 transition-transform duration-500"
                 />

@@ -11,7 +11,7 @@ export default function AuthorAndStatsSection() {
               <div className="relative">
                 <div className="absolute inset-0 bg-book-gold/20 blur-2xl rounded-full"></div>
                 <img 
-                  src="https://cdn.poehali.dev/files/author-photo.jpg" 
+                  src="https://cdn.poehali.dev/files/4F5A0545-118.jpg" 
                   alt="Дарья Серп" 
                   className="relative w-full rounded-lg shadow-2xl"
                 />
@@ -92,14 +92,14 @@ export default function AuthorAndStatsSection() {
           <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto pt-6">
             <Card className="bg-gray-900/80 border-gray-800">
               <CardContent className="p-6 space-y-2">
-                <p className="text-3xl font-bold text-book-blue">📚 300+</p>
+                <p className="text-3xl font-bold text-book-blue">📚 70+</p>
                 <p className="text-gray-400">отзывов за первый месяц</p>
               </CardContent>
             </Card>
             <Card className="bg-gray-900/80 border-gray-800">
               <CardContent className="p-6 space-y-2">
-                <p className="text-3xl font-bold text-book-blue">💬 500+</p>
-                <p className="text-gray-400">читателей в закрытом чате</p>
+                <p className="text-3xl font-bold text-book-blue">💬 71</p>
+                <p className="text-gray-400">читатель в закрытом чате</p>
               </CardContent>
             </Card>
           </div>
