@@ -18,6 +18,13 @@ export default function Index() {
     setIsVisible(true);
   }, []);
 
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   const painPoints = [
     "Почему послушание делает возможными геноциды?",
     "Почему мы восхищаемся успешными и презираем неудачников?",
@@ -68,7 +75,7 @@ export default function Index() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#1a1a2e] to-black text-white overflow-x-hidden">
-      <section className={`min-h-screen flex items-center justify-center px-4 py-12 md:py-20 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+      <section id="hero" className={`min-h-screen flex items-center justify-center px-4 py-12 md:py-20 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <div className="container mx-auto max-w-7xl">
           <div className="grid md:grid-cols-5 gap-8 md:gap-12 items-center">
             <div className="md:col-span-3 space-y-6 md:space-y-8">
@@ -79,7 +86,11 @@ export default function Index() {
                 Почему послушные граждане становятся палачами, а евангельский Христос — враг семейных ценностей и патриотизма
               </p>
               <div className="flex flex-col sm:flex-row gap-4 animate-fade-in">
-                <Button size="lg" className="bg-book-red hover:bg-book-red/90 text-white font-semibold text-lg px-8 py-6">
+                <Button 
+                  size="lg" 
+                  className="bg-book-red hover:bg-book-red/90 text-white font-semibold text-lg px-8 py-6"
+                  onClick={() => scrollToSection('about')}
+                >
                   УЗНАТЬ →
                 </Button>
                 <div className="flex items-center gap-4 text-sm text-gray-400">
@@ -132,7 +143,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 px-4">
+      <section id="about" className="py-16 md:py-24 px-4">
         <div className="container mx-auto max-w-5xl text-center space-y-8">
           <h2 className="text-3xl md:text-5xl font-bold">О чём книга?</h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -160,7 +171,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 px-4 bg-black/30">
+      <section id="thesis" className="py-16 md:py-24 px-4 bg-black/30">
         <div className="container mx-auto max-w-4xl">
           <Card className="bg-gradient-to-br from-gray-900 to-black border-2 border-book-red p-8 md:p-12">
             <CardContent className="space-y-6 p-0">
@@ -175,7 +186,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 px-4">
+      <section id="reviews" className="py-16 md:py-24 px-4">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-12">
             Что говорят читатели
@@ -206,7 +217,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 px-4 bg-black/30">
+      <section id="warning" className="py-16 md:py-24 px-4 bg-black/30">
         <div className="container mx-auto max-w-6xl">
           <Card className="bg-red-950/50 border-2 border-book-red">
             <CardContent className="p-8 md:p-12 space-y-6">
@@ -240,7 +251,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 px-4">
+      <section id="audience" className="py-16 md:py-24 px-4">
         <div className="container mx-auto max-w-7xl">
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-12">
             Для кого эта книга?
@@ -282,7 +293,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 px-4 bg-black/30">
+      <section id="community" className="py-16 md:py-24 px-4 bg-black/30">
         <div className="container mx-auto max-w-5xl text-center space-y-8">
           <h2 className="text-3xl md:text-5xl font-bold">
             Вступите в сообщество
@@ -313,7 +324,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 px-4">
+      <section id="topics" className="py-16 md:py-24 px-4">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-12">
             Темы без табу
@@ -331,7 +342,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 px-4 bg-black/30">
+      <section id="buy" className="py-16 md:py-24 px-4 bg-black/30">
         <div className="container mx-auto max-w-5xl text-center space-y-8">
           <h2 className="text-3xl md:text-5xl font-bold">Форматы и покупка</h2>
           <div className="grid md:grid-cols-3 gap-6">
@@ -371,7 +382,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="py-20 md:py-32 px-4 bg-gradient-to-b from-black/30 to-black">
+      <section id="cta" className="py-20 md:py-32 px-4 bg-gradient-to-b from-black/30 to-black">
         <div className="container mx-auto max-w-4xl text-center space-y-10">
           <h2 className="text-4xl md:text-6xl font-bold leading-tight">
             ХРИСТИАНСТВО — ЭТО НЕ КОМФОРТ
@@ -383,7 +394,11 @@ export default function Index() {
             <span className="block text-book-red font-bold">Это Христос вместо традиций.</span>
           </p>
           <div className="pt-8">
-            <Button size="lg" className="bg-book-red hover:bg-book-red/90 text-white font-bold text-xl px-12 py-8 animate-pulse">
+            <Button 
+              size="lg" 
+              className="bg-book-red hover:bg-book-red/90 text-white font-bold text-xl px-12 py-8 animate-pulse"
+              onClick={() => scrollToSection('buy')}
+            >
               КУПИТЬ КНИГУ И ВЫБРАТЬ КРАСНУЮ ТАБЛЕТКУ
             </Button>
           </div>
