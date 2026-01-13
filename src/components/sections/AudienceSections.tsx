@@ -58,9 +58,8 @@ export default function AudienceSections() {
         <div className="container mx-auto max-w-6xl space-y-12">
           <div className="text-center space-y-6">
             <h2 className="text-3xl md:text-5xl font-bold leading-tight">
-              Прочитайте КНИГУ —<br />
-              ПОЛУЧИТЕ БИЛЕТ В КЛУБ<br />
-              ДУМАЮЩИХ и готовых к диалогу верующих и агностиков
+              Прочитайте книгу —<br />
+              и присоединяйтесь к общению думающих и готовых к диалогу верующих и агностиков
             </h2>
           </div>
           <Card className="bg-gradient-to-br from-gray-900 to-black border-2 border-book-blue">
@@ -92,17 +91,7 @@ export default function AudienceSections() {
                   </div>
                 </div>
               </div>
-              <Card className="bg-black/50 border-book-gold">
-                <CardContent className="p-6 space-y-4">
-                  <p className="text-lg md:text-xl text-gray-200 italic leading-relaxed">
-                    "Книга — огонь.<br />
-                    Но чат — это отдельная вселенная.<br /><br />
-                    Впервые за годы могу говорить о вере<br />
-                    с людьми, которые не осуждают за вопросы"
-                  </p>
-                  <p className="text-sm text-gray-400">— Читательница чата</p>
-                </CardContent>
-              </Card>
+
             </CardContent>
           </Card>
         </div>
@@ -204,14 +193,11 @@ export default function AudienceSections() {
                   <li>• Доставка по России</li>
                 </ul>
                 <div className="space-y-3 pt-4">
-                  <Button className="w-full bg-book-red hover:bg-book-red/90 text-white font-bold">
+                  <Button 
+                    className="w-full bg-book-red hover:bg-book-red/90 text-white font-bold"
+                    onClick={() => window.open('https://wildberries.ru/catalog/0/search.aspx?search=WW268963', '_blank')}
+                  >
                     КУПИТЬ НА WILDBERRIES
-                  </Button>
-                  <Button className="w-full bg-book-blue hover:bg-book-blue/90 text-white font-bold">
-                    КУПИТЬ НА OZON
-                  </Button>
-                  <Button className="w-full bg-book-gold hover:bg-book-gold/90 text-black font-bold">
-                    КУПИТЬ В ЛАБИРИНТЕ
                   </Button>
                 </div>
               </CardContent>
@@ -229,42 +215,17 @@ export default function AudienceSections() {
                   <li>• Можно делать заметки</li>
                 </ul>
                 <div className="pt-4">
-                  <Button className="w-full bg-book-blue hover:bg-book-blue/90 text-white font-bold">
+                  <Button 
+                    className="w-full bg-book-blue hover:bg-book-blue/90 text-white font-bold"
+                    onClick={() => window.open('https://www.litres.ru/book/darya-serp/zapovedi-zla-bog-protiv-tradicionnyh-cennostey-72952082/', '_blank')}
+                  >
                     СКАЧАТЬ НА ЛИТРЕС
                   </Button>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-to-br from-gray-900 to-black border-2 border-purple-500">
-              <CardContent className="p-8 space-y-6">
-                <div className="text-center space-y-4">
-                  <div className="text-6xl">🎧</div>
-                  <h3 className="text-2xl font-bold text-purple-400">АУДИОКНИГА</h3>
-                </div>
-                <ul className="space-y-2 text-gray-300">
-                  <li>• Профессиональная озвучка</li>
-                  <li>• 5+ часов</li>
-                  <li>• Слушайте где угодно</li>
-                </ul>
-                <div className="pt-4">
-                  <Button className="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold">
-                    КУПИТЬ
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
           </div>
-          <Card className="bg-black/50 border-green-600">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-green-400 mb-4 text-center">Гарантии:</h3>
-              <div className="grid sm:grid-cols-3 gap-4 text-center">
-                <p className="text-gray-300">✅ Официальные площадки</p>
-                <p className="text-gray-300">✅ Защита покупателя</p>
-                <p className="text-gray-300">✅ Возврат в течение 14 дней</p>
-              </div>
-            </CardContent>
-          </Card>
         </div>
       </section>
 

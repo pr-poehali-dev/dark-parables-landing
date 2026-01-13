@@ -14,7 +14,7 @@ export default function ReaderInsightsSection() {
             <Card className="bg-gray-900/80 border-gray-800 hover:border-book-blue transition-all">
               <CardContent className="p-8 space-y-4">
                 <div className="text-5xl">🔬</div>
-                <h3 className="text-2xl font-bold text-book-gold">Бывшие атеисты</h3>
+                <h3 className="text-2xl font-bold text-book-gold">Атеисты и агностики</h3>
                 <p className="text-gray-300 leading-relaxed italic">
                   «Я атеистка, но очень рада, что купила.<br />
                   Интереснейший текст. Автор полемизирует<br />
@@ -155,125 +155,11 @@ export default function ReaderInsightsSection() {
         </div>
       </section>
 
-      <section id="discussions" className="py-16 md:py-24 px-4">
-        <div className="container mx-auto max-w-6xl space-y-12">
-          <div className="text-center space-y-4">
-            <h2 className="text-3xl md:text-5xl font-bold uppercase">
-              ПОСЛЕ ПРОЧТЕНИЯ ЧИТАТЕЛИ<br />
-              НЕ МОГУТ МОЛЧАТЬ
-            </h2>
-            <p className="text-xl md:text-2xl text-gray-400">
-              В читательском чате за неделю — 200+ сообщений<br />
-              глубоких философских споров
-            </p>
-          </div>
-
-          <div className="flex flex-wrap justify-center gap-3 text-book-blue font-semibold text-sm md:text-base">
-            {["#эволюция_и_христианство", "#свобода_воли", "#грехопадение", "#куриная_мораль", "#Бог_изгой", "#традиции_vs_вера", "#где_найти_Христа", "#отсечение_воли", "#практика_не_слова", "#духовные_авторитеты"].map((tag, i) => (
-              <Badge key={i} variant="outline" className="px-4 py-2 border-book-blue text-book-blue hover:bg-book-blue/10 cursor-pointer transition-all">
-                {tag}
-              </Badge>
-            ))}
-          </div>
-
-          <div className="space-y-6">
-            <Card className="bg-gray-900/80 border-gray-700">
-              <CardContent className="p-6 space-y-4">
-                <h3 className="text-xl font-bold text-book-gold">💬 ДИСКУССИЯ О ПАРАДОКСАХ ВЕРЫ</h3>
-                <div className="space-y-3 text-gray-300">
-                  <p className="leading-relaxed">
-                    <span className="font-semibold text-book-blue">Tatiana K.:</span> "Получается, Бог знал что так будет,<br />
-                    а всё равно дал людям свободу воли...<br />
-                    И даже тем, кто воспользуется ею плохо"
-                  </p>
-                  <p className="leading-relaxed">
-                    <span className="font-semibold text-book-blue">Михаил:</span> "Без свободы невозможна истинная Любовь.<br />
-                    Богу нужны не куклы на верёвочках.<br />
-                    Он хочет, чтобы мы сами выбрали любить Его.<br /><br />
-                    Короче, всё ради любви 😁"
-                  </p>
-                  <p className="text-sm text-gray-500">[350+ реакций, 2 часа обсуждения]</p>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-gray-900/80 border-gray-700">
-              <CardContent className="p-6 space-y-4">
-                <h3 className="text-xl font-bold text-book-gold">💬 ПРО "ТРУП ВЕРЫ"</h3>
-                <div className="space-y-3 text-gray-300">
-                  <p className="leading-relaxed">
-                    <span className="font-semibold text-book-blue">Афина:</span> «культура, приличия и традиции» –<br />
-                    это труп веры. Богато украшенная мумия.<br />
-                    «И восковых фигур прекрасен вид!»
-                  </p>
-                  <p className="text-sm text-gray-500">[Лайки: 💯💯💯💯]</p>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-gray-900/80 border-gray-700">
-              <CardContent className="p-6 space-y-4">
-                <h3 className="text-xl font-bold text-book-gold">💬 КОГДА ПОНЯЛ, ЧТО НИЧЕГО НЕ ПОНЯЛ</h3>
-                <div className="space-y-3 text-gray-300">
-                  <p className="leading-relaxed">
-                    <span className="font-semibold text-book-blue">Сергей:</span> "Чем старше становлюсь,<br />
-                    тем чаще говорю 'не знаю'.<br /><br />
-                    А лет 20 назад казалось — вот-вот узнаю<br />
-                    ответы на все основные вопросы"
-                  </p>
-                  <p className="text-sm text-gray-500">[Реакции: 🤝👍💯]</p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
-          <Card className="bg-black/50 border-book-blue">
-            <CardContent className="p-8 space-y-6">
-              <h3 className="text-2xl font-bold text-center text-book-blue">📊 ЗА 1 НЕДЕЛЮ В ЧАТЕ:</h3>
-              <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 text-center">
-                <div className="space-y-2">
-                  <p className="text-3xl font-bold text-book-gold">200+</p>
-                  <p className="text-gray-400">сообщений глубоких обсуждений</p>
-                </div>
-                <div className="space-y-2">
-                  <p className="text-3xl font-bold text-book-gold">15+</p>
-                  <p className="text-gray-400">философских споров</p>
-                </div>
-                <div className="space-y-2">
-                  <p className="text-3xl font-bold text-book-gold">50+</p>
-                  <p className="text-gray-400">личных инсайтов</p>
-                </div>
-                <div className="space-y-2">
-                  <p className="text-3xl font-bold text-book-gold">8</p>
-                  <p className="text-gray-400">человек признались: "Теперь всё по-другому вижу"</p>
-                </div>
-                <div className="space-y-2">
-                  <p className="text-3xl font-bold text-book-gold">3 часа</p>
-                  <p className="text-gray-400">средняя длина вечерней дискуссии</p>
-                </div>
-                <div className="space-y-2">
-                  <p className="text-3xl font-bold text-book-gold">до 2 ночи</p>
-                  <p className="text-gray-400">время последнего сообщения</p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-
-          <div className="text-center pt-6">
-            <Button size="lg" className="bg-book-red hover:bg-book-red/90 text-white font-bold text-lg px-10 py-6">
-              ПРИСОЕДИНИТЬСЯ К ОБСУЖДЕНИЮ<br />
-              ↓<br />
-              КУПИТЬ И ВСТУПИТЬ В ЧАТ ЧИТАТЕЛЕЙ
-            </Button>
-          </div>
-        </div>
-      </section>
-
       <section id="quotes" className="py-16 md:py-24 px-4 bg-black/30">
         <div className="container mx-auto max-w-6xl space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-3xl md:text-5xl font-bold">
-              Цитаты, которые взорвали чат
+              Цитаты, которые зацепили читателей
             </h2>
             <p className="text-xl md:text-2xl text-gray-400">
               То, что читатели сохраняют себе в заметки
