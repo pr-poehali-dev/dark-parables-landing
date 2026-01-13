@@ -166,7 +166,34 @@ export default function ContentSections() {
         </div>
       </section>
 
-      <section id="reviews" className="py-16 md:py-24 px-4">
+      <section id="topics" className="py-16 md:py-24 px-4">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl md:text-5xl font-bold text-center mb-12">
+            Что вы узнаете
+          </h2>
+          <div className="space-y-4">
+            {bookTopics.map((topic, index) => (
+              <Card key={index} className="bg-gray-900/80 border-gray-800 hover:border-book-gold transition-all duration-300 cursor-pointer group">
+                <CardContent className="p-6 md:p-8">
+                  <div className="flex items-start gap-4">
+                    <span className="text-2xl flex-shrink-0 font-bold text-book-gold">{index + 1}️⃣</span>
+                    <div className="space-y-2">
+                      <h3 className="text-xl md:text-2xl font-bold text-white group-hover:text-book-gold transition-colors">
+                        {topic.title}
+                      </h3>
+                      <p className="text-base md:text-lg text-gray-400 leading-relaxed">
+                        {topic.description}
+                      </p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews" className="py-16 md:py-24 px-4 bg-black/30">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-12">
             Что говорят читатели
@@ -197,7 +224,7 @@ export default function ContentSections() {
         </div>
       </section>
 
-      <section id="warning" className="py-16 md:py-24 px-4 bg-black/30">
+      <section id="warning" className="py-16 md:py-24 px-4">
         <div className="container mx-auto max-w-6xl">
           <Card className="bg-red-950/50 border-2 border-book-red">
             <CardContent className="p-8 md:p-12 space-y-6">
@@ -300,33 +327,6 @@ export default function ContentSections() {
                 <p className="text-gray-300">Люди, которые понимают</p>
               </CardContent>
             </Card>
-          </div>
-        </div>
-      </section>
-
-      <section id="topics" className="py-16 md:py-24 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-5xl font-bold text-center mb-12">
-            Что вы узнаете
-          </h2>
-          <div className="space-y-4">
-            {bookTopics.map((topic, index) => (
-              <Card key={index} className="bg-gray-900/80 border-gray-800 hover:border-book-gold transition-all duration-300 cursor-pointer group">
-                <CardContent className="p-6 md:p-8">
-                  <div className="flex items-start gap-4">
-                    <span className="text-2xl flex-shrink-0 font-bold text-book-gold">{index + 1}️⃣</span>
-                    <div className="space-y-2">
-                      <h3 className="text-xl md:text-2xl font-bold text-white group-hover:text-book-gold transition-colors">
-                        {topic.title}
-                      </h3>
-                      <p className="text-base md:text-lg text-gray-400 leading-relaxed">
-                        {topic.description}
-                      </p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
           </div>
         </div>
       </section>
