@@ -32,22 +32,22 @@ export default function HeroSection({ isVisible, scrollToSection }: HeroSectionP
       <div className="container mx-auto max-w-7xl">
         <div className="grid md:grid-cols-5 gap-12 md:gap-16 items-center">
           <div className="md:col-span-3 space-y-8 md:space-y-10">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
-              <span className="animate-word mr-4">Что</span>
-              <span className="animate-word mr-4">если</span>
-              <span className="text-book-gold animate-word">«добро»<span className="mr-4">,</span></span>
-              <span className="animate-word mr-4">которому</span>
-              <span className="animate-word mr-4">вас</span>
-              <span className="animate-word">учили<span className="mr-4">,</span></span>
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
+              <span className="animate-word mr-2 sm:mr-4">Что</span>
+              <span className="animate-word mr-2 sm:mr-4">если</span>
+              <span className="text-book-gold animate-word">«добро»<span className="mr-2 sm:mr-4">,</span></span>
+              <span className="animate-word mr-2 sm:mr-4">которому</span>
+              <span className="animate-word mr-2 sm:mr-4">вас</span>
+              <span className="animate-word">учили<span className="mr-2 sm:mr-4">,</span></span>
               <br className="hidden md:block" />
-              <span className="animate-word mr-4">на</span>
-              <span className="animate-word mr-4">самом</span>
-              <span className="animate-word mr-4">деле</span>
+              <span className="animate-word mr-2 sm:mr-4">на</span>
+              <span className="animate-word mr-2 sm:mr-4">самом</span>
+              <span className="animate-word mr-2 sm:mr-4">деле</span>
               <span className="text-book-red animate-word mr-2">зло</span>
               <span className="animate-word">?</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-200 leading-relaxed animate-slide-up">
-              Почему послушные граждане становятся палачами,<br className="hidden md:block" /> а евангельский Христос — враг семейных ценностей<br className="hidden md:block" /> и патриотизма
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-200 leading-relaxed animate-slide-up">
+              Почему послушные граждане становятся палачами, а евангельский Христос — враг семейных ценностей и патриотизма
             </p>
             <div className="space-y-4 animate-fade-in">
               <Button 
@@ -57,9 +57,9 @@ export default function HeroSection({ isVisible, scrollToSection }: HeroSectionP
               >
                 УЗНАТЬ →
               </Button>
-              <p className="text-lg md:text-xl text-gray-300 flex items-center gap-2">
+              <p className="text-base sm:text-lg md:text-xl text-gray-300 flex items-center gap-2">
                 <Icon name="Zap" size={20} className="text-book-gold flex-shrink-0" />
-                <span>Книга, которая заставит пересмотреть всё,<br className="hidden md:block" /> что вы считали очевидным</span>
+                <span>Книга, которая заставит пересмотреть всё, что вы считали очевидным</span>
               </p>
             </div>
             <div className="flex flex-wrap items-center gap-3 md:gap-4 text-sm text-gray-300 animate-fade-in pt-2">
