@@ -136,16 +136,16 @@ export default function AudienceSections({ scrollToSection }: AudienceSectionsPr
           </div>
           <div className="text-center space-y-4 md:space-y-6 pt-4 md:pt-6 px-2">
             <div className="space-y-2 md:space-y-3">
-              <p className="text-lg sm:text-xl md:text-2xl font-bold text-book-gold">НЕТ ТАБУИРОВАННЫХ ТЕМ</p>
-              <p className="text-lg sm:text-xl md:text-2xl font-bold text-book-gold">НЕТ ГОТОВЫХ ОТВЕТОВ</p>
-              <p className="text-lg sm:text-xl md:text-2xl font-bold text-book-red">ЕСТЬ ЧЕСТНЫЙ РАЗГОВОР</p>
+              <p className="text-sm sm:text-base md:text-xl lg:text-2xl font-bold text-book-gold">НЕТ ТАБУИРОВАННЫХ ТЕМ</p>
+              <p className="text-sm sm:text-base md:text-xl lg:text-2xl font-bold text-book-gold">НЕТ ГОТОВЫХ ОТВЕТОВ</p>
+              <p className="text-sm sm:text-base md:text-xl lg:text-2xl font-bold text-book-red">ЕСТЬ ЧЕСТНЫЙ РАЗГОВОР</p>
             </div>
             <Button 
               size="lg" 
-              className="bg-book-red hover:bg-book-red/90 text-white font-bold text-lg px-10 py-6"
+              className="bg-book-red hover:bg-book-red/90 text-white font-bold text-xs sm:text-sm md:text-base lg:text-lg px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 w-full sm:w-auto"
               onClick={() => handleScroll('formats')}
             >
-              ПРИСОЕДИНИТЬСЯ К РАЗГОВОРУ
+              ПРИСОЕДИНИТЬСЯ
             </Button>
           </div>
           <div className="text-center mt-12">
@@ -265,10 +265,10 @@ export default function AudienceSections({ scrollToSection }: AudienceSectionsPr
           <div className="text-center space-y-4 md:space-y-6 px-4">
             <Button 
               size="lg" 
-              className="bg-book-red hover:bg-book-red/90 text-white font-bold text-sm sm:text-base md:text-lg lg:text-xl px-6 sm:px-8 md:px-12 py-5 sm:py-6 md:py-8 animate-pulse w-full sm:w-auto"
+              className="bg-book-red hover:bg-book-red/90 text-white font-bold text-xs sm:text-sm md:text-base lg:text-lg px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 animate-pulse w-full sm:w-auto"
               onClick={() => handleScroll('formats')}
             >
-              КУПИТЬ КНИГУ И ВЫБРАТЬ
+              КУПИТЬ КНИГУ
             </Button>
           </div>
         </div>
@@ -328,17 +328,18 @@ export default function AudienceSections({ scrollToSection }: AudienceSectionsPr
             </div>
             
             <div className="pt-5 md:pt-6 space-y-3 md:space-y-4">
-              <p className="text-base sm:text-lg md:text-xl text-gray-400 flex items-center justify-center gap-2 flex-wrap px-2">
-                <Icon name="Flame" size={20} className="text-book-red hidden sm:inline" />
-                <span className="text-center">🔥 УЖЕ 70+ ЧИТАТЕЛЕЙ В ЧАТЕ</span>
+              <p className="text-sm sm:text-base md:text-lg text-gray-400 text-center px-2">
+                🔥 УЖЕ 70+ ЧИТАТЕЛЕЙ В ЧАТЕ
               </p>
-              <div className="flex items-center justify-center gap-1 sm:gap-2 flex-wrap px-2">
-                {[...Array(5)].map((_, i) => (
-                  <span key={i} className="text-yellow-400 text-lg sm:text-xl md:text-2xl">⬅0</span>
-                ))}
-                <span className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 ml-1 sm:ml-2 text-center">4.9/5 на основе 70+ отзывов</span>
+              <div className="flex items-center justify-center gap-1 flex-wrap px-2">
+                <div className="flex gap-0.5">
+                  {[...Array(5)].map((_, i) => (
+                    <span key={i} className="text-yellow-400 text-base sm:text-lg">⭐</span>
+                  ))}
+                </div>
+                <span className="text-xs sm:text-sm md:text-base text-gray-300 text-center">4.9/5 на основе 70+ отзывов</span>
               </div>
-              <div className="space-y-2 text-sm sm:text-base md:text-lg text-gray-400 text-center px-4">
+              <div className="space-y-2 text-xs sm:text-sm md:text-base text-gray-400 text-center px-4">
                 <p>💬 "Читается запойно!" — Елена</p>
                 <p>📚 "Книга важнейшая" — Михаил</p>
                 <p>🔥 "Не могу оторваться!" — Сергей</p>
