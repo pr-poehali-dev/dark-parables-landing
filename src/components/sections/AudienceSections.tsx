@@ -75,29 +75,29 @@ export default function AudienceSections({ scrollToSection }: AudienceSectionsPr
           <Card className="bg-gradient-to-br from-gray-900 to-black border-2 border-book-blue">
             <CardContent className="p-5 sm:p-6 md:p-8 lg:p-12 space-y-6 md:space-y-8">
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-book-blue text-center">💬 В ЧАТЕ ЧИТАТЕЛЕЙ</h3>
-              <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
-                <div className="flex items-start gap-3">
-                  <Icon name="MessageCircle" size={24} className="text-book-blue flex-shrink-0 hidden sm:block" />
+              <div className="grid sm:grid-cols-2 gap-3 md:gap-6">
+                <div className="flex items-start gap-2">
+                  <Icon name="MessageCircle" size={20} className="text-book-blue flex-shrink-0 hidden sm:block" />
                   <div>
-                    <p className="text-sm sm:text-base md:text-lg text-gray-300">Обсуждения глав с автором</p>
+                    <p className="text-xs sm:text-base md:text-lg text-gray-300">Обсуждения глав с автором</p>
                   </div>
                 </div>
-                <div className="flex items-start gap-3">
-                  <Icon name="Moon" size={24} className="text-book-gold flex-shrink-0 hidden sm:block" />
+                <div className="flex items-start gap-2">
+                  <Icon name="Moon" size={20} className="text-book-gold flex-shrink-0 hidden sm:block" />
                   <div>
-                    <p className="text-sm sm:text-base md:text-lg text-gray-300">Философские споры до 2 ночи</p>
+                    <p className="text-xs sm:text-base md:text-lg text-gray-300">Философские споры до 2 ночи</p>
                   </div>
                 </div>
-                <div className="flex items-start gap-3">
-                  <Icon name="Users" size={24} className="text-book-red flex-shrink-0 hidden sm:block" />
+                <div className="flex items-start gap-2">
+                  <Icon name="Users" size={20} className="text-book-red flex-shrink-0 hidden sm:block" />
                   <div>
-                    <p className="text-sm sm:text-base md:text-lg text-gray-300">Люди, которые понимают</p>
+                    <p className="text-xs sm:text-base md:text-lg text-gray-300">Люди, которые понимают</p>
                   </div>
                 </div>
-                <div className="flex items-start gap-3">
-                  <Icon name="Heart" size={24} className="text-green-500 flex-shrink-0 hidden sm:block" />
+                <div className="flex items-start gap-2">
+                  <Icon name="Heart" size={20} className="text-green-500 flex-shrink-0 hidden sm:block" />
                   <div>
-                    <p className="text-sm sm:text-base md:text-lg text-gray-300">Место, где можно сомневаться</p>
+                    <p className="text-xs sm:text-base md:text-lg text-gray-300">Место, где можно сомневаться</p>
                   </div>
                 </div>
               </div>
@@ -167,10 +167,10 @@ export default function AudienceSections({ scrollToSection }: AudienceSectionsPr
           <div className="space-y-3 md:space-y-4">
             {chapters.map((chapter, index) => (
               <Card key={index} className="bg-gray-900/80 border-gray-700 hover:border-book-blue transition-all">
-                <CardContent className="p-4 sm:p-5 md:p-6">
-                  <div className="flex items-start gap-3 md:gap-4">
-                    <Badge className="bg-book-blue text-white font-bold text-base sm:text-lg px-2 sm:px-3 py-1 flex-shrink-0">{index + 1}</Badge>
-                    <p className="text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed flex-grow">{chapter}</p>
+                <CardContent className="p-3 sm:p-5 md:p-6">
+                  <div className="flex items-start gap-2 md:gap-4">
+                    <Badge className="hidden sm:inline-flex bg-book-blue text-white font-bold text-base sm:text-lg px-2 sm:px-3 py-1 flex-shrink-0">{index + 1}</Badge>
+                    <p className="text-xs sm:text-base md:text-lg text-gray-200 leading-relaxed flex-grow">{chapter}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -247,18 +247,18 @@ export default function AudienceSections({ scrollToSection }: AudienceSectionsPr
       <section id="final-cta" className="py-12 md:py-20 lg:py-32 px-4 bg-gradient-to-b from-black/30 to-black">
         <div className="container mx-auto max-w-5xl space-y-10 md:space-y-16">
           <div className="text-center space-y-6 md:space-y-8">
-            <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold leading-tight px-2">
+            <h2 className="text-xl sm:text-3xl md:text-5xl lg:text-6xl font-bold leading-tight px-2">
               ХРИСТИАНСТВО — ЭТО НЕ КОМФОРТ
             </h2>
-            <div className="text-base sm:text-lg md:text-2xl lg:text-3xl text-gray-300 leading-relaxed space-y-3 md:space-y-4 max-w-3xl mx-auto px-4">
+            <div className="text-sm sm:text-lg md:text-2xl lg:text-3xl text-gray-300 leading-relaxed space-y-2 md:space-y-4 max-w-3xl mx-auto px-4">
               <p>Это вызов.</p>
               <p>Это риск.</p>
               <p>Это свобода.</p>
-              <p className="pt-2 md:pt-4">Это балансирование на лезвии бритвы между готовыми ответами и честными вопросами.</p>
-              <p>Это выбор любви там, где легче выбрать правила.</p>
-              <p>Это жизнь изгоя среди "правильных".</p>
-              <p className="text-book-red font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl pt-2 md:pt-4">Это Христос вместо традиций.</p>
-              <p className="text-book-gold font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl pt-4 md:pt-6">ГОТОВЫ?</p>
+              <p className="pt-1 md:pt-4 text-xs sm:text-lg md:text-2xl">Это балансирование на лезвии бритвы между готовыми ответами и честными вопросами.</p>
+              <p className="text-xs sm:text-lg md:text-2xl">Это выбор любви там, где легче выбрать правила.</p>
+              <p className="text-xs sm:text-lg md:text-2xl">Это жизнь изгоя среди "правильных".</p>
+              <p className="text-book-red font-bold text-base sm:text-2xl md:text-3xl lg:text-4xl pt-2 md:pt-4">Это Христос вместо традиций.</p>
+              <p className="text-book-gold font-bold text-lg sm:text-3xl md:text-4xl lg:text-5xl pt-3 md:pt-6">ГОТОВЫ?</p>
             </div>
           </div>
 

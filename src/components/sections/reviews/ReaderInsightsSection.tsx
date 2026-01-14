@@ -103,13 +103,13 @@ export default function ReaderInsightsSection({ scrollToSection }: ReaderInsight
             </Card>
 
             <Card className="bg-gradient-to-br from-book-blue/20 to-gray-900 border-book-blue">
-              <CardContent className="p-5 sm:p-6 md:p-8 space-y-3 md:space-y-4">
-                <div className="text-3xl md:text-4xl">🌬️</div>
-                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-book-blue uppercase leading-tight">"КАК ОТКРЫТЬ ОКНО ЗИМОЙ"</h3>
-                <p className="text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed">
+              <CardContent className="p-4 sm:p-6 md:p-8 space-y-2 md:space-y-4">
+                <div className="text-2xl md:text-4xl">🌬️</div>
+                <h3 className="text-sm sm:text-xl md:text-2xl font-bold text-book-blue uppercase leading-tight">"КАК ОТКРЫТЬ ОКНО ЗИМОЙ"</h3>
+                <p className="text-xs sm:text-base md:text-lg text-gray-200 leading-relaxed">
                   "Чтение этой книги похоже на открытие окна зимой в душном помещении. Свежего морозного воздуха так много, что становится холодновато.
                 </p>
-                <p className="text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed font-semibold">
+                <p className="text-xs sm:text-base md:text-lg text-gray-200 leading-relaxed font-semibold">
                   Ортодоксальным ортодоксам держать на полочке пол-литровый пузырёк корвалола."
                 </p>
                 <p className="text-xs sm:text-sm text-gray-400 pt-1 md:pt-2">— Paulus, рецензент</p>
@@ -117,13 +117,13 @@ export default function ReaderInsightsSection({ scrollToSection }: ReaderInsight
             </Card>
 
             <Card className="bg-gradient-to-br from-book-red/20 to-gray-900 border-book-red">
-              <CardContent className="p-5 sm:p-6 md:p-8 space-y-3 md:space-y-4">
-                <div className="text-3xl md:text-4xl">🏠</div>
-                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-book-red uppercase leading-tight">"НАКОНЕЦ ПОЧУВСТВОВАЛА ДОМ"</h3>
-                <p className="text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed">
+              <CardContent className="p-4 sm:p-6 md:p-8 space-y-2 md:space-y-4">
+                <div className="text-2xl md:text-4xl">🏠</div>
+                <h3 className="text-sm sm:text-xl md:text-2xl font-bold text-book-red uppercase leading-tight">"НАКОНЕЦ ПОЧУВСТВОВАЛА ДОМ"</h3>
+                <p className="text-xs sm:text-base md:text-lg text-gray-200 leading-relaxed">
                   "Из книги светится мысль, что изгоем быть можно, это не порок. Сам Бог был изгоем и ученики его.
                 </p>
-                <p className="text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed font-semibold">
+                <p className="text-xs sm:text-base md:text-lg text-gray-200 leading-relaxed font-semibold">
                   Эта мысль даёт мне чувство дома. Спасибо."
                 </p>
                 <p className="text-xs sm:text-sm text-gray-400 pt-1 md:pt-2">— Афина, читательница</p>
@@ -131,13 +131,13 @@ export default function ReaderInsightsSection({ scrollToSection }: ReaderInsight
             </Card>
 
             <Card className="bg-gradient-to-br from-purple-600/20 to-gray-900 border-purple-500">
-              <CardContent className="p-5 sm:p-6 md:p-8 space-y-3 md:space-y-4">
-                <div className="text-3xl md:text-4xl">⚡</div>
-                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-purple-400 uppercase leading-tight">"ХРИСТИАНСТВО — ЭТО РАДИКАЛЬНО"</h3>
-                <p className="text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed">
+              <CardContent className="p-4 sm:p-6 md:p-8 space-y-2 md:space-y-4">
+                <div className="text-2xl md:text-4xl">⚡</div>
+                <h3 className="text-sm sm:text-xl md:text-2xl font-bold text-purple-400 uppercase leading-tight">"ХРИСТИАНСТВО — ЭТО РАДИКАЛЬНО"</h3>
+                <p className="text-xs sm:text-base md:text-lg text-gray-200 leading-relaxed">
                   "На 56-й странице усилилось ощущение, что став христианином я ввязался во что-то действительно радикальное –
                 </p>
-                <p className="text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed font-semibold">
+                <p className="text-xs sm:text-base md:text-lg text-gray-200 leading-relaxed font-semibold">
                   на много более тру радикальное, чем whitepowerblackmetall"
                 </p>
                 <p className="text-xs sm:text-sm text-gray-400 pt-1 md:pt-2">— Григорий, читатель</p>
@@ -176,36 +176,36 @@ export default function ReaderInsightsSection({ scrollToSection }: ReaderInsight
           </div>
           <div className="grid md:grid-cols-2 gap-5 md:gap-6">
             <Card className="bg-gradient-to-br from-gray-900 to-black border-2 border-book-gold">
-              <CardContent className="p-5 sm:p-6 md:p-8 space-y-3 md:space-y-4">
+              <CardContent className="p-4 sm:p-6 md:p-8 space-y-2 md:space-y-4">
                 <Badge className="bg-book-gold text-black font-bold text-xs sm:text-sm">📌 СОХРАНЕНО</Badge>
-                <blockquote className="text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed italic">
+                <blockquote className="text-xs sm:text-base md:text-lg text-gray-200 leading-relaxed italic">
                   "Правильность и смирение находятся по ту сторону добра и зла. Они не связаны с духовностью и не подразумевают ни выбора, ни свободы. Это просто комплекс механизмов приспособления."
                 </blockquote>
               </CardContent>
             </Card>
 
             <Card className="bg-gradient-to-br from-gray-900 to-black border-2 border-book-gold">
-              <CardContent className="p-5 sm:p-6 md:p-8 space-y-3 md:space-y-4">
+              <CardContent className="p-4 sm:p-6 md:p-8 space-y-2 md:space-y-4">
                 <Badge className="bg-book-gold text-black font-bold text-xs sm:text-sm">📌 СОХРАНЕНО</Badge>
-                <blockquote className="text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed italic">
+                <blockquote className="text-xs sm:text-base md:text-lg text-gray-200 leading-relaxed italic">
                   "Приятно и легко выбирать добро, когда оно полезно и одобряется окружающими. Но как выбрать добро, если оно позорно, опасно и осуждается?"
                 </blockquote>
               </CardContent>
             </Card>
 
             <Card className="bg-gradient-to-br from-gray-900 to-black border-2 border-book-red">
-              <CardContent className="p-5 sm:p-6 md:p-8 space-y-3 md:space-y-4">
+              <CardContent className="p-4 sm:p-6 md:p-8 space-y-2 md:space-y-4">
                 <Badge className="bg-book-red text-white font-bold text-xs sm:text-sm">📌 ПРОЦИТИРОВАНО 50+</Badge>
-                <blockquote className="text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed italic">
+                <blockquote className="text-xs sm:text-base md:text-lg text-gray-200 leading-relaxed italic">
                   "Евангелие — история о том, как любовь, истину и добро дискредитируют во имя традиций, общественного спокойствия и для пользы уважаемых людей"
                 </blockquote>
               </CardContent>
             </Card>
 
             <Card className="bg-gradient-to-br from-gray-900 to-black border-2 border-book-blue">
-              <CardContent className="p-5 sm:p-6 md:p-8 space-y-3 md:space-y-4">
+              <CardContent className="p-4 sm:p-6 md:p-8 space-y-2 md:space-y-4">
                 <Badge className="bg-book-blue text-white font-bold text-xs sm:text-sm">📌 СПОР НА 100 СООБЩ.</Badge>
-                <blockquote className="text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed italic">
+                <blockquote className="text-xs sm:text-base md:text-lg text-gray-200 leading-relaxed italic">
                   "Нет ничего удивительного, что образ Бога — карающего суперальфа-самца — является ведущим. Евангельский Бог, не похожий на властителя, — это парадокс и исключение"
                 </blockquote>
               </CardContent>
