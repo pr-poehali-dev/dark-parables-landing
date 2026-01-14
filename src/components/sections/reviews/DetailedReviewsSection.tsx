@@ -93,7 +93,7 @@ export default function DetailedReviewsSection({ scrollToSection }: DetailedRevi
 
   return (
     <>
-      <section id="reviews" className="py-16 md:py-24 px-4">
+      <section id="reviews" className="h-screen flex items-center py-12 px-4">
         <div className="container mx-auto max-w-6xl">
           <Carousel className="w-full" opts={{ loop: true }}>
             <CarouselContent>

@@ -9,11 +9,11 @@ interface HeroSectionProps {
 
 export default function HeroSection({ isVisible, parallaxOffset, scrollToSection }: HeroSectionProps) {
   return (
-    <section id="hero" className={`min-h-screen flex items-center justify-center px-4 py-12 md:py-20 pt-24 md:pt-32 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+    <section id="hero" className={`h-screen flex items-center justify-center px-4 py-8 pt-20 md:pt-24 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
       <div className="container mx-auto max-w-7xl">
-        <div className="grid md:grid-cols-5 gap-12 md:gap-16 items-center">
-          <div className="md:col-span-3 space-y-8 md:space-y-10">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.15]">
+        <div className="grid md:grid-cols-5 gap-8 md:gap-12 items-center">
+          <div className="md:col-span-3 space-y-6 md:space-y-7">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-[1.15]">
               <span className="animate-word mr-4">Что</span>
               <span className="animate-word mr-4">если</span>
               <span className="text-book-gold animate-word">«добро»<span className="mr-4">,</span></span>
@@ -27,23 +27,23 @@ export default function HeroSection({ isVisible, parallaxOffset, scrollToSection
               <span className="text-book-red animate-word mr-2">зло</span>
               <span className="animate-word">?</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-200 leading-relaxed animate-slide-up">
+            <p className="text-lg md:text-xl text-gray-200 leading-snug animate-slide-up">
               Почему послушные граждане становятся палачами,<br className="hidden md:block" /> а евангельский Христос — враг семейных ценностей<br className="hidden md:block" /> и патриотизма
             </p>
-            <div className="space-y-6 animate-fade-in">
+            <div className="space-y-4 animate-fade-in">
               <Button 
                 size="lg" 
-                className="bg-book-red hover:bg-book-gold text-white font-bold text-xl px-12 py-7 transition-all hover:scale-105 shadow-lg hover:shadow-book-red/50"
+                className="bg-book-red hover:bg-book-gold text-white font-bold text-lg px-10 py-6 transition-all hover:scale-105 shadow-lg hover:shadow-book-red/50"
                 onClick={() => scrollToSection('questions')}
               >
                 УЗНАТЬ →
               </Button>
-              <p className="text-lg md:text-xl text-gray-300 flex items-center gap-3">
-                <Icon name="Zap" size={24} className="text-book-gold flex-shrink-0" />
+              <p className="text-base md:text-lg text-gray-300 flex items-center gap-2">
+                <Icon name="Zap" size={20} className="text-book-gold flex-shrink-0" />
                 <span>Книга, которая заставит пересмотреть всё,<br className="hidden md:block" /> что вы считали очевидным</span>
               </p>
             </div>
-            <div className="flex flex-wrap items-center gap-4 md:gap-6 text-base text-gray-300 animate-fade-in pt-4">
+            <div className="flex flex-wrap items-center gap-3 md:gap-4 text-sm text-gray-300 animate-fade-in pt-2">
               <div className="flex items-center gap-2">
                 <div className="flex">
                   {[...Array(5)].map((_, i) => (
