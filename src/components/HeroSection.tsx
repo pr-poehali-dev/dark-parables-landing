@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
 import {
@@ -7,7 +7,9 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
+  type CarouselApi,
 } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 interface HeroSectionProps {
   isVisible: boolean;
@@ -21,7 +23,9 @@ export default function HeroSection({ isVisible, scrollToSection }: HeroSectionP
     "https://cdn.poehali.dev/files/2026-01-14_10-14-59.png",
     "https://cdn.poehali.dev/files/2026-01-14_10-14-42.png",
     "https://cdn.poehali.dev/files/2026-01-14_10-14-30.png",
-    "https://cdn.poehali.dev/files/2026-01-14_10-14-07.png"
+    "https://cdn.poehali.dev/files/2026-01-14_10-14-07.png",
+    "https://cdn.poehali.dev/files/2026-01-14_10-13-53.png",
+    "https://cdn.poehali.dev/files/2026-01-14_10-13-38.png"
   ];
   return (
     <section id="hero" className={`min-h-screen flex items-center justify-center px-4 py-16 md:py-24 pt-20 md:pt-24 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
@@ -79,7 +83,15 @@ export default function HeroSection({ isVisible, scrollToSection }: HeroSectionP
           <div className="md:col-span-2 flex justify-center animate-fade-in">
             <div className="relative w-full max-w-sm">
               <div className="absolute inset-0 bg-book-gold/30 blur-3xl rounded-full scale-110"></div>
-              <Carousel className="w-full" opts={{ loop: true }}>
+              <Carousel 
+                className="w-full" 
+                opts={{ loop: true }}
+                plugins={[
+                  Autoplay({
+                    delay: 3000,
+                  }),
+                ]}
+              >
                 <CarouselContent>
                   {bookImages.map((image, index) => (
                     <CarouselItem key={index}>
