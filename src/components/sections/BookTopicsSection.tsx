@@ -40,9 +40,9 @@ export default function BookTopicsSection({ scrollToSection }: BookTopicsSection
   ];
 
   return (
-    <section id="book-topics" className="min-h-screen flex items-center py-12 px-4">
+    <section id="book-topics" className="h-screen flex items-center py-10 px-4">
       <div className="container mx-auto max-w-5xl">
-        <h2 className="text-2xl md:text-4xl font-bold text-center mb-6">
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-5">
           Что вы узнаете
         </h2>
         <div className="space-y-3">

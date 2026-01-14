@@ -16,7 +16,7 @@ export default function ReaderInsightsSection({ scrollToSection }: ReaderInsight
   };
   return (
     <>
-      <section id="reader-types" className="py-16 md:py-24 px-4">
+      <section id="reader-types" className="h-screen flex items-center py-12 px-4">
         <div className="container mx-auto max-w-6xl space-y-12">
           <h2 className="text-3xl md:text-5xl font-bold text-center">
             Кто уже читает эту книгу
@@ -52,7 +52,7 @@ export default function ReaderInsightsSection({ scrollToSection }: ReaderInsight
 
             <Card className="bg-gray-900/80 border-gray-800 hover:border-book-blue transition-all">
               <CardContent className="p-8 space-y-4">
-                <div className="text-5xl">📿</div>
+                <div className="text-5xl">📚</div>
                 <h3 className="text-2xl font-bold text-book-gold">Выпускники духовных учебных заведений</h3>
                 <p className="text-gray-300 leading-relaxed italic">
                   «Закончил духовную семинарию. Вы большая умница —<br />

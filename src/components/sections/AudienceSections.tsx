@@ -65,7 +65,7 @@ export default function AudienceSections({ scrollToSection }: AudienceSectionsPr
 
   return (
     <>
-      <section id="community" className="py-16 md:py-24 px-4">
+      <section id="community" className="h-screen flex items-center py-12 px-4">
         <div className="container mx-auto max-w-6xl space-y-12">
           <div className="text-center space-y-6">
             <h2 className="text-3xl md:text-5xl font-bold leading-tight">
@@ -116,7 +116,7 @@ export default function AudienceSections({ scrollToSection }: AudienceSectionsPr
         </div>
       </section>
 
-      <section id="discussion-topics" className="py-16 md:py-24 px-4 bg-black/30">
+      <section id="discussion-topics" className="h-screen flex items-center py-12 px-4 bg-black/30">
         <div className="container mx-auto max-w-6xl space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-3xl md:text-5xl font-bold uppercase">
@@ -160,7 +160,7 @@ export default function AudienceSections({ scrollToSection }: AudienceSectionsPr
         </div>
       </section>
 
-      <section id="structure" className="py-16 md:py-24 px-4">
+      <section id="structure" className="h-screen flex items-center py-12 px-4">
         <div className="container mx-auto max-w-5xl space-y-12">
           <h2 className="text-3xl md:text-5xl font-bold text-center">
             Структура книги
@@ -214,7 +214,7 @@ export default function AudienceSections({ scrollToSection }: AudienceSectionsPr
         </div>
       </section>
 
-      <section id="faq" className="py-16 md:py-24 px-4">
+      <section id="faq" className="h-screen flex items-center py-12 px-4">
         <div className="container mx-auto max-w-4xl space-y-12">
           <h2 className="text-3xl md:text-5xl font-bold text-center">
             Частые вопросы
@@ -245,7 +245,7 @@ export default function AudienceSections({ scrollToSection }: AudienceSectionsPr
         </div>
       </section>
 
-      <section id="final-cta" className="py-20 md:py-32 px-4 bg-gradient-to-b from-black/30 to-black">
+      <section id="final-cta" className="h-screen flex items-center py-12 px-4 bg-gradient-to-b from-black/30 to-black">
         <div className="container mx-auto max-w-5xl space-y-12">
           <div className="text-center space-y-8">
             <h2 className="text-4xl md:text-6xl font-bold leading-tight">
@@ -271,8 +271,13 @@ export default function AudienceSections({ scrollToSection }: AudienceSectionsPr
             >
               КУПИТЬ КНИГУ И ВЫБРАТЬ КРАСНУЮ ТАБЛЕТКУ
             </Button>
-            
-            <div id="formats" className="py-12">
+          </div>
+        </div>
+      </section>
+
+      <section id="formats" className="py-16 md:py-24 px-4 bg-black/30">
+        <div className="container mx-auto max-w-6xl">
+            <div>
               <h2 className="text-3xl md:text-5xl font-bold text-center mb-12">
                 Выберите формат
               </h2>
@@ -358,7 +363,6 @@ export default function AudienceSections({ scrollToSection }: AudienceSectionsPr
               <p className="text-gray-400">📦 Доставка бумажной книги по всей России</p>
               <p className="text-gray-400">💬 Вступайте в чат и общайтесь с автором</p>
             </div>
-          </div>
         </div>
       </section>
     </>
