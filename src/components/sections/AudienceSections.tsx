@@ -276,9 +276,8 @@ export default function AudienceSections({ scrollToSection }: AudienceSectionsPr
       </section>
 
       <section id="formats" className="py-16 md:py-24 px-4 bg-black/30">
-        <div className="container mx-auto max-w-6xl">
-            <div>
-              <h2 className="text-3xl md:text-5xl font-bold text-center mb-12">
+        <div className="container mx-auto max-w-6xl space-y-8">
+              <h2 className="text-3xl md:text-5xl font-bold text-center">
                 Выберите формат
               </h2>
               <div className="grid md:grid-cols-2 gap-8 justify-items-center max-w-4xl mx-auto">
@@ -326,7 +325,6 @@ export default function AudienceSections({ scrollToSection }: AudienceSectionsPr
                   </CardContent>
                 </Card>
               </div>
-            </div>
             
             <div className="pt-6 space-y-3">
               <p className="text-xl text-gray-400 flex items-center justify-center gap-3">
@@ -363,7 +361,6 @@ export default function AudienceSections({ scrollToSection }: AudienceSectionsPr
               <p className="text-gray-400">📦 Доставка бумажной книги по всей России</p>
               <p className="text-gray-400">💬 Вступайте в чат и общайтесь с автором</p>
             </div>
-          </div>
         </div>
       </section>
     </>
