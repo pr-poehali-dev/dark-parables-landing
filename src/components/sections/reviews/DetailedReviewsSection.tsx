@@ -152,7 +152,7 @@ export default function DetailedReviewsSection({ scrollToSection }: DetailedRevi
                 </div>
                 <div className="space-y-4">
                   {positiveReviews.map((review, index) => (
-                    <div key={index} className="border-l-4 border-green-500 pl-4 py-2">
+                    <div key={index} className="border-l-4 border-green-500 pl-4 py-2 text-center">
                       <p className="text-gray-300 leading-relaxed mb-2">💬 {review.text}</p>
                       <p className="text-sm text-gray-500">— {review.author}</p>
                     </div>
@@ -168,7 +168,7 @@ export default function DetailedReviewsSection({ scrollToSection }: DetailedRevi
                 </div>
                 <div className="space-y-4">
                   {criticalReviews.map((review, index) => (
-                    <div key={index} className="border-l-4 border-yellow-500 pl-4 py-2">
+                    <div key={index} className="border-l-4 border-yellow-500 pl-4 py-2 text-center">
                       <p className="text-gray-300 leading-relaxed mb-2">💬 {review.text}</p>
                       <p className="text-sm text-gray-500">— {review.author}</p>
                     </div>
