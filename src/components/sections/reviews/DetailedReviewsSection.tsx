@@ -133,55 +133,55 @@ export default function DetailedReviewsSection({ scrollToSection }: DetailedRevi
         </div>
       </section>
 
-      <section id="opinions" className="py-16 md:py-24 px-4 bg-black/30">
-        <div className="container mx-auto max-w-6xl space-y-12">
-          <div className="text-center space-y-4">
-            <h2 className="text-3xl md:text-5xl font-bold">
+      <section id="opinions" className="py-12 md:py-24 px-4 bg-black/30">
+        <div className="container mx-auto max-w-6xl space-y-8 md:space-y-12">
+          <div className="text-center space-y-3 md:space-y-4">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold px-2">
               Эта книга не оставляет равнодушными
             </h2>
-            <p className="text-xl md:text-2xl text-gray-400">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-400 px-2">
               Даже критики признают: здесь есть о чём подумать
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8">
             <Card className="bg-green-950/30 border-green-700">
-              <CardContent className="p-8 space-y-6">
-                <div className="flex items-center gap-3">
-                  <span className="text-3xl">💚</span>
-                  <h3 className="text-2xl font-bold text-green-400">ВОСТОРГ</h3>
+              <CardContent className="p-5 sm:p-6 md:p-8 space-y-4 md:space-y-6">
+                <div className="flex items-center gap-2 sm:gap-3 justify-center md:justify-start">
+                  <span className="text-2xl sm:text-3xl">💚</span>
+                  <h3 className="text-xl sm:text-2xl font-bold text-green-400">ВОСТОРГ</h3>
                 </div>
-                <div className="space-y-4">
+                <div className="space-y-4 md:space-y-5">
                   {positiveReviews.map((review, index) => (
-                    <div key={index} className="py-2">
-                      <p className="text-gray-300 leading-relaxed mb-2 text-center">💬 {review.text}</p>
-                      <p className="text-sm text-gray-500 text-center">— {review.author}</p>
+                    <div key={index} className="py-2 border-b border-green-900/30 last:border-0">
+                      <p className="text-sm sm:text-base text-gray-300 leading-relaxed mb-2">💬 {review.text}</p>
+                      <p className="text-xs sm:text-sm text-gray-500">— {review.author}</p>
                     </div>
                   ))}
                 </div>
               </CardContent>
             </Card>
             <Card className="bg-yellow-950/30 border-yellow-700">
-              <CardContent className="p-8 space-y-6">
-                <div className="flex items-center gap-3">
-                  <span className="text-3xl">💭</span>
-                  <h3 className="text-2xl font-bold text-yellow-400">СОМНЕНИЯ</h3>
+              <CardContent className="p-5 sm:p-6 md:p-8 space-y-4 md:space-y-6">
+                <div className="flex items-center gap-2 sm:gap-3 justify-center md:justify-start">
+                  <span className="text-2xl sm:text-3xl">💭</span>
+                  <h3 className="text-xl sm:text-2xl font-bold text-yellow-400">СОМНЕНИЯ</h3>
                 </div>
-                <div className="space-y-4">
+                <div className="space-y-4 md:space-y-5">
                   {criticalReviews.map((review, index) => (
-                    <div key={index} className="py-2">
-                      <p className="text-gray-300 leading-relaxed mb-2 text-center">💬 {review.text}</p>
-                      <p className="text-sm text-gray-500 text-center">— {review.author}</p>
+                    <div key={index} className="py-2 border-b border-yellow-900/30 last:border-0">
+                      <p className="text-sm sm:text-base text-gray-300 leading-relaxed mb-2">💬 {review.text}</p>
+                      <p className="text-xs sm:text-sm text-gray-500">— {review.author}</p>
                     </div>
                   ))}
                 </div>
               </CardContent>
             </Card>
           </div>
-          <div className="text-center max-w-3xl mx-auto space-y-4 pt-8">
-            <p className="text-xl text-gray-300 leading-relaxed">
+          <div className="text-center max-w-3xl mx-auto space-y-3 md:space-y-4 pt-6 md:pt-8 px-4">
+            <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed">
               Книга задевает за живое. Именно поэтому одни называют её «важнейшей», а другие говорят: «Лучше святых отцов почитаю».
             </p>
-            <p className="text-xl font-semibold text-book-gold">
+            <p className="text-base sm:text-lg md:text-xl font-semibold text-book-gold">
               Но даже критики не могут отрицать: здесь поднимаются вопросы, которые нельзя игнорировать.
             </p>
           </div>

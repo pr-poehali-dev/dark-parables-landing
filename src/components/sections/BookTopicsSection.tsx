@@ -49,16 +49,16 @@ export default function BookTopicsSection({ scrollToSection }: BookTopicsSection
           {bookTopics.map((topic, index) => (
             <Card key={index} className="bg-gray-900/80 border-gray-800 hover:border-book-gold transition-all duration-300 cursor-pointer group">
               <CardContent className="p-4 sm:p-6 md:p-8">
-                <div className="flex items-start gap-2 sm:gap-3">
-                  <span className="text-lg sm:text-xl flex-shrink-0 font-bold text-book-gold">{index + 1}️⃣</span>
-                  <div className="space-y-1 sm:space-y-2">
-                    <h3 className="text-base sm:text-lg md:text-xl font-bold text-white group-hover:text-book-gold transition-colors leading-snug">
+                <div className="space-y-3">
+                  <div className="flex items-center gap-2">
+                    <span className="text-2xl sm:text-3xl font-bold text-book-blue bg-book-blue/10 w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center flex-shrink-0">{index + 1}</span>
+                    <h3 className="text-base sm:text-lg md:text-xl font-bold text-white group-hover:text-book-gold transition-colors leading-tight">
                       {topic.title}
                     </h3>
-                    <p className="text-sm sm:text-base md:text-lg text-gray-400 leading-relaxed">
-                      {topic.description}
-                    </p>
                   </div>
+                  <p className="text-sm sm:text-base md:text-lg text-gray-400 leading-relaxed pl-0">
+                    {topic.description}
+                  </p>
                 </div>
               </CardContent>
             </Card>

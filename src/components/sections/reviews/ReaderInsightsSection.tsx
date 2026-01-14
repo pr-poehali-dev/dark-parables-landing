@@ -16,64 +16,53 @@ export default function ReaderInsightsSection({ scrollToSection }: ReaderInsight
   };
   return (
     <>
-      <section id="reader-types" className="py-20 md:py-32 px-4">
-        <div className="container mx-auto max-w-6xl space-y-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-center">
+      <section id="reader-types" className="py-12 md:py-20 lg:py-32 px-4">
+        <div className="container mx-auto max-w-6xl space-y-10 md:space-y-16">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-center px-2">
             Кто уже читает эту книгу
           </h2>
-          <div className="grid sm:grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-2 gap-5 md:gap-6">
             <Card className="bg-gray-900/80 border-gray-800 hover:border-book-blue transition-all">
-              <CardContent className="p-8 space-y-4">
-                <div className="text-5xl">🔬</div>
-                <h3 className="text-2xl font-bold text-book-gold">Атеисты и агностики</h3>
-                <p className="text-gray-300 leading-relaxed italic">
-                  «Я атеистка, но очень рада, что купила.<br />
-                  Интереснейший текст. Автор полемизирует<br />
-                  с учёными и философами, которые считают,<br />
-                  что христианство не нужно».
+              <CardContent className="p-5 sm:p-6 md:p-8 space-y-3 md:space-y-4">
+                <div className="text-4xl md:text-5xl">🔬</div>
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-book-gold leading-tight">Атеисты и агностики</h3>
+                <p className="text-sm sm:text-base text-gray-300 leading-relaxed italic">
+                  «Я атеистка, но очень рада, что купила. Интереснейший текст. Автор полемизирует с учёными и философами, которые считают, что христианство не нужно».
                 </p>
-                <p className="text-sm text-gray-500">— Анастасия, Литрес</p>
+                <p className="text-xs sm:text-sm text-gray-500">— Анастасия, Литрес</p>
               </CardContent>
             </Card>
 
             <Card className="bg-gray-900/80 border-gray-800 hover:border-book-blue transition-all">
-              <CardContent className="p-8 space-y-4">
-                <div className="text-5xl">⛪</div>
-                <h3 className="text-2xl font-bold text-book-gold">Воцерковлённые христиане</h3>
-                <p className="text-gray-300 leading-relaxed italic">
-                  «Выросла в воцерковлённой семье. Но книга<br />
-                  очень хорошо отрезвляет и напоминает,<br />
-                  в чём именно заключается главная заповедь<br />
-                  Евангелия. Даёт надежду».
+              <CardContent className="p-5 sm:p-6 md:p-8 space-y-3 md:space-y-4">
+                <div className="text-4xl md:text-5xl">⛪</div>
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-book-gold leading-tight">Воцерковлённые христиане</h3>
+                <p className="text-sm sm:text-base text-gray-300 leading-relaxed italic">
+                  «Выросла в воцерковлённой семье. Но книга очень хорошо отрезвляет и напоминает, в чём именно заключается главная заповедь Евангелия. Даёт надежду».
                 </p>
-                <p className="text-sm text-gray-500">— Ирина, WildBerries</p>
+                <p className="text-xs sm:text-sm text-gray-500">— Ирина, WildBerries</p>
               </CardContent>
             </Card>
 
             <Card className="bg-gray-900/80 border-gray-800 hover:border-book-blue transition-all">
-              <CardContent className="p-8 space-y-4">
-                <div className="text-5xl">📚</div>
-                <h3 className="text-2xl font-bold text-book-gold">Выпускники духовных учебных заведений</h3>
-                <p className="text-gray-300 leading-relaxed italic">
-                  «Закончил духовную семинарию. Вы большая умница —<br />
-                  очень много пищи для размышления, поводов<br />
-                  для переосмысления своих ценностей и представлений<br />
-                  о Христе».
+              <CardContent className="p-5 sm:p-6 md:p-8 space-y-3 md:space-y-4">
+                <div className="text-4xl md:text-5xl">📚</div>
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-book-gold leading-tight">Выпускники духовных учебных заведений</h3>
+                <p className="text-sm sm:text-base text-gray-300 leading-relaxed italic">
+                  «Закончил духовную семинарию. Вы большая умница — очень много пищи для размышления, поводов для переосмысления своих ценностей и представлений о Христе».
                 </p>
-                <p className="text-sm text-gray-500">— Литрес</p>
+                <p className="text-xs sm:text-sm text-gray-500">— Литрес</p>
               </CardContent>
             </Card>
 
             <Card className="bg-gray-900/80 border-gray-800 hover:border-book-blue transition-all">
-              <CardContent className="p-8 space-y-4">
-                <div className="text-5xl">🕊️</div>
-                <h3 className="text-2xl font-bold text-book-gold">Даже священнослужители</h3>
-                <p className="text-gray-300 leading-relaxed italic">
-                  «Я священник РПЦ. Автор прекрасно знает Евангелие.<br />
-                  Разумеется, с некоторыми тезисами я не согласен.<br />
-                  Но это не повод занижать оценку».
+              <CardContent className="p-5 sm:p-6 md:p-8 space-y-3 md:space-y-4">
+                <div className="text-4xl md:text-5xl">🕊️</div>
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-book-gold leading-tight">Даже священнослужители</h3>
+                <p className="text-sm sm:text-base text-gray-300 leading-relaxed italic">
+                  «Я священник РПЦ. Автор прекрасно знает Евангелие. Разумеется, с некоторыми тезисами я не согласен. Но это не повод занижать оценку».
                 </p>
-                <p className="text-sm text-gray-500">— Литрес</p>
+                <p className="text-xs sm:text-sm text-gray-500">— Литрес</p>
               </CardContent>
             </Card>
           </div>
@@ -88,81 +77,70 @@ export default function ReaderInsightsSection({ scrollToSection }: ReaderInsight
         </div>
       </section>
 
-      <section id="insights" className="py-16 md:py-24 px-4 bg-black/30">
-        <div className="container mx-auto max-w-6xl space-y-12">
-          <div className="text-center space-y-4">
-            <h2 className="text-3xl md:text-5xl font-bold">
+      <section id="insights" className="py-12 md:py-24 px-4 bg-black/30">
+        <div className="container mx-auto max-w-6xl space-y-8 md:space-y-12">
+          <div className="text-center space-y-3 md:space-y-4">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold px-2">
               Реальные инсайты читателей
             </h2>
-            <p className="text-xl md:text-2xl text-gray-400">
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-400 px-2">
               Эта книга взрывает мозг
             </p>
           </div>
-          <div className="grid sm:grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-2 gap-5 md:gap-6">
             <Card className="bg-gradient-to-br from-book-gold/20 to-gray-900 border-book-gold">
-              <CardContent className="p-8 space-y-4">
-                <div className="text-4xl">💡</div>
-                <h3 className="text-2xl font-bold text-book-gold uppercase">"ПАЗЛ НАКОНЕЦ СЛОЖИЛСЯ"</h3>
-                <p className="text-lg text-gray-200 leading-relaxed">
-                  "Христос ломает вообще всю концепцию:<br />
-                  не имеет значения, сколько поклонов ты сделал –<br />
-                  имеют значение лишь реальные дела!
+              <CardContent className="p-5 sm:p-6 md:p-8 space-y-3 md:space-y-4">
+                <div className="text-3xl md:text-4xl">💡</div>
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-book-gold uppercase leading-tight">"ПАЗЛ НАКОНЕЦ СЛОЖИЛСЯ"</h3>
+                <p className="text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed">
+                  "Христос ломает вообще всю концепцию: не имеет значения, сколько поклонов ты сделал – имеют значение лишь реальные дела!
                 </p>
-                <p className="text-lg text-gray-200 leading-relaxed font-semibold">
-                  Христианство – это о практике.<br />
-                  Не о бла-бла-бла."
+                <p className="text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed font-semibold">
+                  Христианство – это о практике. Не о бла-бла-бла."
                 </p>
-                <p className="text-sm text-gray-400 pt-2">— Оленька, читательница</p>
+                <p className="text-xs sm:text-sm text-gray-400 pt-1 md:pt-2">— Оленька, читательница</p>
               </CardContent>
             </Card>
 
             <Card className="bg-gradient-to-br from-book-blue/20 to-gray-900 border-book-blue">
-              <CardContent className="p-8 space-y-4">
-                <div className="text-4xl">🌬️</div>
-                <h3 className="text-2xl font-bold text-book-blue uppercase">"КАК ОТКРЫТЬ ОКНО ЗИМОЙ"</h3>
-                <p className="text-lg text-gray-200 leading-relaxed">
-                  "Чтение этой книги похоже на открытие окна зимой<br />
-                  в душном помещении. Свежего морозного воздуха<br />
-                  так много, что становится холодновато.
+              <CardContent className="p-5 sm:p-6 md:p-8 space-y-3 md:space-y-4">
+                <div className="text-3xl md:text-4xl">🌬️</div>
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-book-blue uppercase leading-tight">"КАК ОТКРЫТЬ ОКНО ЗИМОЙ"</h3>
+                <p className="text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed">
+                  "Чтение этой книги похоже на открытие окна зимой в душном помещении. Свежего морозного воздуха так много, что становится холодновато.
                 </p>
-                <p className="text-lg text-gray-200 leading-relaxed font-semibold">
-                  Ортодоксальным ортодоксам держать на полочке<br />
-                  пол-литровый пузырёк корвалола."
+                <p className="text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed font-semibold">
+                  Ортодоксальным ортодоксам держать на полочке пол-литровый пузырёк корвалола."
                 </p>
-                <p className="text-sm text-gray-400 pt-2">— Paulus, рецензент</p>
+                <p className="text-xs sm:text-sm text-gray-400 pt-1 md:pt-2">— Paulus, рецензент</p>
               </CardContent>
             </Card>
 
             <Card className="bg-gradient-to-br from-book-red/20 to-gray-900 border-book-red">
-              <CardContent className="p-8 space-y-4">
-                <div className="text-4xl">🏠</div>
-                <h3 className="text-2xl font-bold text-book-red uppercase">"НАКОНЕЦ ПОЧУВСТВОВАЛА ДОМ"</h3>
-                <p className="text-lg text-gray-200 leading-relaxed">
-                  "Из книги светится мысль, что изгоем быть можно,<br />
-                  это не порок. Сам Бог был изгоем и ученики его.
+              <CardContent className="p-5 sm:p-6 md:p-8 space-y-3 md:space-y-4">
+                <div className="text-3xl md:text-4xl">🏠</div>
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-book-red uppercase leading-tight">"НАКОНЕЦ ПОЧУВСТВОВАЛА ДОМ"</h3>
+                <p className="text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed">
+                  "Из книги светится мысль, что изгоем быть можно, это не порок. Сам Бог был изгоем и ученики его.
                 </p>
-                <p className="text-lg text-gray-200 leading-relaxed font-semibold">
-                  Эта мысль даёт мне чувство дома.<br />
-                  Спасибо."
+                <p className="text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed font-semibold">
+                  Эта мысль даёт мне чувство дома. Спасибо."
                 </p>
-                <p className="text-sm text-gray-400 pt-2">— Афина, читательница</p>
+                <p className="text-xs sm:text-sm text-gray-400 pt-1 md:pt-2">— Афина, читательница</p>
               </CardContent>
             </Card>
 
             <Card className="bg-gradient-to-br from-purple-600/20 to-gray-900 border-purple-500">
-              <CardContent className="p-8 space-y-4">
-                <div className="text-4xl">⚡</div>
-                <h3 className="text-2xl font-bold text-purple-400 uppercase">"ХРИСТИАНСТВО — ЭТО РАДИКАЛЬНО"</h3>
-                <p className="text-lg text-gray-200 leading-relaxed">
-                  "На 56-й странице усилилось ощущение,<br />
-                  что став христианином я ввязался во что-то<br />
-                  действительно радикальное –
+              <CardContent className="p-5 sm:p-6 md:p-8 space-y-3 md:space-y-4">
+                <div className="text-3xl md:text-4xl">⚡</div>
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-purple-400 uppercase leading-tight">"ХРИСТИАНСТВО — ЭТО РАДИКАЛЬНО"</h3>
+                <p className="text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed">
+                  "На 56-й странице усилилось ощущение, что став христианином я ввязался во что-то действительно радикальное –
                 </p>
-                <p className="text-lg text-gray-200 leading-relaxed font-semibold">
-                  на много более тру радикальное,<br />
-                  чем whitepowerblackmetall"
+                <p className="text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed font-semibold">
+                  на много более тру радикальное, чем whitepowerblackmetall"
                 </p>
-                <p className="text-sm text-gray-400 pt-2">— Григорий, читатель</p>
+                <p className="text-xs sm:text-sm text-gray-400 pt-1 md:pt-2">— Григорий, читатель</p>
               </CardContent>
             </Card>
           </div>

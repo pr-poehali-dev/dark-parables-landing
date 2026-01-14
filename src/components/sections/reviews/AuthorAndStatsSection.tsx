@@ -68,46 +68,46 @@ export default function AuthorAndStatsSection({ scrollToSection }: AuthorAndStat
         </div>
       </section>
 
-      <section id="stats" className="py-20 md:py-32 px-4 bg-black/30">
-        <div className="container mx-auto max-w-6xl text-center space-y-16">
-          <div className="space-y-6">
-            <h2 className="text-4xl md:text-6xl font-bold">Что говорят читатели</h2>
-            <p className="text-2xl md:text-3xl text-gray-400">
+      <section id="stats" className="py-12 md:py-20 lg:py-32 px-4 bg-black/30">
+        <div className="container mx-auto max-w-6xl text-center space-y-10 md:space-y-16">
+          <div className="space-y-4 md:space-y-6">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold px-2">Что говорят читатели</h2>
+            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-400 px-2">
               Книга собрала десятки 5-звёздочных отзывов и вызвала бурные обсуждения
             </p>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
             <Card className="bg-gray-900/80 border-gray-800">
-              <CardContent className="p-8 space-y-3">
-                <div className="flex gap-1 justify-center">
+              <CardContent className="p-6 md:p-8 space-y-2 md:space-y-3">
+                <div className="flex gap-0.5 md:gap-1 justify-center">
                   {[...Array(5)].map((_, i) => (
-                    <span key={i} className="text-yellow-400 text-2xl">⭐</span>
+                    <span key={i} className="text-yellow-400 text-xl md:text-2xl">⭐</span>
                   ))}
                 </div>
-                <p className="text-4xl font-bold text-book-gold">4.9/5</p>
-                <p className="text-gray-400">на WildBerries</p>
+                <p className="text-3xl md:text-4xl font-bold text-book-gold">4.9/5</p>
+                <p className="text-sm md:text-base text-gray-400">на WildBerries</p>
               </CardContent>
             </Card>
             <Card className="bg-gray-900/80 border-gray-800">
-              <CardContent className="p-8 space-y-3">
-                <div className="flex gap-1 justify-center">
+              <CardContent className="p-6 md:p-8 space-y-2 md:space-y-3">
+                <div className="flex gap-0.5 md:gap-1 justify-center">
                   {[...Array(5)].map((_, i) => (
-                    <span key={i} className="text-yellow-400 text-2xl">⭐</span>
+                    <span key={i} className="text-yellow-400 text-xl md:text-2xl">⭐</span>
                   ))}
                 </div>
-                <p className="text-4xl font-bold text-book-gold">4.8/5</p>
-                <p className="text-gray-400">на Литрес</p>
+                <p className="text-3xl md:text-4xl font-bold text-book-gold">4.8/5</p>
+                <p className="text-sm md:text-base text-gray-400">на Литрес</p>
               </CardContent>
             </Card>
             <Card className="bg-gray-900/80 border-gray-800">
-              <CardContent className="p-8 space-y-3">
-                <div className="flex gap-1 justify-center">
+              <CardContent className="p-6 md:p-8 space-y-2 md:space-y-3">
+                <div className="flex gap-0.5 md:gap-1 justify-center">
                   {[...Array(5)].map((_, i) => (
-                    <span key={i} className="text-yellow-400 text-2xl">⭐</span>
+                    <span key={i} className="text-yellow-400 text-xl md:text-2xl">⭐</span>
                   ))}
                 </div>
-                <p className="text-4xl font-bold text-book-gold">5/5</p>
-                <p className="text-gray-400">на LiveLib</p>
+                <p className="text-3xl md:text-4xl font-bold text-book-gold">5/5</p>
+                <p className="text-sm md:text-base text-gray-400">на LiveLib</p>
               </CardContent>
             </Card>
           </div>
