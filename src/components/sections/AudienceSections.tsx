@@ -317,7 +317,7 @@ export default function AudienceSections({ scrollToSection }: AudienceSectionsPr
                     <div className="pt-1 md:pt-4">
                       <Button 
                         className="w-full bg-book-blue hover:bg-book-blue/90 text-white font-bold text-xs sm:text-base md:text-lg py-3 sm:py-5 md:py-6"
-                        onClick={() => window.open('https://www.litres.ru/book/darya-serp/zapovedi-zla-bog-protiv-tradicionnyh-cennostey-72952082/', '_blank')}
+                        onClick={() => window.open('https://www.litres.ru/book/darya-serp/zapovedi-zla-bog-protiv-tradicionnyh-cennostey-72952082/?utm_source=advcake&utm_medium=cpa&utm_campaign=affiliate&utm_content=06d2a99e&advcake_params=&utm_term=&keyword=chto-esli-dobro-kotoromu-vas-uchili-na-samom-dele-zlo&erid=2VfnxyNkZrY&advcake_method=1&m=1', '_blank')}
                       >
                         СКАЧАТЬ НА ЛИТРЕС
                       </Button>
