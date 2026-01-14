@@ -23,7 +23,7 @@ export default function PhilosophySections({ scrollToSection }: PhilosophySectio
 
   return (
     <>
-      <section id="questions" className="py-16 md:py-24 px-4 bg-black/30">
+      <section id="questions" className="min-h-screen flex items-center py-16 px-4 bg-black/30">
         <div className="container mx-auto max-w-7xl">
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-12 md:mb-16">
             Вы когда-нибудь задумывались...
@@ -55,7 +55,7 @@ export default function PhilosophySections({ scrollToSection }: PhilosophySectio
         </div>
       </section>
 
-      <section id="about" className="py-16 md:py-24 px-4">
+      <section id="about" className="min-h-screen flex items-center py-16 px-4">
         <div className="container mx-auto max-w-5xl text-center space-y-12">
           <h2 className="text-3xl md:text-5xl font-bold leading-tight">
             Евангелие через призму Ницше,<br className="hidden md:block" />
@@ -98,7 +98,7 @@ export default function PhilosophySections({ scrollToSection }: PhilosophySectio
         </div>
       </section>
 
-      <section id="thesis" className="py-16 md:py-24 px-4 bg-black/30">
+      <section id="thesis" className="min-h-screen flex items-center py-16 px-4 bg-black/30">
         <div className="container mx-auto max-w-5xl">
           <Card className="bg-gradient-to-br from-gray-900 to-black border-2 border-book-red p-8 md:p-12">
             <CardContent className="space-y-8 p-0">
