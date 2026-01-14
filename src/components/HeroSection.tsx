@@ -1,5 +1,13 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 interface HeroSectionProps {
   isVisible: boolean;
@@ -7,7 +15,14 @@ interface HeroSectionProps {
   scrollToSection: (id: string) => void;
 }
 
-export default function HeroSection({ isVisible, parallaxOffset, scrollToSection }: HeroSectionProps) {
+export default function HeroSection({ isVisible, scrollToSection }: HeroSectionProps) {
+  const bookImages = [
+    "https://cdn.poehali.dev/files/2026-01-14_10-15-20.png",
+    "https://cdn.poehali.dev/files/2026-01-14_10-14-59.png",
+    "https://cdn.poehali.dev/files/2026-01-14_10-14-42.png",
+    "https://cdn.poehali.dev/files/2026-01-14_10-14-30.png",
+    "https://cdn.poehali.dev/files/2026-01-14_10-14-07.png"
+  ];
   return (
     <section id="hero" className={`min-h-screen flex items-center justify-center px-4 py-16 md:py-24 pt-20 md:pt-24 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
       <div className="container mx-auto max-w-7xl">
@@ -64,19 +79,21 @@ export default function HeroSection({ isVisible, parallaxOffset, scrollToSection
           <div className="md:col-span-2 flex justify-center animate-fade-in">
             <div className="relative w-full max-w-sm">
               <div className="absolute inset-0 bg-book-gold/30 blur-3xl rounded-full scale-110"></div>
-              <div 
-                className="relative"
-                style={{
-                  transform: `translateY(-${parallaxOffset}px)`,
-                  transition: 'transform 0.1s ease-out'
-                }}
-              >
-                <img 
-                  src="https://cdn.poehali.dev/files/photo_2025-11-06_13-35-24 (3).jpg" 
-                  alt="Заповеди зла - обложка книги" 
-                  className="w-full h-auto rounded-lg shadow-2xl border-2 border-gray-700/50 hover:scale-105 transition-transform duration-500"
-                />
-              </div>
+              <Carousel className="w-full" opts={{ loop: true }}>
+                <CarouselContent>
+                  {bookImages.map((image, index) => (
+                    <CarouselItem key={index}>
+                      <img 
+                        src={image} 
+                        alt={`Заповеди зла - фото ${index + 1}`}
+                        className="w-full h-auto rounded-lg shadow-2xl border-2 border-gray-700/50"
+                      />
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious className="left-2" />
+                <CarouselNext className="right-2" />
+              </Carousel>
             </div>
           </div>
         </div>

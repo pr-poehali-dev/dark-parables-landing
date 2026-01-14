@@ -7,7 +7,6 @@ import BuySection from "@/components/BuySection";
 export default function Index() {
   const [isVisible, setIsVisible] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [parallaxOffset, setParallaxOffset] = useState(0);
 
   useEffect(() => {
     setIsVisible(true);
@@ -15,7 +14,6 @@ export default function Index() {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       setScrolled(scrollY > 100);
-      setParallaxOffset(scrollY * 0.3);
     };
     
     window.addEventListener('scroll', handleScroll);
@@ -32,7 +30,7 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#1a1a2e] to-black text-white overflow-x-hidden">
       <Navigation scrolled={scrolled} scrollToSection={scrollToSection} />
-      <HeroSection isVisible={isVisible} parallaxOffset={parallaxOffset} scrollToSection={scrollToSection} />
+      <HeroSection isVisible={isVisible} parallaxOffset={0} scrollToSection={scrollToSection} />
       <ContentSections scrollToSection={scrollToSection} />
       <BuySection />
     </div>

@@ -1,5 +1,13 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 interface NavigationProps {
   scrolled: boolean;
@@ -7,6 +15,7 @@ interface NavigationProps {
 }
 
 export default function Navigation({ scrolled, scrollToSection }: NavigationProps) {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navItems = [
     { label: "О книге", id: "about" },
     { label: "Об авторе", id: "author" },
@@ -44,12 +53,44 @@ export default function Navigation({ scrolled, scrollToSection }: NavigationProp
               КУПИТЬ
             </Button>
           </div>
-          <button 
-            onClick={() => scrollToSection('formats')}
-            className="md:hidden"
-          >
-            <Icon name="ShoppingCart" size={24} className="text-book-red" />
-          </button>
+          <div className="md:hidden">
+            <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+              <SheetTrigger asChild>
+                <button className="text-white">
+                  <Icon name="Menu" size={28} className="text-book-red" />
+                </button>
+              </SheetTrigger>
+              <SheetContent side="right" className="bg-black border-gray-800">
+                <SheetHeader>
+                  <SheetTitle className="text-book-red text-xl">МЕНЮ</SheetTitle>
+                </SheetHeader>
+                <div className="flex flex-col gap-6 mt-8">
+                  {navItems.map((item) => (
+                    <button
+                      key={item.id}
+                      onClick={() => {
+                        scrollToSection(item.id);
+                        setMobileMenuOpen(false);
+                      }}
+                      className="text-left text-lg font-semibold text-gray-300 hover:text-book-red transition-colors uppercase tracking-wider"
+                    >
+                      {item.label}
+                    </button>
+                  ))}
+                  <Button 
+                    size="lg" 
+                    className="bg-book-red hover:bg-book-red/90 text-white font-bold mt-4"
+                    onClick={() => {
+                      scrollToSection('formats');
+                      setMobileMenuOpen(false);
+                    }}
+                  >
+                    КУПИТЬ КНИГУ
+                  </Button>
+                </div>
+              </SheetContent>
+            </Sheet>
+          </div>
         </div>
       </div>
     </nav>
