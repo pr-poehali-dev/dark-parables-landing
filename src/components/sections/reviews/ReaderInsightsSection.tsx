@@ -16,8 +16,8 @@ export default function ReaderInsightsSection({ scrollToSection }: ReaderInsight
   };
   return (
     <>
-      <section id="reader-types" className="h-screen flex items-center py-12 px-4">
-        <div className="container mx-auto max-w-6xl space-y-12">
+      <section id="reader-types" className="py-20 md:py-32 px-4">
+        <div className="container mx-auto max-w-6xl space-y-16">
           <h2 className="text-3xl md:text-5xl font-bold text-center">
             Кто уже читает эту книгу
           </h2>

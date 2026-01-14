@@ -15,7 +15,7 @@ export default function AuthorAndStatsSection({ scrollToSection }: AuthorAndStat
   };
   return (
     <>
-      <section id="author" className="h-screen flex items-center py-12 px-4">
+      <section id="author" className="py-20 md:py-32 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-10 gap-8 md:gap-12 items-center">
             <div className="md:col-span-3">
@@ -33,7 +33,7 @@ export default function AuthorAndStatsSection({ scrollToSection }: AuthorAndStat
                 <h2 className="text-3xl md:text-5xl font-bold text-book-gold mb-2">ДАРЬЯ СЕРП</h2>
                 <p className="text-xl text-gray-400">Христианский философ, блогер, бывшая атеистка</p>
               </div>
-              <div className="space-y-4 text-lg md:text-xl text-gray-300 leading-relaxed">
+              <div className="space-y-6 text-xl md:text-2xl text-gray-300 leading-relaxed">
                 <p>
                   «Я была убеждённой атеисткой. Считала религию опиумом для народа и инструментом контроля.
                 </p>
@@ -68,15 +68,15 @@ export default function AuthorAndStatsSection({ scrollToSection }: AuthorAndStat
         </div>
       </section>
 
-      <section id="stats" className="h-screen flex items-center py-12 px-4 bg-black/30">
-        <div className="container mx-auto max-w-6xl text-center space-y-12">
-          <div className="space-y-4">
-            <h2 className="text-3xl md:text-5xl font-bold">Что говорят читатели</h2>
-            <p className="text-xl md:text-2xl text-gray-400">
+      <section id="stats" className="py-20 md:py-32 px-4 bg-black/30">
+        <div className="container mx-auto max-w-6xl text-center space-y-16">
+          <div className="space-y-6">
+            <h2 className="text-4xl md:text-6xl font-bold">Что говорят читатели</h2>
+            <p className="text-2xl md:text-3xl text-gray-400">
               Книга собрала сотни 5-звёздочных отзывов и вызвала бурные обсуждения
             </p>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="bg-gray-900/80 border-gray-800">
               <CardContent className="p-8 space-y-3">
                 <div className="flex gap-1 justify-center">
@@ -111,7 +111,7 @@ export default function AuthorAndStatsSection({ scrollToSection }: AuthorAndStat
               </CardContent>
             </Card>
           </div>
-          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto pt-6">
+          <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto pt-8">
             <Card className="bg-gray-900/80 border-gray-800">
               <CardContent className="p-6 space-y-2">
                 <p className="text-3xl font-bold text-book-blue">📚 70+</p>

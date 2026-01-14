@@ -65,8 +65,8 @@ export default function AudienceSections({ scrollToSection }: AudienceSectionsPr
 
   return (
     <>
-      <section id="community" className="h-screen flex items-center py-12 px-4">
-        <div className="container mx-auto max-w-6xl space-y-12">
+      <section id="community" className="py-20 md:py-32 px-4">
+        <div className="container mx-auto max-w-6xl space-y-16">
           <div className="text-center space-y-6">
             <h2 className="text-3xl md:text-5xl font-bold leading-tight">
               Прочитайте книгу —<br />
@@ -116,8 +116,8 @@ export default function AudienceSections({ scrollToSection }: AudienceSectionsPr
         </div>
       </section>
 
-      <section id="discussion-topics" className="h-screen flex items-center py-12 px-4 bg-black/30">
-        <div className="container mx-auto max-w-6xl space-y-12">
+      <section id="discussion-topics" className="py-20 md:py-32 px-4 bg-black/30">
+        <div className="container mx-auto max-w-6xl space-y-16">
           <div className="text-center space-y-4">
             <h2 className="text-3xl md:text-5xl font-bold uppercase">
               ТЕМЫ, КОТОРЫЕ МЫ НЕ БОИМСЯ ОБСУЖДАТЬ
@@ -160,8 +160,8 @@ export default function AudienceSections({ scrollToSection }: AudienceSectionsPr
         </div>
       </section>
 
-      <section id="structure" className="h-screen flex items-center py-12 px-4">
-        <div className="container mx-auto max-w-5xl space-y-12">
+      <section id="structure" className="py-20 md:py-32 px-4">
+        <div className="container mx-auto max-w-5xl space-y-16">
           <h2 className="text-3xl md:text-5xl font-bold text-center">
             Структура книги
           </h2>
@@ -214,8 +214,8 @@ export default function AudienceSections({ scrollToSection }: AudienceSectionsPr
         </div>
       </section>
 
-      <section id="faq" className="h-screen flex items-center py-12 px-4">
-        <div className="container mx-auto max-w-4xl space-y-12">
+      <section id="faq" className="py-20 md:py-32 px-4">
+        <div className="container mx-auto max-w-4xl space-y-16">
           <h2 className="text-3xl md:text-5xl font-bold text-center">
             Частые вопросы
           </h2>
@@ -245,8 +245,8 @@ export default function AudienceSections({ scrollToSection }: AudienceSectionsPr
         </div>
       </section>
 
-      <section id="final-cta" className="h-screen flex items-center py-12 px-4 bg-gradient-to-b from-black/30 to-black">
-        <div className="container mx-auto max-w-5xl space-y-12">
+      <section id="final-cta" className="py-20 md:py-32 px-4 bg-gradient-to-b from-black/30 to-black">
+        <div className="container mx-auto max-w-5xl space-y-16">
           <div className="text-center space-y-8">
             <h2 className="text-4xl md:text-6xl font-bold leading-tight">
               ХРИСТИАНСТВО — ЭТО НЕ КОМФОРТ

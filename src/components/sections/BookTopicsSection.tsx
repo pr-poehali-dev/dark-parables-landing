@@ -40,22 +40,22 @@ export default function BookTopicsSection({ scrollToSection }: BookTopicsSection
   ];
 
   return (
-    <section id="book-topics" className="h-screen flex items-center py-10 px-4">
+    <section id="book-topics" className="py-16 md:py-24 px-4">
       <div className="container mx-auto max-w-5xl">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-5">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">
           Что вы узнаете
         </h2>
-        <div className="space-y-3">
+        <div className="space-y-6">
           {bookTopics.map((topic, index) => (
             <Card key={index} className="bg-gray-900/80 border-gray-800 hover:border-book-gold transition-all duration-300 cursor-pointer group">
-              <CardContent className="p-4 md:p-5">
+              <CardContent className="p-6 md:p-8">
                 <div className="flex items-start gap-3">
                   <span className="text-xl flex-shrink-0 font-bold text-book-gold">{index + 1}️⃣</span>
                   <div className="space-y-1">
                     <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-book-gold transition-colors">
                       {topic.title}
                     </h3>
-                    <p className="text-sm md:text-base text-gray-400 leading-snug">
+                    <p className="text-base md:text-lg text-gray-400 leading-relaxed">
                       {topic.description}
                     </p>
                   </div>
@@ -64,7 +64,7 @@ export default function BookTopicsSection({ scrollToSection }: BookTopicsSection
             </Card>
           ))}
         </div>
-        <div className="text-center mt-6">
+        <div className="text-center mt-12">
           <button 
             onClick={() => handleScroll('author')}
             className="text-book-gold hover:text-book-red transition-colors text-lg font-semibold"
