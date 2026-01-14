@@ -31,7 +31,7 @@ export default function Navigation({ scrolled, scrollToSection }: NavigationProp
         <div className="flex items-center justify-between">
           <button 
             onClick={() => scrollToSection('hero')} 
-            className="text-xl md:text-2xl font-bold text-book-red hover:text-book-gold transition-colors cursor-pointer"
+            className="text-base sm:text-lg md:text-2xl font-bold text-book-red hover:text-book-gold transition-colors cursor-pointer"
           >
             ЗАПОВЕДИ ЗЛА
           </button>

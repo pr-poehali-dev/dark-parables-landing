@@ -174,54 +174,39 @@ export default function ReaderInsightsSection({ scrollToSection }: ReaderInsight
               То, что читатели сохраняют себе в заметки
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-5 md:gap-6">
             <Card className="bg-gradient-to-br from-gray-900 to-black border-2 border-book-gold">
-              <CardContent className="p-8 space-y-4">
-                <Badge className="bg-book-gold text-black font-bold">📌 СОХРАНЕНО В ЗАМЕТКИ</Badge>
-                <blockquote className="text-lg md:text-xl text-gray-200 leading-relaxed italic">
-                  "Правильность и смирение находятся<br />
-                  по ту сторону добра и зла.<br /><br />
-                  Они не связаны с духовностью<br />
-                  и не подразумевают ни выбора, ни свободы.<br /><br />
-                  Это просто комплекс механизмов приспособления."
+              <CardContent className="p-5 sm:p-6 md:p-8 space-y-3 md:space-y-4">
+                <Badge className="bg-book-gold text-black font-bold text-xs sm:text-sm">📌 СОХРАНЕНО</Badge>
+                <blockquote className="text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed italic">
+                  "Правильность и смирение находятся по ту сторону добра и зла. Они не связаны с духовностью и не подразумевают ни выбора, ни свободы. Это просто комплекс механизмов приспособления."
                 </blockquote>
               </CardContent>
             </Card>
 
             <Card className="bg-gradient-to-br from-gray-900 to-black border-2 border-book-gold">
-              <CardContent className="p-8 space-y-4">
-                <Badge className="bg-book-gold text-black font-bold">📌 СОХРАНЕНО В ЗАМЕТКИ</Badge>
-                <blockquote className="text-lg md:text-xl text-gray-200 leading-relaxed italic">
-                  "Приятно и легко выбирать добро,<br />
-                  когда оно полезно и одобряется окружающими.<br /><br />
-                  Но как выбрать добро,<br />
-                  если оно позорно, опасно и осуждается?"
+              <CardContent className="p-5 sm:p-6 md:p-8 space-y-3 md:space-y-4">
+                <Badge className="bg-book-gold text-black font-bold text-xs sm:text-sm">📌 СОХРАНЕНО</Badge>
+                <blockquote className="text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed italic">
+                  "Приятно и легко выбирать добро, когда оно полезно и одобряется окружающими. Но как выбрать добро, если оно позорно, опасно и осуждается?"
                 </blockquote>
               </CardContent>
             </Card>
 
             <Card className="bg-gradient-to-br from-gray-900 to-black border-2 border-book-red">
-              <CardContent className="p-8 space-y-4">
-                <Badge className="bg-book-red text-white font-bold">📌 ПРОЦИТИРОВАНО 50+ РАЗ</Badge>
-                <blockquote className="text-lg md:text-xl text-gray-200 leading-relaxed italic">
-                  "Евангелие — история о том,<br />
-                  как любовь, истину и добро дискредитируют<br /><br />
-                  во имя традиций,<br />
-                  общественного спокойствия<br />
-                  и для пользы уважаемых людей"
+              <CardContent className="p-5 sm:p-6 md:p-8 space-y-3 md:space-y-4">
+                <Badge className="bg-book-red text-white font-bold text-xs sm:text-sm">📌 ПРОЦИТИРОВАНО 50+</Badge>
+                <blockquote className="text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed italic">
+                  "Евангелие — история о том, как любовь, истину и добро дискредитируют во имя традиций, общественного спокойствия и для пользы уважаемых людей"
                 </blockquote>
               </CardContent>
             </Card>
 
             <Card className="bg-gradient-to-br from-gray-900 to-black border-2 border-book-blue">
-              <CardContent className="p-8 space-y-4">
-                <Badge className="bg-book-blue text-white font-bold">📌 ВЫЗВАЛО СПОР НА 100 СООБЩЕНИЙ</Badge>
-                <blockquote className="text-lg md:text-xl text-gray-200 leading-relaxed italic">
-                  "Нет ничего удивительного, что образ Бога —<br />
-                  карающего суперальфа-самца — является ведущим.<br /><br />
-                  Евангельский Бог,<br />
-                  не похожий на властителя, —<br />
-                  это парадокс и исключение"
+              <CardContent className="p-5 sm:p-6 md:p-8 space-y-3 md:space-y-4">
+                <Badge className="bg-book-blue text-white font-bold text-xs sm:text-sm">📌 СПОР НА 100 СООБЩ.</Badge>
+                <blockquote className="text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed italic">
+                  "Нет ничего удивительного, что образ Бога — карающего суперальфа-самца — является ведущим. Евангельский Бог, не похожий на властителя, — это парадокс и исключение"
                 </blockquote>
               </CardContent>
             </Card>

@@ -52,7 +52,7 @@ export default function HeroSection({ isVisible, scrollToSection }: HeroSectionP
             <div className="space-y-4 animate-fade-in">
               <Button 
                 size="lg" 
-                className="bg-book-red hover:bg-book-gold text-white font-bold text-xl px-12 py-7 transition-all hover:scale-105 shadow-lg hover:shadow-book-red/50"
+                className="bg-book-red hover:bg-book-gold text-white font-bold text-base sm:text-lg md:text-xl px-8 sm:px-10 md:px-12 py-5 sm:py-6 md:py-7 transition-all hover:scale-105 shadow-lg hover:shadow-book-red/50 w-full sm:w-auto"
                 onClick={() => scrollToSection('questions')}
               >
                 УЗНАТЬ →
@@ -62,21 +62,21 @@ export default function HeroSection({ isVisible, scrollToSection }: HeroSectionP
                 <span>Книга, которая заставит пересмотреть всё, что вы считали очевидным</span>
               </p>
             </div>
-            <div className="flex flex-wrap items-center gap-3 md:gap-4 text-sm text-gray-300 animate-fade-in pt-2">
-              <div className="flex items-center gap-2">
-                <div className="flex">
+            <div className="flex flex-wrap items-center gap-2 sm:gap-3 md:gap-4 text-xs sm:text-sm text-gray-300 animate-fade-in pt-2">
+              <div className="flex items-center gap-1 sm:gap-2">
+                <div className="flex gap-0.5">
                   {[...Array(5)].map((_, i) => (
-                    <span key={i} className="text-yellow-400 text-lg">⭐</span>
+                    <span key={i} className="text-yellow-400 text-sm sm:text-base">⭐</span>
                   ))}
                 </div>
                 <span className="font-semibold">4.9/5</span>
               </div>
-              <span className="text-gray-500">|</span>
+              <span className="text-gray-500 hidden sm:inline">|</span>
               <span>70+ отзывов</span>
-              <span className="text-gray-500">|</span>
-              <div className="flex items-center gap-2">
-                <Icon name="Users" size={20} className="text-book-blue" />
-                <span>71 участник в чате</span>
+              <span className="text-gray-500 hidden sm:inline">|</span>
+              <div className="flex items-center gap-1 sm:gap-2">
+                <Icon name="Users" size={16} className="text-book-blue" />
+                <span>71 участник</span>
               </div>
             </div>
           </div>
