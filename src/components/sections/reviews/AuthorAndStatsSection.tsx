@@ -15,7 +15,7 @@ export default function AuthorAndStatsSection({ scrollToSection }: AuthorAndStat
   };
   return (
     <>
-      <section id="author" className="h-screen flex items-center py-12 px-4">
+      <section id="author" className="py-16 md:py-24 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-10 gap-8 md:gap-12 items-center">
             <div className="md:col-span-3">
@@ -35,7 +35,7 @@ export default function AuthorAndStatsSection({ scrollToSection }: AuthorAndStat
               </div>
               <div className="space-y-4 text-lg md:text-xl text-gray-300 leading-relaxed">
                 <p>
-                  «Я была убеждённой атеисткой. Считала религию опиумом для народа и инструментом контроля.
+                  «Я 20 лет была убеждённой атеисткой. Считала религию опиумом для народа и инструментом контроля.
                 </p>
                 <p>
                   Но когда я действительно прочитала Евангелие — не в изложении церковных проповедников, а глазами современного человека, знакомого с философией и психологией, — я увидела нечто радикально иное.
@@ -48,10 +48,7 @@ export default function AuthorAndStatsSection({ scrollToSection }: AuthorAndStat
                 </p>
               </div>
               <div className="pt-4">
-                <Button 
-                  className="bg-book-blue hover:bg-book-blue/90 text-white font-bold"
-                  onClick={() => window.open('https://t.me/daryaserpbook/2', '_blank')}
-                >
+                <Button className="bg-book-blue hover:bg-book-blue/90 text-white font-bold">
                   Подписаться на канал
                 </Button>
               </div>
@@ -68,7 +65,7 @@ export default function AuthorAndStatsSection({ scrollToSection }: AuthorAndStat
         </div>
       </section>
 
-      <section id="stats" className="h-screen flex items-center py-12 px-4 bg-black/30">
+      <section id="stats" className="py-16 md:py-24 px-4 bg-black/30">
         <div className="container mx-auto max-w-6xl text-center space-y-12">
           <div className="space-y-4">
             <h2 className="text-3xl md:text-5xl font-bold">Что говорят читатели</h2>

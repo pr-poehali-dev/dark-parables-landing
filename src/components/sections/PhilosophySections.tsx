@@ -23,9 +23,9 @@ export default function PhilosophySections({ scrollToSection }: PhilosophySectio
 
   return (
     <>
-      <section id="questions" className="h-screen flex items-center py-10 px-4 bg-black/30">
+      <section id="questions" className="min-h-screen flex items-center py-12 px-4 bg-black/30">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 md:mb-8">
+          <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 md:mb-10">
             Вы когда-нибудь задумывались...
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -55,34 +55,34 @@ export default function PhilosophySections({ scrollToSection }: PhilosophySectio
         </div>
       </section>
 
-      <section id="about" className="h-screen flex items-center py-12 px-4">
-        <div className="container mx-auto max-w-5xl text-center space-y-10">
-          <h2 className="text-3xl md:text-5xl font-bold leading-tight">
+      <section id="about" className="min-h-screen flex items-center py-12 px-4">
+        <div className="container mx-auto max-w-5xl text-center space-y-8">
+          <h2 className="text-2xl md:text-4xl font-bold leading-tight">
             Евангелие через призму Ницше,<br className="hidden md:block" />
             психологии нацизма и эволюционной биологии
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="space-y-4">
-              <div className="text-5xl mx-auto">🧬</div>
-              <h3 className="text-2xl font-bold">БИОЛОГИЯ</h3>
-              <p className="text-base text-gray-300 leading-relaxed">
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="space-y-3">
+              <div className="text-4xl mx-auto">🧬</div>
+              <h3 className="text-xl font-bold">БИОЛОГИЯ</h3>
+              <p className="text-sm text-gray-300 leading-snug">
                 Почему "эволюционное добро" — это верность стае и любовь к сильному.
               </p>
-              <p className="text-base text-gray-400 leading-relaxed">
+              <p className="text-sm text-gray-400 leading-snug">
                 И почему животным не нужны заповеди для морального поведения.
               </p>
             </div>
-            <div className="space-y-4">
-              <div className="text-5xl mx-auto">⚡</div>
-              <h3 className="text-2xl font-bold">ФИЛОСОФИЯ</h3>
-              <p className="text-base text-gray-300 leading-relaxed">
+            <div className="space-y-3">
+              <div className="text-4xl mx-auto">⚡</div>
+              <h3 className="text-xl font-bold">ФИЛОСОФИЯ</h3>
+              <p className="text-sm text-gray-300 leading-snug">
                 Что общего у христианских «традиционных ценностей» с идеями Ницше о господстве сильных над слабыми.
               </p>
             </div>
-            <div className="space-y-4">
-              <div className="text-5xl mx-auto">🔬</div>
-              <h3 className="text-2xl font-bold">ПСИХОЛОГИЯ</h3>
-              <p className="text-base text-gray-300 leading-relaxed">
+            <div className="space-y-3">
+              <div className="text-4xl mx-auto">🔬</div>
+              <h3 className="text-xl font-bold">ПСИХОЛОГИЯ</h3>
+              <p className="text-sm text-gray-300 leading-snug">
                 Как «нормальные люди» становятся соучастниками зла — от домашнего насилия до Холокоста.
               </p>
             </div>
@@ -98,11 +98,11 @@ export default function PhilosophySections({ scrollToSection }: PhilosophySectio
         </div>
       </section>
 
-      <section id="thesis" className="h-screen flex items-center py-12 px-4 bg-black/30">
-        <div className="container mx-auto max-w-5xl">
-          <Card className="bg-gradient-to-br from-gray-900 to-black border-2 border-book-red p-8 md:p-12">
-            <CardContent className="space-y-8 p-0">
-              <blockquote className="text-2xl md:text-3xl leading-relaxed font-quote space-y-4">
+      <section id="thesis" className="min-h-screen flex items-center py-12 px-4 bg-black/30">
+        <div className="container mx-auto max-w-4xl">
+          <Card className="bg-gradient-to-br from-gray-900 to-black border-2 border-book-red p-6 md:p-10">
+            <CardContent className="space-y-6 p-0">
+              <blockquote className="text-xl md:text-2xl leading-relaxed font-quote space-y-3">
                 <p>
                   Христос пришёл <span className="text-book-red font-bold">НЕ</span> учить любви к своим —<br className="hidden md:block" />
                   это умеют даже курицы.
@@ -112,11 +112,11 @@ export default function PhilosophySections({ scrollToSection }: PhilosophySectio
                   И это единственное, что отличает человека от животного.
                 </p>
               </blockquote>
-              <div className="pt-6 border-t border-gray-700 space-y-4">
-                <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
+              <div className="pt-4 border-t border-gray-700 space-y-3">
+                <p className="text-base md:text-lg text-gray-300 leading-snug">
                   Верность семье, уважение к старшим, послушание власти, патриотизм — всё это есть у шимпанзе и работает по принципу «порядка клевания».
                 </p>
-                <p className="text-xl md:text-2xl font-bold text-book-gold">
+                <p className="text-lg md:text-xl font-bold text-book-gold">
                   Евангелие не про это.
                 </p>
               </div>

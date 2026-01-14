@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Merriweather:ital,wght@0,400;0,700;1,400&family=PT+Serif:wght@400;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -99,13 +99,7 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family:
-      "Montserrat",
-      -apple-system,
-      BlinkMacSystemFont,
-      "Segoe UI",
-      Arial,
-      sans-serif;
+    font-family: "PT Serif", Georgia, serif;
   }
 
   h1,
@@ -119,9 +113,8 @@
   }
 
   .font-quote {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Merriweather", serif;
     font-style: italic;
-    font-weight: 400;
   }
 
   @keyframes word-fade-in {
