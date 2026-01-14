@@ -331,7 +331,7 @@ export default function AudienceSections({ scrollToSection }: AudienceSectionsPr
             <div className="pt-6 space-y-3">
               <p className="text-xl text-gray-400 flex items-center justify-center gap-3">
                 <Icon name="Flame" size={24} className="text-book-red" />
-                <span>УЖЕ 500+ ЧИТАТЕЛЕЙ В ЧАТЕ</span>
+                <span>УЖЕ 70+ ЧИТАТЕЛЕЙ В ЧАТЕ</span>
               </p>
               <div className="flex items-center justify-center gap-2">
                 {[...Array(5)].map((_, i) => (
