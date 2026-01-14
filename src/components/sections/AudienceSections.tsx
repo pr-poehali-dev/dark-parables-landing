@@ -274,27 +274,27 @@ export default function AudienceSections({ scrollToSection }: AudienceSectionsPr
         </div>
       </section>
 
-      <section id="formats" className="py-12 md:py-20 px-4 bg-black/30">
+      <section id="formats" className="py-12 md:py-20 px-3 bg-black/30">
         <div className="container mx-auto max-w-6xl">
             <div>
-              <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-center mb-8 md:mb-12 px-2">
+              <h2 className="text-xl sm:text-3xl md:text-5xl font-bold text-center mb-6 md:mb-12 px-1">
                 Выберите формат
               </h2>
-              <div className="grid md:grid-cols-2 gap-6 md:gap-8 justify-items-center max-w-4xl mx-auto">
+              <div className="grid md:grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
                 <Card className="bg-gradient-to-br from-gray-900 to-black border-2 border-book-gold w-full">
-                  <CardContent className="p-5 sm:p-6 md:p-8 space-y-4 sm:space-y-5 md:space-y-6">
-                    <div className="text-center space-y-3 md:space-y-4">
-                      <div className="text-4xl sm:text-5xl md:text-6xl">📖</div>
-                      <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-book-gold">БУМАЖНАЯ КНИГА</h3>
+                  <CardContent className="p-4 sm:p-6 md:p-8 space-y-3 sm:space-y-5 md:space-y-6">
+                    <div className="text-center space-y-2 md:space-y-4">
+                      <div className="text-3xl sm:text-5xl md:text-6xl">📖</div>
+                      <h3 className="text-base sm:text-xl md:text-2xl font-bold text-book-gold">БУМАЖНАЯ КНИГА</h3>
                     </div>
-                    <ul className="space-y-2 text-sm sm:text-base text-gray-300">
+                    <ul className="space-y-1 text-xs sm:text-base text-gray-300">
                       <li>• 272 страницы</li>
                       <li>• Твёрдый переплёт</li>
                       <li>• Доставка по России</li>
                     </ul>
-                    <div className="space-y-3 pt-2 md:pt-4">
+                    <div className="space-y-2 pt-1 md:pt-4">
                       <Button 
-                        className="w-full bg-book-red hover:bg-book-red/90 text-white font-bold text-sm sm:text-base md:text-lg py-4 sm:py-5 md:py-6"
+                        className="w-full bg-book-red hover:bg-book-red/90 text-white font-bold text-xs sm:text-base md:text-lg py-3 sm:py-5 md:py-6"
                         onClick={() => window.open('https://wildberries.ru/catalog/0/search.aspx?search=WW268963', '_blank')}
                       >
                         КУПИТЬ НА WB
@@ -304,19 +304,19 @@ export default function AudienceSections({ scrollToSection }: AudienceSectionsPr
                 </Card>
 
                 <Card className="bg-gradient-to-br from-gray-900 to-black border-2 border-book-blue w-full">
-                  <CardContent className="p-5 sm:p-6 md:p-8 space-y-4 sm:space-y-5 md:space-y-6">
-                    <div className="text-center space-y-3 md:space-y-4">
-                      <div className="text-4xl sm:text-5xl md:text-6xl">📱</div>
-                      <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-book-blue">ЭЛЕКТРОННАЯ ВЕРСИЯ</h3>
+                  <CardContent className="p-4 sm:p-6 md:p-8 space-y-3 sm:space-y-5 md:space-y-6">
+                    <div className="text-center space-y-2 md:space-y-4">
+                      <div className="text-3xl sm:text-5xl md:text-6xl">📱</div>
+                      <h3 className="text-base sm:text-xl md:text-2xl font-bold text-book-blue">ЭЛЕКТРОННАЯ ВЕРСИЯ</h3>
                     </div>
-                    <ul className="space-y-2 text-sm sm:text-base text-gray-300">
+                    <ul className="space-y-1 text-xs sm:text-base text-gray-300">
                       <li>• Моментальная доставка</li>
                       <li>• Чтение на любом устройстве</li>
                       <li>• Можно делать заметки</li>
                     </ul>
-                    <div className="pt-2 md:pt-4">
+                    <div className="pt-1 md:pt-4">
                       <Button 
-                        className="w-full bg-book-blue hover:bg-book-blue/90 text-white font-bold text-sm sm:text-base md:text-lg py-4 sm:py-5 md:py-6"
+                        className="w-full bg-book-blue hover:bg-book-blue/90 text-white font-bold text-xs sm:text-base md:text-lg py-3 sm:py-5 md:py-6"
                         onClick={() => window.open('https://www.litres.ru/book/darya-serp/zapovedi-zla-bog-protiv-tradicionnyh-cennostey-72952082/', '_blank')}
                       >
                         СКАЧАТЬ НА ЛИТРЕС
@@ -327,40 +327,40 @@ export default function AudienceSections({ scrollToSection }: AudienceSectionsPr
               </div>
             </div>
             
-            <div className="pt-5 md:pt-6 space-y-3 md:space-y-4">
-              <p className="text-sm sm:text-base md:text-lg text-gray-400 text-center px-2">
+            <div className="pt-4 md:pt-6 space-y-2 md:space-y-4">
+              <p className="text-xs sm:text-base md:text-lg text-gray-400 text-center px-1">
                 🔥 УЖЕ 70+ ЧИТАТЕЛЕЙ В ЧАТЕ
               </p>
-              <div className="flex items-center justify-center gap-1 flex-wrap px-2">
+              <div className="flex items-center justify-center gap-1 flex-wrap px-1">
                 <div className="flex gap-0.5">
                   {[...Array(5)].map((_, i) => (
-                    <span key={i} className="text-yellow-400 text-base sm:text-lg">⭐</span>
+                    <span key={i} className="text-yellow-400 text-sm sm:text-lg">⭐</span>
                   ))}
                 </div>
                 <span className="text-xs sm:text-sm md:text-base text-gray-300 text-center">4.9/5 на основе 70+ отзывов</span>
               </div>
-              <div className="space-y-2 text-xs sm:text-sm md:text-base text-gray-400 text-center px-4">
+              <div className="space-y-1 text-xs sm:text-sm md:text-base text-gray-400 text-center px-2">
                 <p>💬 "Читается запойно!" — Елена</p>
                 <p>📚 "Книга важнейшая" — Михаил</p>
                 <p>🔥 "Не могу оторваться!" — Сергей</p>
               </div>
             </div>
 
-            <Card className="bg-red-950/30 border-book-red max-w-2xl mx-auto mt-6 md:mt-8">
-              <CardContent className="p-4 sm:p-5 md:p-6 space-y-2 md:space-y-3">
-                <p className="text-sm sm:text-base md:text-lg text-gray-300">
+            <Card className="bg-red-950/30 border-book-red max-w-2xl mx-auto mt-4 md:mt-8">
+              <CardContent className="p-3 sm:p-5 md:p-6 space-y-1 md:space-y-3">
+                <p className="text-xs sm:text-base md:text-lg text-gray-300">
                   ⚠️ Предупреждение: после прочтения вы не сможете верить "как раньше"
                 </p>
-                <p className="text-base sm:text-lg md:text-xl font-bold text-book-gold">
+                <p className="text-sm sm:text-lg md:text-xl font-bold text-book-gold">
                   ✅ Но вы наконец начнёте дышать
                 </p>
               </CardContent>
             </Card>
 
-            <div className="grid sm:grid-cols-3 gap-3 md:gap-4 max-w-3xl mx-auto pt-5 md:pt-6 px-4">
-              <p className="text-xs sm:text-sm md:text-base text-gray-400 text-center sm:text-left">⚡ Моментальная доставка</p>
-              <p className="text-xs sm:text-sm md:text-base text-gray-400 text-center sm:text-left">📦 Доставка по России</p>
-              <p className="text-xs sm:text-sm md:text-base text-gray-400 text-center sm:text-left">💬 Чат с автором</p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 md:gap-4 max-w-3xl mx-auto pt-3 md:pt-6 px-2">
+              <p className="text-xs sm:text-sm md:text-base text-gray-400 text-center">⚡ Моментальная доставка</p>
+              <p className="text-xs sm:text-sm md:text-base text-gray-400 text-center">📦 Доставка по России</p>
+              <p className="text-xs sm:text-sm md:text-base text-gray-400 text-center">💬 Чат с автором</p>
             </div>
         </div>
       </section>

@@ -21,12 +21,12 @@ export default function ReaderInsightsSection({ scrollToSection }: ReaderInsight
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-center px-2">
             Кто уже читает эту книгу
           </h2>
-          <div className="grid sm:grid-cols-2 gap-5 md:gap-6">
+          <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
             <Card className="bg-gray-900/80 border-gray-800 hover:border-book-blue transition-all">
-              <CardContent className="p-5 sm:p-6 md:p-8 space-y-3 md:space-y-4">
-                <div className="text-4xl md:text-5xl">🔬</div>
-                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-book-gold leading-tight">Атеисты и агностики</h3>
-                <p className="text-sm sm:text-base text-gray-300 leading-relaxed italic">
+              <CardContent className="p-4 sm:p-6 md:p-8 space-y-2 md:space-y-4">
+                <div className="text-3xl md:text-5xl">🔬</div>
+                <h3 className="text-base sm:text-xl md:text-2xl font-bold text-book-gold leading-tight">Атеисты и агностики</h3>
+                <p className="text-xs sm:text-base text-gray-300 leading-relaxed italic">
                   «Я атеистка, но очень рада, что купила. Интереснейший текст. Автор полемизирует с учёными и философами, которые считают, что христианство не нужно».
                 </p>
                 <p className="text-xs sm:text-sm text-gray-500">— Анастасия, Литрес</p>
@@ -34,10 +34,10 @@ export default function ReaderInsightsSection({ scrollToSection }: ReaderInsight
             </Card>
 
             <Card className="bg-gray-900/80 border-gray-800 hover:border-book-blue transition-all">
-              <CardContent className="p-5 sm:p-6 md:p-8 space-y-3 md:space-y-4">
-                <div className="text-4xl md:text-5xl">⛪</div>
-                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-book-gold leading-tight">Воцерковлённые христиане</h3>
-                <p className="text-sm sm:text-base text-gray-300 leading-relaxed italic">
+              <CardContent className="p-4 sm:p-6 md:p-8 space-y-2 md:space-y-4">
+                <div className="text-3xl md:text-5xl">⛪</div>
+                <h3 className="text-base sm:text-xl md:text-2xl font-bold text-book-gold leading-tight">Воцерковлённые христиане</h3>
+                <p className="text-xs sm:text-base text-gray-300 leading-relaxed italic">
                   «Выросла в воцерковлённой семье. Но книга очень хорошо отрезвляет и напоминает, в чём именно заключается главная заповедь Евангелия. Даёт надежду».
                 </p>
                 <p className="text-xs sm:text-sm text-gray-500">— Ирина, WildBerries</p>
@@ -45,10 +45,10 @@ export default function ReaderInsightsSection({ scrollToSection }: ReaderInsight
             </Card>
 
             <Card className="bg-gray-900/80 border-gray-800 hover:border-book-blue transition-all">
-              <CardContent className="p-5 sm:p-6 md:p-8 space-y-3 md:space-y-4">
-                <div className="text-4xl md:text-5xl">📚</div>
-                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-book-gold leading-tight">Выпускники духовных учебных заведений</h3>
-                <p className="text-sm sm:text-base text-gray-300 leading-relaxed italic">
+              <CardContent className="p-4 sm:p-6 md:p-8 space-y-2 md:space-y-4">
+                <div className="text-3xl md:text-5xl">📚</div>
+                <h3 className="text-base sm:text-xl md:text-2xl font-bold text-book-gold leading-tight">Выпускники духовных учебных заведений</h3>
+                <p className="text-xs sm:text-base text-gray-300 leading-relaxed italic">
                   «Закончил духовную семинарию. Вы большая умница — очень много пищи для размышления, поводов для переосмысления своих ценностей и представлений о Христе».
                 </p>
                 <p className="text-xs sm:text-sm text-gray-500">— Литрес</p>
@@ -56,10 +56,10 @@ export default function ReaderInsightsSection({ scrollToSection }: ReaderInsight
             </Card>
 
             <Card className="bg-gray-900/80 border-gray-800 hover:border-book-blue transition-all">
-              <CardContent className="p-5 sm:p-6 md:p-8 space-y-3 md:space-y-4">
-                <div className="text-4xl md:text-5xl">🕊️</div>
-                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-book-gold leading-tight">Даже священнослужители</h3>
-                <p className="text-sm sm:text-base text-gray-300 leading-relaxed italic">
+              <CardContent className="p-4 sm:p-6 md:p-8 space-y-2 md:space-y-4">
+                <div className="text-3xl md:text-5xl">🕊️</div>
+                <h3 className="text-base sm:text-xl md:text-2xl font-bold text-book-gold leading-tight">Даже священнослужители</h3>
+                <p className="text-xs sm:text-base text-gray-300 leading-relaxed italic">
                   «Я священник РПЦ. Автор прекрасно знает Евангелие. Разумеется, с некоторыми тезисами я не согласен. Но это не повод занижать оценку».
                 </p>
                 <p className="text-xs sm:text-sm text-gray-500">— Литрес</p>
@@ -144,13 +144,14 @@ export default function ReaderInsightsSection({ scrollToSection }: ReaderInsight
               </CardContent>
             </Card>
           </div>
-          <div className="text-center pt-6">
+          <div className="text-center pt-6 px-2">
             <Button 
               size="lg" 
-              className="bg-book-gold hover:bg-book-gold/90 text-black font-bold text-lg px-10 py-6"
+              className="bg-book-gold hover:bg-book-gold/90 text-black font-bold text-xs sm:text-base md:text-lg px-4 sm:px-10 py-4 sm:py-6 w-full sm:w-auto"
               onClick={() => handleScroll('formats')}
             >
-              ПОЛУЧИТЬ СВОЙ ИНСАЙТ → Откройте книгу
+              <span className="hidden sm:inline">ПОЛУЧИТЬ СВОЙ ИНСАЙТ → Откройте книгу</span>
+              <span className="sm:hidden">ПОЛУЧИТЬ ИНСАЙТ</span>
             </Button>
           </div>
           <div className="text-center mt-12">

@@ -31,10 +31,10 @@ export default function PhilosophySections({ scrollToSection }: PhilosophySectio
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             {painPoints.map((point, index) => (
               <Card key={index} className="bg-gray-900/80 border-gray-800 hover:border-book-red transition-all duration-300 hover:scale-105 cursor-pointer group">
-                <CardContent className="p-4 sm:p-6">
+                <CardContent className="p-3 sm:p-6">
                   <div className="flex items-start gap-2 sm:gap-3">
-                    <span className="text-lg sm:text-xl flex-shrink-0">📌</span>
-                    <p className="text-base sm:text-lg leading-relaxed">{point}</p>
+                    <span className="text-base sm:text-xl flex-shrink-0 hidden sm:inline">📌</span>
+                    <p className="text-xs sm:text-lg leading-relaxed">{point}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -56,31 +56,31 @@ export default function PhilosophySections({ scrollToSection }: PhilosophySectio
 
       <section id="about" className="py-12 md:py-20 lg:py-32 px-4">
         <div className="container mx-auto max-w-5xl text-center space-y-10 md:space-y-16">
-          <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold leading-tight px-2">
+          <h2 className="text-xl sm:text-3xl md:text-5xl lg:text-6xl font-bold leading-tight px-2">
             Евангелие через призму Ницше, психологии нацизма и эволюционной биологии
           </h2>
           <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-            <div className="space-y-3 md:space-y-6">
-              <div className="text-4xl md:text-5xl mx-auto">🧬</div>
-              <h3 className="text-xl md:text-2xl font-bold">БИОЛОГИЯ</h3>
-              <p className="text-base md:text-lg text-gray-300 leading-relaxed px-2">
+            <div className="space-y-2 md:space-y-6">
+              <div className="text-3xl md:text-5xl mx-auto">🧬</div>
+              <h3 className="text-base md:text-2xl font-bold">БИОЛОГИЯ</h3>
+              <p className="text-xs md:text-lg text-gray-300 leading-relaxed px-2">
                 Почему "эволюционное добро" — это верность стае и любовь к сильному.
               </p>
-              <p className="text-sm md:text-base text-gray-400 leading-relaxed px-2">
+              <p className="text-xs md:text-base text-gray-400 leading-relaxed px-2">
                 И почему животным не нужны заповеди для морального поведения.
               </p>
             </div>
-            <div className="space-y-3 md:space-y-4">
-              <div className="text-4xl md:text-5xl mx-auto">⚡</div>
-              <h3 className="text-xl md:text-2xl font-bold">ФИЛОСОФИЯ</h3>
-              <p className="text-base md:text-lg text-gray-300 leading-relaxed px-2">
+            <div className="space-y-2 md:space-y-4">
+              <div className="text-3xl md:text-5xl mx-auto">⚡</div>
+              <h3 className="text-base md:text-2xl font-bold">ФИЛОСОФИЯ</h3>
+              <p className="text-xs md:text-lg text-gray-300 leading-relaxed px-2">
                 Что общего у христианских «традиционных ценностей» с идеями Ницше о господстве сильных над слабыми.
               </p>
             </div>
-            <div className="space-y-3 md:space-y-4">
-              <div className="text-4xl md:text-5xl mx-auto">🔬</div>
-              <h3 className="text-xl md:text-2xl font-bold">ПСИХОЛОГИЯ</h3>
-              <p className="text-base md:text-lg text-gray-300 leading-relaxed px-2">
+            <div className="space-y-2 md:space-y-4">
+              <div className="text-3xl md:text-5xl mx-auto">🔬</div>
+              <h3 className="text-base md:text-2xl font-bold">ПСИХОЛОГИЯ</h3>
+              <p className="text-xs md:text-lg text-gray-300 leading-relaxed px-2">
                 Как «нормальные люди» становятся соучастниками зла — от домашнего насилия до Холокоста.
               </p>
             </div>
@@ -99,8 +99,8 @@ export default function PhilosophySections({ scrollToSection }: PhilosophySectio
       <section id="thesis" className="py-12 md:py-20 lg:py-32 px-4 bg-black/30">
         <div className="container mx-auto max-w-5xl">
           <Card className="bg-gradient-to-br from-gray-900 to-black border-2 border-book-red p-6 sm:p-8 md:p-16">
-            <CardContent className="space-y-6 md:space-y-10 p-0">
-              <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-relaxed font-quote space-y-4 md:space-y-6">
+            <CardContent className="space-y-4 md:space-y-10 p-0">
+              <blockquote className="text-base sm:text-2xl md:text-3xl lg:text-4xl leading-relaxed font-quote space-y-3 md:space-y-6">
                 <p>
                   Христос пришёл <span className="text-book-red font-bold">НЕ</span> учить любви к своим — это умеют даже курицы.
                 </p>
@@ -108,11 +108,11 @@ export default function PhilosophySections({ scrollToSection }: PhilosophySectio
                   Он учил <span className="text-book-gold font-bold">безумной любви к врагам</span>. И это единственное, что отличает человека от животного.
                 </p>
               </blockquote>
-              <div className="pt-6 md:pt-8 border-t border-gray-700 space-y-4 md:space-y-6">
-                <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 leading-relaxed">
+              <div className="pt-4 md:pt-8 border-t border-gray-700 space-y-3 md:space-y-6">
+                <p className="text-xs sm:text-lg md:text-xl lg:text-2xl text-gray-300 leading-relaxed">
                   Верность семье, уважение к старшим, послушание власти, патриотизм — всё это есть у шимпанзе и работает по принципу «порядка клевания».
                 </p>
-                <p className="text-xl sm:text-2xl md:text-3xl font-bold text-book-gold">
+                <p className="text-base sm:text-2xl md:text-3xl font-bold text-book-gold">
                   Евангелие не про это.
                 </p>
               </div>
