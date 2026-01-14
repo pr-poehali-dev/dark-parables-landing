@@ -337,9 +337,9 @@ export default function AudienceSections({ scrollToSection }: AudienceSectionsPr
                 {[...Array(5)].map((_, i) => (
                   <span key={i} className="text-yellow-400 text-2xl">⭐</span>
                 ))}
-                <span className="text-xl text-gray-300 ml-2">4.9/5 на основе 300+ отзывов</span>
+                <span className="text-xl text-gray-300 ml-2">4.9/5 на основе 70+ отзывов</span>
               </div>
-              <div className="space-y-2 text-lg text-gray-400">
+              <div className="space-y-2 text-lg text-gray-400 text-center">
                 <p>💬 "Читается запойно!" — Елена</p>
                 <p>📚 "Книга важнейшая" — Михаил</p>
                 <p>🔥 "Не могу оторваться!" — Сергей</p>
