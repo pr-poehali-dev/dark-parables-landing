@@ -73,7 +73,7 @@ export default function AuthorAndStatsSection({ scrollToSection }: AuthorAndStat
           <div className="space-y-6">
             <h2 className="text-4xl md:text-6xl font-bold">Что говорят читатели</h2>
             <p className="text-2xl md:text-3xl text-gray-400">
-              Книга собрала сотни 5-звёздочных отзывов и вызвала бурные обсуждения
+              Книга собрала десятки 5-звёздочных отзывов и вызвала бурные обсуждения
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
