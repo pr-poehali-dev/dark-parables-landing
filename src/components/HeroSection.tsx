@@ -19,14 +19,14 @@ interface HeroSectionProps {
 
 export default function HeroSection({ isVisible, scrollToSection }: HeroSectionProps) {
   const bookImages = [
-    "https://cdn.poehali.dev/files/3.webp",
-    "https://cdn.poehali.dev/files/4.webp",
-    "https://cdn.poehali.dev/files/5.webp",
-    "https://cdn.poehali.dev/files/6.webp",
-    "https://cdn.poehali.dev/files/7.webp",
-    "https://cdn.poehali.dev/files/8.webp",
-    "https://cdn.poehali.dev/files/2.webp",
-    "https://cdn.poehali.dev/files/1.webp"
+    "https://cdn.poehali.dev/projects/3c7ed24e-e461-4d4a-8c66-243a8d39f07d/bucket/3.webp",
+    "https://cdn.poehali.dev/projects/3c7ed24e-e461-4d4a-8c66-243a8d39f07d/bucket/4.webp",
+    "https://cdn.poehali.dev/projects/3c7ed24e-e461-4d4a-8c66-243a8d39f07d/bucket/5.webp",
+    "https://cdn.poehali.dev/projects/3c7ed24e-e461-4d4a-8c66-243a8d39f07d/bucket/6.webp",
+    "https://cdn.poehali.dev/projects/3c7ed24e-e461-4d4a-8c66-243a8d39f07d/bucket/7.webp",
+    "https://cdn.poehali.dev/projects/3c7ed24e-e461-4d4a-8c66-243a8d39f07d/bucket/8.webp",
+    "https://cdn.poehali.dev/projects/3c7ed24e-e461-4d4a-8c66-243a8d39f07d/bucket/2.webp",
+    "https://cdn.poehali.dev/projects/3c7ed24e-e461-4d4a-8c66-243a8d39f07d/bucket/1.webp"
   ];
   return (
     <section id="hero" className={`min-h-screen flex items-center justify-center px-4 py-16 md:py-24 pt-20 md:pt-24 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
