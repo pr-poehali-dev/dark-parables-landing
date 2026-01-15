@@ -100,6 +100,8 @@ export default function HeroSection({ isVisible, scrollToSection }: HeroSectionP
                         src={image} 
                         alt={`Заповеди зла - фото ${index + 1}`}
                         className="w-full h-auto rounded-lg shadow-2xl border-2 border-gray-700/50"
+                        loading={index === 0 ? "eager" : "lazy"}
+                        fetchPriority={index === 0 ? "high" : "auto"}
                       />
                     </CarouselItem>
                   ))}

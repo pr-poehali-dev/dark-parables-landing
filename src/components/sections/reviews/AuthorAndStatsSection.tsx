@@ -25,6 +25,7 @@ export default function AuthorAndStatsSection({ scrollToSection }: AuthorAndStat
                   src="https://cdn.poehali.dev/projects/3c7ed24e-e461-4d4a-8c66-243a8d39f07d/bucket/4F5A0545-118 (1).webp" 
                   alt="Дарья Серп" 
                   className="relative w-full rounded-lg shadow-2xl"
+                  loading="lazy"
                 />
               </div>
             </div>
