@@ -22,7 +22,7 @@ export default function AuthorAndStatsSection({ scrollToSection }: AuthorAndStat
               <div className="relative">
                 <div className="absolute inset-0 bg-book-gold/20 blur-2xl rounded-full"></div>
                 <img 
-                  src="https://cdn.poehali.dev/projects/3c7ed24e-e461-4d4a-8c66-243a8d39f07d/bucket/4F5A0545-118 (1).webp" 
+                  src="https://cdn.poehali.dev/projects/3c7ed24e-e461-4d4a-8c66-243a8d39f07d/bucket/4F5A0545-118.webp" 
                   alt="Дарья Серп" 
                   className="relative w-full rounded-lg shadow-2xl"
                   loading="lazy"
