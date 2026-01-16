@@ -67,7 +67,6 @@ export default function ConversionSection({ scrollToSection }: ConversionSection
                 </ul>
                 <div className="pt-4">
                   <p className="text-3xl font-bold text-book-gold mb-6">до 999 ₽</p>
-                  <p className="text-sm text-gray-400 mb-4">зависит от ваших персональных скидок на WB</p>
                   <Button 
                     size="lg" 
                     className="w-full bg-book-gold hover:bg-book-red text-black hover:text-white font-bold text-lg py-6"
@@ -75,6 +74,7 @@ export default function ConversionSection({ scrollToSection }: ConversionSection
                   >
                     КУПИТЬ НА WILDBERRIES →
                   </Button>
+                  <p className="text-sm text-gray-400 mt-3">зависит от ваших персональных скидок на WB</p>
                 </div>
               </div>
             </div>
