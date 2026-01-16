@@ -28,8 +28,7 @@ export default function ConversionSection({ scrollToSection }: ConversionSection
                   {[
                     'Моментальная доставка',
                     'Чтение на любом устройстве',
-                    'Можно делать заметки',
-                    'Доступ в чат читателей'
+                    'Можно делать заметки'
                   ].map((item, i) => (
                     <li key={i} className="flex items-center gap-3">
                       <Icon name="Check" size={20} className="text-book-gold flex-shrink-0" />
@@ -58,8 +57,7 @@ export default function ConversionSection({ scrollToSection }: ConversionSection
                   {[
                     '272 страницы',
                     'Твёрдый переплёт',
-                    'Доставка по России',
-                    'Доступ в чат читателей'
+                    'Доставка по России'
                   ].map((item, i) => (
                     <li key={i} className="flex items-center gap-3">
                       <Icon name="Check" size={20} className="text-book-gold flex-shrink-0" />
