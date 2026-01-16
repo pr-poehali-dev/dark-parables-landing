@@ -49,17 +49,25 @@ export default function SocialProofSection({ scrollToSection }: SocialProofSecti
             <span className="text-gray-600">|</span>
             <div className="flex items-center gap-2">
               <Icon name="MessageCircle" size={24} className="text-book-blue" />
-              <span>500+ человек в чате</span>
+              <span>70+ человек в чате</span>
             </div>
           </div>
-          <div className="text-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
               variant="outline"
               className="border-book-gold text-book-gold hover:bg-book-gold hover:text-black font-bold text-lg px-10 py-6"
-              onClick={() => window.open('https://www.wildberries.ru/catalog/219895925/detail.aspx', '_blank')}
+              onClick={() => window.open('https://www.wildberries.ru/catalog/599313256/feedbacks?imtId=619713962&size=816459879', '_blank')}
             >
               ЧИТАТЬ ВСЕ ОТЗЫВЫ НА WILDBERRIES →
+            </Button>
+            <Button 
+              size="lg" 
+              variant="outline"
+              className="border-book-gold text-book-gold hover:bg-book-gold hover:text-black font-bold text-lg px-10 py-6"
+              onClick={() => window.open('https://www.litres.ru/book/darya-serp/zapovedi-zla-bog-protiv-tradicionnyh-cennostey-72952082/otzivi/?utm_source=advcake&utm_medium=cpa&utm_campaign=affiliate&utm_content=06d2a99e&advcake_params=&utm_term=&erid=2VfnxyNkZrY&advcake_method=1&m=1', '_blank')}
+            >
+              ЧИТАТЬ ОТЗЫВЫ НА LITRES →
             </Button>
           </div>
         </div>
@@ -101,13 +109,24 @@ export default function SocialProofSection({ scrollToSection }: SocialProofSecti
                   Эта книга — попытка отделить Евангелие от того, что веками выдавали за христианство».
                 </p>
               </div>
-              <div className="pt-4">
-                <Button 
-                  className="bg-book-blue hover:bg-book-blue/90 text-white font-bold"
-                  onClick={() => window.open('https://t.me/daryaserpbook/2', '_blank')}
-                >
-                  Подписаться на канал
-                </Button>
+              <div className="pt-4 space-y-4">
+                <div className="space-y-3 text-gray-300">
+                  <a href="https://vk.com/badbeliever" target="_blank" rel="noopener" className="block hover:text-book-gold transition-colors">
+                    <strong>vk.com/badbeliever</strong> — группа «Меньше ада» Вконтакте, с которой всё когда-то началось: сейчас там мемы про котиков и религию, а также записи подкастов Дарьи Серп.
+                  </a>
+                  <a href="https://vk.ru/daryaserp" target="_blank" rel="noopener" className="block hover:text-book-gold transition-colors">
+                    <strong>vk.ru/daryaserp</strong> — личный Вк Дарьи Серп с фото и новостями.
+                  </a>
+                  <a href="https://youtube.com/@DaryaSerp" target="_blank" rel="noopener" className="block hover:text-book-gold transition-colors">
+                    <strong>youtube.com/@DaryaSerp</strong> — тут выкладываются видео подкастов, эфиров, интервью с Дарьей
+                  </a>
+                  <a href="https://t.me/daryaserp" target="_blank" rel="noopener" className="block hover:text-book-gold transition-colors">
+                    <strong>t.me/daryaserp</strong> — канал про проекты и книги Дарьи, заметки на горячие темы (пока не вошедшие в книги).
+                  </a>
+                  <a href="https://t.me/daryaserpbook" target="_blank" rel="noopener" className="block hover:text-book-gold transition-colors">
+                    <strong>t.me/daryaserpbook</strong> — здесь читательский чат для обсуждения книг Дарьи Серп и околорелигиозного флуда.
+                  </a>
+                </div>
               </div>
             </div>
           </div>

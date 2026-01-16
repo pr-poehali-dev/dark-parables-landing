@@ -18,8 +18,8 @@ export default function Navigation({ scrolled, scrollToSection }: NavigationProp
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navItems = [
     { label: "О книге", id: "solution" },
-    { label: "Об авторе", id: "author" },
     { label: "Отзывы", id: "reviews" },
+    { label: "Об авторе", id: "author" },
     { label: "Частые вопросы", id: "faq" }
   ];
 

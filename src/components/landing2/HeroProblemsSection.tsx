@@ -91,7 +91,7 @@ export default function HeroProblemsSection({ isVisible, scrollToSection }: Hero
                 <span className="text-gray-500">|</span>
                 <div className="flex items-center gap-2">
                   <Icon name="Users" size={16} className="text-book-blue" />
-                  <span>500+ читателей в чате</span>
+                  <span>70+ читателей в чате</span>
                 </div>
               </div>
               <div className="flex items-center gap-3 text-gray-400 animate-bounce pt-4">
@@ -146,7 +146,7 @@ export default function HeroProblemsSection({ isVisible, scrollToSection }: Hero
             <Button 
               size="lg" 
               className="bg-book-red hover:bg-book-gold text-white font-bold text-xl px-12 py-7 mt-8"
-              onClick={() => scrollToSection('solution')}
+              onClick={() => window.open('https://www.litres.ru/book/darya-serp/zapovedi-zla-bog-protiv-tradicionnyh-cennostey-72952082/chitat-onlayn/?utm_source=advcake&utm_medium=cpa&utm_campaign=affiliate&utm_content=06d2a99e&advcake_params=&utm_term=&erid=2VfnxyNkZrY&advcake_method=1&m=1', '_blank')}
             >
               СКАЧАТЬ ГЛАВУ И РАЗОБРАТЬСЯ
             </Button>
@@ -194,7 +194,7 @@ export default function HeroProblemsSection({ isVisible, scrollToSection }: Hero
             <Button 
               size="lg" 
               className="bg-book-red hover:bg-book-gold text-white font-bold text-xl px-12 py-7"
-              onClick={() => scrollToSection('reviews')}
+              onClick={() => window.open('https://www.litres.ru/book/darya-serp/zapovedi-zla-bog-protiv-tradicionnyh-cennostey-72952082/chitat-onlayn/?utm_source=advcake&utm_medium=cpa&utm_campaign=affiliate&utm_content=06d2a99e&advcake_params=&utm_term=&erid=2VfnxyNkZrY&advcake_method=1&m=1', '_blank')}
             >
               НАЧАТЬ ЧИТАТЬ →
             </Button>

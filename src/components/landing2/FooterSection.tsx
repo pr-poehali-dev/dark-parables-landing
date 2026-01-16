@@ -17,13 +17,10 @@ export default function FooterSection() {
           <div className="space-y-4">
             <h3 className="text-xl font-bold text-book-gold">Навигация</h3>
             <div className="flex flex-col gap-2 text-gray-400">
-              <a href="#problem" className="hover:text-book-blue transition-colors">Проблема</a>
-              <a href="#solution" className="hover:text-book-blue transition-colors">Решение</a>
+              <a href="#solution" className="hover:text-book-blue transition-colors">О книге</a>
               <a href="#reviews" className="hover:text-book-blue transition-colors">Отзывы</a>
               <a href="#author" className="hover:text-book-blue transition-colors">Об авторе</a>
-              <a href="#community" className="hover:text-book-blue transition-colors">Сообщество</a>
-              <a href="#formats" className="hover:text-book-blue transition-colors">Купить</a>
-              <a href="#faq" className="hover:text-book-blue transition-colors">FAQ</a>
+              <a href="#faq" className="hover:text-book-blue transition-colors">Частые вопросы</a>
             </div>
           </div>
           

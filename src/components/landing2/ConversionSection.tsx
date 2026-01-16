@@ -38,11 +38,11 @@ export default function ConversionSection({ scrollToSection }: ConversionSection
                   ))}
                 </ul>
                 <div className="pt-4">
-                  <p className="text-3xl font-bold text-book-gold mb-6">от 299 ₽</p>
+                  <p className="text-3xl font-bold text-book-gold mb-6">299 ₽</p>
                   <Button 
                     size="lg" 
                     className="w-full bg-book-gold hover:bg-book-red text-black hover:text-white font-bold text-lg py-6"
-                    onClick={() => window.open('https://www.litres.ru/book/darya-serp/zapovedi-zla-bog-protiv-tradicionnyh-cennostey-72952082/', '_blank')}
+                    onClick={() => window.open('https://www.litres.ru/book/darya-serp/zapovedi-zla-bog-protiv-tradicionnyh-cennostey-72952082/?utm_source=advcake&utm_medium=cpa&utm_campaign=affiliate&utm_content=06d2a99e&advcake_params=&utm_term=&erid=2VfnxyNkZrY&advcake_method=1&m=1', '_blank')}
                   >
                     СКАЧАТЬ НА ЛИТРЕС →
                   </Button>
@@ -68,11 +68,12 @@ export default function ConversionSection({ scrollToSection }: ConversionSection
                   ))}
                 </ul>
                 <div className="pt-4">
-                  <p className="text-3xl font-bold text-book-gold mb-6">от 549 ₽</p>
+                  <p className="text-3xl font-bold text-book-gold mb-6">до 999 ₽</p>
+                  <p className="text-sm text-gray-400 mb-4">зависит от ваших персональных скидок на WB</p>
                   <Button 
                     size="lg" 
                     className="w-full bg-book-gold hover:bg-book-red text-black hover:text-white font-bold text-lg py-6"
-                    onClick={() => window.open('https://www.wildberries.ru/catalog/283327092/detail.aspx', '_blank')}
+                    onClick={() => window.open('https://wildberries.ru/catalog/0/search.aspx?search=WW271423', '_blank')}
                   >
                     КУПИТЬ НА WILDBERRIES →
                   </Button>
@@ -83,7 +84,7 @@ export default function ConversionSection({ scrollToSection }: ConversionSection
           <div className="flex flex-wrap justify-center items-center gap-8 text-lg">
             <div className="flex items-center gap-2">
               <span className="text-2xl">🔥</span>
-              <span>Уже 500+ читателей в чате</span>
+              <span>Уже 70+ читателей в чате</span>
             </div>
             <span className="text-gray-600">|</span>
             <div className="flex items-center gap-2">
