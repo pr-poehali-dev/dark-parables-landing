@@ -104,7 +104,7 @@ export default function HeroProblemsSection({ isVisible, scrollToSection }: Hero
         </div>
       </section>
 
-      <section id="problem" className="py-12 md:py-20 px-4 bg-black/50">
+      <section id="problem" className="pt-20 pb-12 md:pt-28 md:pb-20 px-4 bg-black/50">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-3xl xs:text-4xl md:text-5xl font-bold text-center mb-12 sm:mb-16">
             Вас тоже учили, что...
@@ -156,7 +156,7 @@ export default function HeroProblemsSection({ isVisible, scrollToSection }: Hero
         </div>
       </section>
 
-      <section id="solution" className="py-12 md:py-20 px-4">
+      <section id="solution" className="pt-20 pb-12 md:pt-28 md:pb-20 px-4">
         <div className="container mx-auto max-w-7xl">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8 md:mb-12 lg:mb-16">
             Что вы узнаете из этой книги

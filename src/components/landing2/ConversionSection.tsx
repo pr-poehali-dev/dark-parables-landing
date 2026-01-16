@@ -14,7 +14,7 @@ interface ConversionSectionProps {
 export default function ConversionSection({ scrollToSection }: ConversionSectionProps) {
   return (
     <>
-      <section id="formats" className="py-12 md:py-20 px-4">
+      <section id="formats" className="pt-20 pb-12 md:pt-28 md:pb-20 px-4">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl xs:text-4xl md:text-5xl font-bold text-center mb-12 sm:mb-16">
             Выберите формат
@@ -99,7 +99,7 @@ export default function ConversionSection({ scrollToSection }: ConversionSection
         </div>
       </section>
 
-      <section id="faq" className="py-12 md:py-20 px-4 bg-black/50">
+      <section id="faq" className="pt-20 pb-12 md:pt-28 md:pb-20 px-4 bg-black/50">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8 md:mb-12 lg:mb-16">
             Частые вопросы
