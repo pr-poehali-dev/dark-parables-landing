@@ -137,7 +137,7 @@ export default function SocialProofSection({ scrollToSection }: SocialProofSecti
 
       <section id="community" className="py-12 md:py-20 px-4 bg-black/50">
         <div className="container mx-auto max-w-5xl">
-          <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-6 leading-tight">
+          <h2 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 leading-tight">
             Прочитайте книгу и<br className="md:hidden" /> присоединяйтесь к обсуждению
           </h2>
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-center text-gray-400 mb-8 md:mb-12">
