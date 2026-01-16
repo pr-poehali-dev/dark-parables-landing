@@ -56,20 +56,20 @@ export default function SocialProofSection({ scrollToSection }: SocialProofSecti
             <Button 
               size="lg" 
               variant="outline"
-              className="border-book-gold text-book-gold hover:bg-book-gold hover:text-black font-bold text-[10px] xs:text-xs sm:text-sm md:text-base px-2 xs:px-3 sm:px-6 md:px-8 py-4 sm:py-5 w-full sm:w-auto leading-tight"
+              className="border-book-gold text-book-gold hover:bg-book-gold hover:text-black font-bold text-[9px] xs:text-[10px] sm:text-xs md:text-sm lg:text-base px-2 xs:px-3 sm:px-4 md:px-6 lg:px-8 py-4 sm:py-5 w-full sm:w-auto leading-tight"
               onClick={() => window.open('https://www.wildberries.ru/catalog/599313256/feedbacks?imtId=619713962&size=816459879', '_blank')}
             >
-              <span className="hidden xs:inline">ЧИТАТЬ ВСЕ ОТЗЫВЫ НА WILDBERRIES →</span>
-              <span className="xs:hidden">ОТЗЫВЫ НА WB →</span>
+              <span className="hidden sm:inline">ЧИТАТЬ ВСЕ ОТЗЫВЫ НА WILDBERRIES →</span>
+              <span className="sm:hidden">ОТЗЫВЫ НА WB →</span>
             </Button>
             <Button 
               size="lg" 
               variant="outline"
-              className="border-book-gold text-book-gold hover:bg-book-gold hover:text-black font-bold text-[10px] xs:text-xs sm:text-sm md:text-base px-2 xs:px-3 sm:px-6 md:px-8 py-4 sm:py-5 w-full sm:w-auto leading-tight"
+              className="border-book-gold text-book-gold hover:bg-book-gold hover:text-black font-bold text-[9px] xs:text-[10px] sm:text-xs md:text-sm lg:text-base px-2 xs:px-3 sm:px-4 md:px-6 lg:px-8 py-4 sm:py-5 w-full sm:w-auto leading-tight"
               onClick={() => window.open('https://www.litres.ru/book/darya-serp/zapovedi-zla-bog-protiv-tradicionnyh-cennostey-72952082/otzivi/?utm_source=advcake&utm_medium=cpa&utm_campaign=affiliate&utm_content=06d2a99e&advcake_params=&utm_term=&erid=2VfnxyNkZrY&advcake_method=1&m=1', '_blank')}
             >
-              <span className="hidden xs:inline">ЧИТАТЬ ОТЗЫВЫ НА LITRES →</span>
-              <span className="xs:hidden">ОТЗЫВЫ НА LITRES →</span>
+              <span className="hidden sm:inline">ЧИТАТЬ ОТЗЫВЫ НА LITRES →</span>
+              <span className="sm:hidden">ОТЗЫВЫ LITRES →</span>
             </Button>
           </div>
         </div>
@@ -137,8 +137,8 @@ export default function SocialProofSection({ scrollToSection }: SocialProofSecti
 
       <section id="community" className="py-12 md:py-20 px-4 bg-black/50">
         <div className="container mx-auto max-w-5xl">
-          <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-6">
-            Прочитайте книгу<br className="xs:hidden" /> и присоединяйтесь<br className="xs:hidden" /> к обсуждению
+          <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-6 leading-tight">
+            Прочитайте книгу и<br className="md:hidden" /> присоединяйтесь к обсуждению
           </h2>
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-center text-gray-400 mb-8 md:mb-12">
             💬 В закрытом чате читателей:
