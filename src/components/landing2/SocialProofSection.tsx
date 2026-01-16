@@ -183,7 +183,7 @@ export default function SocialProofSection({ scrollToSection }: SocialProofSecti
               className="bg-book-blue hover:bg-book-gold text-white font-bold text-[10px] xs:text-xs sm:text-sm md:text-base lg:text-lg px-2 xs:px-4 sm:px-8 md:px-12 py-4 sm:py-5 md:py-6 w-full sm:w-auto leading-tight"
               onClick={() => scrollToSection('formats')}
             >
-              КУПИТЬ КНИГУ И ВОЙТИ В ЧАТ
+              КУПИТЬ КНИГУ
             </Button>
           </div>
         </div>
