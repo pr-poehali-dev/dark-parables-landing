@@ -31,7 +31,7 @@ export default function Navigation({ scrolled, scrollToSection }: NavigationProp
         <div className="flex items-center justify-between">
           <button 
             onClick={() => scrollToSection('hero')} 
-            className="text-base sm:text-lg md:text-2xl font-bold text-book-red hover:text-book-gold transition-colors cursor-pointer"
+            className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-bold text-book-red hover:text-book-gold transition-colors cursor-pointer"
           >
             ЗАПОВЕДИ ЗЛА
           </button>
@@ -40,7 +40,7 @@ export default function Navigation({ scrolled, scrollToSection }: NavigationProp
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-sm font-semibold text-gray-300 hover:text-book-red transition-colors cursor-pointer uppercase tracking-wider"
+                className="text-xs sm:text-sm font-semibold text-gray-300 hover:text-book-red transition-colors cursor-pointer uppercase tracking-wider"
               >
                 {item.label}
               </button>

@@ -8,15 +8,15 @@ interface SocialProofSectionProps {
 export default function SocialProofSection({ scrollToSection }: SocialProofSectionProps) {
   return (
     <>
-      <section id="reviews" className="py-20 px-4 bg-black/50">
+      <section id="reviews" className="py-12 md:py-20 px-4 bg-black/50">
         <div className="container mx-auto max-w-7xl">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-6">
             Что говорят читатели
           </h2>
-          <p className="text-xl text-gray-400 text-center mb-16">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-400 text-center mb-8 md:mb-12 lg:mb-16">
             Книга собрала 70+ пятизвёздочных отзывов за первый месяц
           </p>
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-8 md:mb-12">
             {[
               { stars: 5, text: 'Прочла запойно. С одной стороны, хочется читать медленно и вдумчиво. С другой — взгляд скользит дальше, настолько увлекательно', author: 'Елена, WildBerries' },
               { stars: 5, text: 'Ожидал мемчики, а увидел настоящее богословие. Всем думающим и ищущим очень рекомендую', author: 'Дмитрий, атеист' },
@@ -25,10 +25,10 @@ export default function SocialProofSection({ scrollToSection }: SocialProofSecti
               { stars: 5, text: 'Смог наконец сформулировать то, что раньше чувствовал смутно. Книга очень чётко говорит о настоящем христианстве', author: 'Сергей' },
               { stars: 5, text: 'Я атеистка, но очень рада, что купила. Интереснейший текст. Автор полемизирует с учёными и философами', author: 'Анастасия' }
             ].map((review, i) => (
-              <div key={i} className="p-6 bg-white/5 rounded-lg border border-gray-800 space-y-4">
-                <div className="flex gap-1">
+              <div key={i} className="p-4 sm:p-5 md:p-6 bg-white/5 rounded-lg border border-gray-800 space-y-3 sm:space-y-4">
+                <div className="flex gap-0.5 sm:gap-1">
                   {[...Array(review.stars)].map((_, j) => (
-                    <span key={j} className="text-yellow-400 text-xl">⭐</span>
+                    <span key={j} className="text-yellow-400 text-base sm:text-lg md:text-xl">⭐</span>
                   ))}
                 </div>
                 <p className="text-gray-300 leading-relaxed">"{review.text}"</p>
@@ -36,27 +36,27 @@ export default function SocialProofSection({ scrollToSection }: SocialProofSecti
               </div>
             ))}
           </div>
-          <div className="flex flex-wrap justify-center items-center gap-8 text-lg mb-8">
-            <div className="flex items-center gap-2">
-              <Icon name="Book" size={24} className="text-book-gold" />
+          <div className="flex flex-wrap justify-center items-center gap-3 sm:gap-6 md:gap-8 text-sm sm:text-base md:text-lg mb-6 md:mb-8">
+            <div className="flex items-center gap-1.5 sm:gap-2">
+              <Icon name="Book" size={20} className="text-book-gold flex-shrink-0" />
               <span>70+ отзывов</span>
             </div>
-            <span className="text-gray-600">|</span>
-            <div className="flex items-center gap-2">
-              <Icon name="Star" size={24} className="text-yellow-400" />
+            <span className="text-gray-600 hidden sm:inline">|</span>
+            <div className="flex items-center gap-1.5 sm:gap-2">
+              <Icon name="Star" size={20} className="text-yellow-400 flex-shrink-0" />
               <span>4.9/5</span>
             </div>
-            <span className="text-gray-600">|</span>
-            <div className="flex items-center gap-2">
-              <Icon name="MessageCircle" size={24} className="text-book-blue" />
+            <span className="text-gray-600 hidden sm:inline">|</span>
+            <div className="flex items-center gap-1.5 sm:gap-2">
+              <Icon name="MessageCircle" size={20} className="text-book-blue flex-shrink-0" />
               <span>70+ человек в чате</span>
             </div>
           </div>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
             <Button 
               size="lg" 
               variant="outline"
-              className="border-book-gold text-book-gold hover:bg-book-gold hover:text-black font-bold text-lg px-10 py-6"
+              className="border-book-gold text-book-gold hover:bg-book-gold hover:text-black font-bold text-xs sm:text-sm md:text-base px-4 sm:px-6 md:px-8 py-4 sm:py-5 w-full sm:w-auto"
               onClick={() => window.open('https://www.wildberries.ru/catalog/599313256/feedbacks?imtId=619713962&size=816459879', '_blank')}
             >
               ЧИТАТЬ ВСЕ ОТЗЫВЫ НА WILDBERRIES →
@@ -64,7 +64,7 @@ export default function SocialProofSection({ scrollToSection }: SocialProofSecti
             <Button 
               size="lg" 
               variant="outline"
-              className="border-book-gold text-book-gold hover:bg-book-gold hover:text-black font-bold text-lg px-10 py-6"
+              className="border-book-gold text-book-gold hover:bg-book-gold hover:text-black font-bold text-xs sm:text-sm md:text-base px-4 sm:px-6 md:px-8 py-4 sm:py-5 w-full sm:w-auto"
               onClick={() => window.open('https://www.litres.ru/book/darya-serp/zapovedi-zla-bog-protiv-tradicionnyh-cennostey-72952082/otzivi/?utm_source=advcake&utm_medium=cpa&utm_campaign=affiliate&utm_content=06d2a99e&advcake_params=&utm_term=&erid=2VfnxyNkZrY&advcake_method=1&m=1', '_blank')}
             >
               ЧИТАТЬ ОТЗЫВЫ НА LITRES →
@@ -73,12 +73,12 @@ export default function SocialProofSection({ scrollToSection }: SocialProofSecti
         </div>
       </section>
 
-      <section id="author" className="py-20 px-4">
+      <section id="author" className="py-12 md:py-20 px-4">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8 md:mb-12 lg:mb-16">
             Об авторе
           </h2>
-          <div className="grid md:grid-cols-10 gap-8 md:gap-12 items-center">
+          <div className="grid md:grid-cols-10 gap-6 md:gap-8 lg:gap-12 items-center">
             <div className="md:col-span-3">
               <div className="relative w-full max-w-sm">
                 <div className="absolute inset-0 bg-book-gold/20 blur-2xl rounded-full"></div>
@@ -90,12 +90,12 @@ export default function SocialProofSection({ scrollToSection }: SocialProofSecti
                 />
               </div>
             </div>
-            <div className="md:col-span-7 space-y-6">
+            <div className="md:col-span-7 space-y-4 sm:space-y-6">
               <div>
-                <h3 className="text-3xl md:text-5xl font-bold text-book-gold mb-2">ДАРЬЯ СЕРП</h3>
-                <p className="text-xl text-gray-400">Христианский философ, блогер, бывшая атеистка</p>
+                <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-book-gold mb-2">ДАРЬЯ СЕРП</h3>
+                <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-400">Христианский философ, блогер, бывшая атеистка</p>
               </div>
-              <div className="space-y-6 text-xl md:text-2xl text-gray-300 leading-relaxed">
+              <div className="space-y-3 sm:space-y-4 md:space-y-6 text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed">
                 <p>
                   «Я была убеждённой атеисткой. Считала религию опиумом для народа и инструментом контроля.
                 </p>
@@ -109,8 +109,8 @@ export default function SocialProofSection({ scrollToSection }: SocialProofSecti
                   Эта книга — попытка отделить Евангелие от того, что веками выдавали за христианство».
                 </p>
               </div>
-              <div className="pt-4 space-y-4">
-                <div className="space-y-3 text-gray-300">
+              <div className="pt-3 sm:pt-4 space-y-3 sm:space-y-4">
+                <div className="space-y-2 sm:space-y-3 text-xs sm:text-sm md:text-base text-gray-300">
                   <a href="https://vk.com/badbeliever" target="_blank" rel="noopener" className="block hover:text-book-gold transition-colors">
                     <strong>vk.com/badbeliever</strong> — группа «Меньше ада» Вконтакте, с которой всё когда-то началось: сейчас там мемы про котиков и религию, а также записи подкастов Дарьи Серп.
                   </a>
@@ -133,52 +133,52 @@ export default function SocialProofSection({ scrollToSection }: SocialProofSecti
         </div>
       </section>
 
-      <section id="community" className="py-20 px-4 bg-black/50">
+      <section id="community" className="py-12 md:py-20 px-4 bg-black/50">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-6">
             Прочитайте книгу и присоединяйтесь к обсуждению
           </h2>
-          <p className="text-2xl text-center text-gray-400 mb-12">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-center text-gray-400 mb-8 md:mb-12">
             💬 В закрытом чате читателей:
           </p>
-          <div className="grid md:grid-cols-2 gap-6 mb-12">
+          <div className="grid sm:grid-cols-2 gap-4 md:gap-6 mb-8 md:mb-12">
             {[
               'Обсуждения глав с автором',
               'Философские споры до 2 ночи',
               'Люди, которые понимают',
               'Место, где можно сомневаться'
             ].map((item, i) => (
-              <div key={i} className="flex items-center gap-4 p-6 bg-white/5 rounded-lg border border-gray-800">
+              <div key={i} className="flex items-center gap-3 sm:gap-4 p-4 sm:p-5 md:p-6 bg-white/5 rounded-lg border border-gray-800">
                 <div className="flex-shrink-0 w-6 h-6 rounded-full bg-book-blue flex items-center justify-center">
                   <Icon name="Check" size={16} />
                 </div>
-                <span className="text-lg">{item}</span>
+                <span className="text-sm sm:text-base md:text-lg">{item}</span>
               </div>
             ))}
           </div>
-          <div className="mb-12">
-            <h3 className="text-2xl font-bold mb-6 text-center">Темы, которые обсуждают:</h3>
-            <div className="space-y-4">
+          <div className="mb-8 md:mb-12">
+            <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-4 sm:mb-6 text-center">Темы, которые обсуждают:</h3>
+            <div className="space-y-3 sm:space-y-4">
               {[
                 'Эволюция и христианство — совместимо?',
                 'Свобода воли vs всеведение Бога',
                 'Традиции — это "труп веры"?',
                 'Можно ли быть христианином-изгоем?'
               ].map((topic, i) => (
-                <div key={i} className="flex items-center gap-3 p-4 bg-gradient-to-r from-book-red/20 to-transparent rounded-lg">
-                  <span className="text-2xl">🔥</span>
-                  <span className="text-lg">{topic}</span>
+                <div key={i} className="flex items-center gap-2 sm:gap-3 p-3 sm:p-4 bg-gradient-to-r from-book-red/20 to-transparent rounded-lg">
+                  <span className="text-xl sm:text-2xl flex-shrink-0">🔥</span>
+                  <span className="text-sm sm:text-base md:text-lg">{topic}</span>
                 </div>
               ))}
             </div>
           </div>
-          <p className="text-xl text-center text-gray-300 mb-8">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-center text-gray-300 mb-6 sm:mb-8">
             Нет табуированных тем. Нет готовых ответов. Есть честный разговор.
           </p>
           <div className="text-center">
             <Button 
               size="lg" 
-              className="bg-book-blue hover:bg-book-gold text-white font-bold text-xl px-12 py-7"
+              className="bg-book-blue hover:bg-book-gold text-white font-bold text-xs sm:text-sm md:text-base lg:text-lg px-6 sm:px-8 md:px-12 py-4 sm:py-5 md:py-6 w-full sm:w-auto"
               onClick={() => scrollToSection('formats')}
             >
               КУПИТЬ КНИГУ И ВОЙТИ В ЧАТ
