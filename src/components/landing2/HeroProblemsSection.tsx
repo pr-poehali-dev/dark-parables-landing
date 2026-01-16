@@ -62,7 +62,7 @@ export default function HeroProblemsSection({ isVisible, scrollToSection }: Hero
             <div className="order-1 md:order-2 space-y-4 sm:space-y-6 md:space-y-8 animate-slide-up">
               <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 Почему <span className="text-book-gold">«хорошие люди»</span> <br className="sm:hidden" />становятся палачами — <br />
-                и как не стать <br className="sm:hidden" />одним из них
+                и как отличить смирение <br className="sm:hidden" />от обычного страха
               </h1>
               <p className="text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl text-gray-200 leading-relaxed">
                 Книга о том, как отличить настоящее Евангелие от морали послушания, семейных ценностей и патриотизма
