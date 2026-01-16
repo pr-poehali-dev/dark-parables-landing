@@ -1,5 +1,13 @@
 import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 interface HeroSectionProps {
   isVisible: boolean;
@@ -9,21 +17,49 @@ interface HeroSectionProps {
 export default function HeroProblemsSection({ isVisible, scrollToSection }: HeroSectionProps) {
   return (
     <>
-      <section id="hero" className={`min-h-screen flex items-center justify-center px-4 py-16 md:py-24 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+      <section id="hero" className={`min-h-screen flex items-center justify-center px-4 py-16 md:py-24 pt-20 md:pt-24 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <div className="container mx-auto max-w-7xl">
           <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
             <div className="order-2 md:order-1 flex justify-center">
               <div className="relative w-full max-w-sm">
                 <div className="absolute inset-0 bg-book-gold/30 blur-3xl rounded-full scale-110"></div>
-                <img 
-                  src="https://cdn.poehali.dev/projects/3c7ed24e-e461-4d4a-8c66-243a8d39f07d/bucket/3.webp" 
-                  alt="Заповеди зла - обложка книги"
-                  className="relative w-full h-auto rounded-lg shadow-2xl border-2 border-gray-700/50"
-                />
+                <Carousel 
+                  className="w-full" 
+                  opts={{ loop: true }}
+                  plugins={[
+                    Autoplay({
+                      delay: 3000,
+                    }),
+                  ]}
+                >
+                  <CarouselContent>
+                    {[
+                      "https://cdn.poehali.dev/projects/3c7ed24e-e461-4d4a-8c66-243a8d39f07d/bucket/3.webp",
+                      "https://cdn.poehali.dev/projects/3c7ed24e-e461-4d4a-8c66-243a8d39f07d/bucket/4.webp",
+                      "https://cdn.poehali.dev/projects/3c7ed24e-e461-4d4a-8c66-243a8d39f07d/bucket/5.webp",
+                      "https://cdn.poehali.dev/projects/3c7ed24e-e461-4d4a-8c66-243a8d39f07d/bucket/6.webp",
+                      "https://cdn.poehali.dev/projects/3c7ed24e-e461-4d4a-8c66-243a8d39f07d/bucket/7.webp",
+                      "https://cdn.poehali.dev/projects/3c7ed24e-e461-4d4a-8c66-243a8d39f07d/bucket/8.webp",
+                      "https://cdn.poehali.dev/projects/3c7ed24e-e461-4d4a-8c66-243a8d39f07d/bucket/2.webp",
+                      "https://cdn.poehali.dev/projects/3c7ed24e-e461-4d4a-8c66-243a8d39f07d/bucket/1.webp"
+                    ].map((image, index) => (
+                      <CarouselItem key={index}>
+                        <img 
+                          src={image} 
+                          alt={`Заповеди зла - фото ${index + 1}`}
+                          className="w-full h-auto rounded-lg shadow-2xl border-2 border-gray-700/50"
+                          loading={index === 0 ? "eager" : "lazy"}
+                        />
+                      </CarouselItem>
+                    ))}
+                  </CarouselContent>
+                  <CarouselPrevious className="left-2" />
+                  <CarouselNext className="right-2" />
+                </Carousel>
               </div>
             </div>
             
-            <div className="order-1 md:order-2 space-y-8">
+            <div className="order-1 md:order-2 space-y-8 animate-slide-up">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 Почему <span className="text-book-gold">«хорошие люди»</span> становятся палачами — <br />
                 и как не стать одним из них
@@ -35,7 +71,7 @@ export default function HeroProblemsSection({ isVisible, scrollToSection }: Hero
                 <Button 
                   size="lg" 
                   className="bg-book-red hover:bg-book-gold text-white font-bold text-lg md:text-xl px-10 py-7 transition-all hover:scale-105 shadow-lg hover:shadow-book-red/50 w-full sm:w-auto"
-                  onClick={() => window.open('https://www.litres.ru/book/darya-serp/zapovedi-zla-chto-esli-dobro-kotoromu-vas-uchili-na-samom-dele-zlo-72154388/chitat-onlayn/', '_blank')}
+                  onClick={() => window.open('https://www.litres.ru/book/darya-serp/zapovedi-zla-bog-protiv-tradicionnyh-cennostey-72952082/chitat-onlayn/?utm_source=advcake&utm_medium=cpa&utm_campaign=affiliate&utm_content=06d2a99e&advcake_params=&utm_term=&erid=2VfnxyNkZrY&advcake_method=1&m=1', '_blank')}
                 >
                   ЧИТАТЬ ПЕРВУЮ ГЛАВУ БЕСПЛАТНО
                 </Button>

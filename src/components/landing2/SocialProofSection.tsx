@@ -70,39 +70,44 @@ export default function SocialProofSection({ scrollToSection }: SocialProofSecti
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
             Об авторе
           </h2>
-          <div className="grid md:grid-cols-5 gap-12 items-center">
-            <div className="md:col-span-2 flex justify-center">
+          <div className="grid md:grid-cols-10 gap-8 md:gap-12 items-center">
+            <div className="md:col-span-3">
               <div className="relative w-full max-w-sm">
-                <div className="absolute inset-0 bg-book-blue/20 blur-3xl rounded-full"></div>
+                <div className="absolute inset-0 bg-book-gold/20 blur-2xl rounded-full"></div>
                 <img 
-                  src="https://cdn.poehali.dev/projects/3c7ed24e-e461-4d4a-8c66-243a8d39f07d/bucket/author.webp" 
+                  src="https://cdn.poehali.dev/projects/3c7ed24e-e461-4d4a-8c66-243a8d39f07d/bucket/4F5A0545-118.webp" 
                   alt="Дарья Серп"
                   className="relative w-full h-auto rounded-lg shadow-2xl"
+                  loading="lazy"
                 />
               </div>
             </div>
-            <div className="md:col-span-3 space-y-6">
-              <h3 className="text-3xl font-bold text-book-gold">Дарья Серп</h3>
-              <p className="text-xl text-gray-400">христианский философ, блогер, бывшая атеистка</p>
-              <div className="space-y-4 text-lg text-gray-300 leading-relaxed">
-                <p>"Я была убеждённой атеисткой. Считала религию опиумом для народа.</p>
-                <p>Но когда я действительно прочитала Евангелие — не в изложении церковных проповедников, а глазами современного человека, знакомого с философией и психологией, — я увидела нечто радикально иное.</p>
-                <p>Христос — не защитник традиций и семейных ценностей. Он их ниспровергатель.</p>
-                <p className="font-semibold text-white">Эта книга — попытка отделить Евангелие от того, что веками выдавали за христианство"</p>
+            <div className="md:col-span-7 space-y-6">
+              <div>
+                <h3 className="text-3xl md:text-5xl font-bold text-book-gold mb-2">ДАРЬЯ СЕРП</h3>
+                <p className="text-xl text-gray-400">Христианский философ, блогер, бывшая атеистка</p>
               </div>
-              <div className="flex flex-wrap gap-4 pt-4">
-                <a href="https://vk.com/badbeliever" target="_blank" rel="noopener" className="flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg transition-colors">
-                  <span>📘</span>
-                  <span>Группа ВКонтакте</span>
-                </a>
-                <a href="https://youtube.com/@DaryaSerp" target="_blank" rel="noopener" className="flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg transition-colors">
-                  <span>▶️</span>
-                  <span>YouTube</span>
-                </a>
-                <a href="https://t.me/daryaserp" target="_blank" rel="noopener" className="flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg transition-colors">
-                  <span>📱</span>
-                  <span>Telegram</span>
-                </a>
+              <div className="space-y-6 text-xl md:text-2xl text-gray-300 leading-relaxed">
+                <p>
+                  «Я была убеждённой атеисткой. Считала религию опиумом для народа и инструментом контроля.
+                </p>
+                <p>
+                  Но когда я действительно прочитала Евангелие — не в изложении церковных проповедников, а глазами современного человека, знакомого с философией и психологией, — я увидела нечто радикально иное.
+                </p>
+                <p className="text-book-gold font-semibold">
+                  Христос — не защитник традиций и семейных ценностей. Он их ниспровергатель.
+                </p>
+                <p>
+                  Эта книга — попытка отделить Евангелие от того, что веками выдавали за христианство».
+                </p>
+              </div>
+              <div className="pt-4">
+                <Button 
+                  className="bg-book-blue hover:bg-book-blue/90 text-white font-bold"
+                  onClick={() => window.open('https://t.me/daryaserpbook/2', '_blank')}
+                >
+                  Подписаться на канал
+                </Button>
               </div>
             </div>
           </div>

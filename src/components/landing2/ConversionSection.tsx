@@ -42,7 +42,7 @@ export default function ConversionSection({ scrollToSection }: ConversionSection
                   <Button 
                     size="lg" 
                     className="w-full bg-book-gold hover:bg-book-red text-black hover:text-white font-bold text-lg py-6"
-                    onClick={() => window.open('https://www.litres.ru/book/darya-serp/zapovedi-zla-chto-esli-dobro-kotoromu-vas-uchili-na-samom-dele-zlo-72154388/', '_blank')}
+                    onClick={() => window.open('https://www.litres.ru/book/darya-serp/zapovedi-zla-bog-protiv-tradicionnyh-cennostey-72952082/', '_blank')}
                   >
                     СКАЧАТЬ НА ЛИТРЕС →
                   </Button>
@@ -72,7 +72,7 @@ export default function ConversionSection({ scrollToSection }: ConversionSection
                   <Button 
                     size="lg" 
                     className="w-full bg-book-gold hover:bg-book-red text-black hover:text-white font-bold text-lg py-6"
-                    onClick={() => window.open('https://www.wildberries.ru/catalog/219895925/detail.aspx', '_blank')}
+                    onClick={() => window.open('https://www.wildberries.ru/catalog/283327092/detail.aspx', '_blank')}
                   >
                     КУПИТЬ НА WILDBERRIES →
                   </Button>
@@ -173,7 +173,7 @@ export default function ConversionSection({ scrollToSection }: ConversionSection
           <Button 
             size="lg" 
             className="bg-book-red hover:bg-book-gold text-white font-bold text-2xl px-16 py-8 mt-8 hover:scale-110 transition-all shadow-2xl"
-            onClick={() => window.open('https://www.litres.ru/book/darya-serp/zapovedi-zla-chto-esli-dobro-kotoromu-vas-uchili-na-samom-dele-zlo-72154388/chitat-onlayn/', '_blank')}
+            onClick={() => window.open('https://www.litres.ru/book/darya-serp/zapovedi-zla-bog-protiv-tradicionnyh-cennostey-72952082/chitat-onlayn/?utm_source=advcake&utm_medium=cpa&utm_campaign=affiliate&utm_content=06d2a99e&advcake_params=&utm_term=&erid=2VfnxyNkZrY&advcake_method=1&m=1', '_blank')}
           >
             НАЧАТЬ ЧИТАТЬ
           </Button>
