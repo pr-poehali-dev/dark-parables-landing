@@ -10,7 +10,7 @@ export default function SocialProofSection({ scrollToSection }: SocialProofSecti
     <>
       <section id="reviews" className="py-12 md:py-20 px-4 bg-black/50">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-6">
+          <h2 className="text-3xl xs:text-4xl md:text-5xl font-bold text-center mb-6">
             Что говорят читатели
           </h2>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-400 text-center mb-8 md:mb-12 lg:mb-16">
@@ -25,49 +25,51 @@ export default function SocialProofSection({ scrollToSection }: SocialProofSecti
               { stars: 5, text: 'Смог наконец сформулировать то, что раньше чувствовал смутно. Книга очень чётко говорит о настоящем христианстве', author: 'Сергей' },
               { stars: 5, text: 'Я атеистка, но очень рада, что купила. Интереснейший текст. Автор полемизирует с учёными и философами', author: 'Анастасия' }
             ].map((review, i) => (
-              <div key={i} className="p-4 sm:p-5 md:p-6 bg-white/5 rounded-lg border border-gray-800 space-y-3 sm:space-y-4">
+              <div key={i} className="p-3 xs:p-4 sm:p-5 md:p-6 bg-white/5 rounded-lg border border-gray-800 space-y-2 xs:space-y-3 sm:space-y-4">
                 <div className="flex gap-0.5 sm:gap-1">
                   {[...Array(review.stars)].map((_, j) => (
-                    <span key={j} className="text-yellow-400 text-base sm:text-lg md:text-xl">⭐</span>
+                    <span key={j} className="text-yellow-400 text-sm xs:text-base sm:text-lg md:text-xl">⭐</span>
                   ))}
                 </div>
-                <p className="text-gray-300 leading-relaxed">"{review.text}"</p>
-                <p className="text-sm text-gray-500">— {review.author}</p>
+                <p className="text-xs xs:text-sm sm:text-base text-gray-300 leading-relaxed">"{review.text}"</p>
+                <p className="text-xs xs:text-sm text-gray-500">— {review.author}</p>
               </div>
             ))}
           </div>
-          <div className="flex flex-wrap justify-center items-center gap-3 sm:gap-6 md:gap-8 text-sm sm:text-base md:text-lg mb-6 md:mb-8">
-            <div className="flex items-center gap-1.5 sm:gap-2">
-              <Icon name="Book" size={20} className="text-book-gold flex-shrink-0" />
+          <div className="flex flex-wrap justify-center items-center gap-2 xs:gap-3 sm:gap-6 md:gap-8 text-[10px] xs:text-xs sm:text-sm md:text-base lg:text-lg mb-6 md:mb-8">
+            <div className="flex items-center gap-1 xs:gap-1.5 sm:gap-2">
+              <Icon name="Book" size={16} className="text-book-gold flex-shrink-0 xs:w-5 xs:h-5" />
               <span>70+ отзывов</span>
             </div>
             <span className="text-gray-600 hidden sm:inline">|</span>
-            <div className="flex items-center gap-1.5 sm:gap-2">
-              <Icon name="Star" size={20} className="text-yellow-400 flex-shrink-0" />
+            <div className="flex items-center gap-1 xs:gap-1.5 sm:gap-2">
+              <Icon name="Star" size={16} className="text-yellow-400 flex-shrink-0 xs:w-5 xs:h-5" />
               <span>4.9/5</span>
             </div>
             <span className="text-gray-600 hidden sm:inline">|</span>
-            <div className="flex items-center gap-1.5 sm:gap-2">
-              <Icon name="MessageCircle" size={20} className="text-book-blue flex-shrink-0" />
-              <span>70+ человек в чате</span>
+            <div className="flex items-center gap-1 xs:gap-1.5 sm:gap-2">
+              <Icon name="MessageCircle" size={16} className="text-book-blue flex-shrink-0 xs:w-5 xs:h-5" />
+              <span>70+ в чате</span>
             </div>
           </div>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
             <Button 
               size="lg" 
               variant="outline"
-              className="border-book-gold text-book-gold hover:bg-book-gold hover:text-black font-bold text-xs sm:text-sm md:text-base px-4 sm:px-6 md:px-8 py-4 sm:py-5 w-full sm:w-auto"
+              className="border-book-gold text-book-gold hover:bg-book-gold hover:text-black font-bold text-[10px] xs:text-xs sm:text-sm md:text-base px-2 xs:px-3 sm:px-6 md:px-8 py-4 sm:py-5 w-full sm:w-auto leading-tight"
               onClick={() => window.open('https://www.wildberries.ru/catalog/599313256/feedbacks?imtId=619713962&size=816459879', '_blank')}
             >
-              ЧИТАТЬ ВСЕ ОТЗЫВЫ НА WILDBERRIES →
+              <span className="hidden xs:inline">ЧИТАТЬ ВСЕ ОТЗЫВЫ НА WILDBERRIES →</span>
+              <span className="xs:hidden">ОТЗЫВЫ НА WB →</span>
             </Button>
             <Button 
               size="lg" 
               variant="outline"
-              className="border-book-gold text-book-gold hover:bg-book-gold hover:text-black font-bold text-xs sm:text-sm md:text-base px-4 sm:px-6 md:px-8 py-4 sm:py-5 w-full sm:w-auto"
+              className="border-book-gold text-book-gold hover:bg-book-gold hover:text-black font-bold text-[10px] xs:text-xs sm:text-sm md:text-base px-2 xs:px-3 sm:px-6 md:px-8 py-4 sm:py-5 w-full sm:w-auto leading-tight"
               onClick={() => window.open('https://www.litres.ru/book/darya-serp/zapovedi-zla-bog-protiv-tradicionnyh-cennostey-72952082/otzivi/?utm_source=advcake&utm_medium=cpa&utm_campaign=affiliate&utm_content=06d2a99e&advcake_params=&utm_term=&erid=2VfnxyNkZrY&advcake_method=1&m=1', '_blank')}
             >
-              ЧИТАТЬ ОТЗЫВЫ НА LITRES →
+              <span className="hidden xs:inline">ЧИТАТЬ ОТЗЫВЫ НА LITRES →</span>
+              <span className="xs:hidden">ОТЗЫВЫ НА LITRES →</span>
             </Button>
           </div>
         </div>
@@ -92,10 +94,10 @@ export default function SocialProofSection({ scrollToSection }: SocialProofSecti
             </div>
             <div className="md:col-span-7 space-y-4 sm:space-y-6">
               <div>
-                <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-book-gold mb-2">ДАРЬЯ СЕРП</h3>
-                <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-400">Христианский философ, блогер, бывшая атеистка</p>
+                <h3 className="text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-book-gold mb-2">ДАРЬЯ СЕРП</h3>
+                <p className="text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl text-gray-400">Христианский философ,<br className="xs:hidden" /> блогер, бывшая атеистка</p>
               </div>
-              <div className="space-y-3 sm:space-y-4 md:space-y-6 text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed">
+              <div className="space-y-3 sm:space-y-4 md:space-y-6 text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed">
                 <p>
                   «Я была убеждённой атеисткой. Считала религию опиумом для народа и инструментом контроля.
                 </p>
@@ -135,8 +137,8 @@ export default function SocialProofSection({ scrollToSection }: SocialProofSecti
 
       <section id="community" className="py-12 md:py-20 px-4 bg-black/50">
         <div className="container mx-auto max-w-5xl">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-6">
-            Прочитайте книгу и присоединяйтесь к обсуждению
+          <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-6">
+            Прочитайте книгу<br className="xs:hidden" /> и присоединяйтесь<br className="xs:hidden" /> к обсуждению
           </h2>
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-center text-gray-400 mb-8 md:mb-12">
             💬 В закрытом чате читателей:
@@ -148,11 +150,11 @@ export default function SocialProofSection({ scrollToSection }: SocialProofSecti
               'Люди, которые понимают',
               'Место, где можно сомневаться'
             ].map((item, i) => (
-              <div key={i} className="flex items-center gap-3 sm:gap-4 p-4 sm:p-5 md:p-6 bg-white/5 rounded-lg border border-gray-800">
-                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-book-blue flex items-center justify-center">
-                  <Icon name="Check" size={16} />
+              <div key={i} className="flex items-center gap-2 xs:gap-3 sm:gap-4 p-3 xs:p-4 sm:p-5 md:p-6 bg-white/5 rounded-lg border border-gray-800">
+                <div className="hidden xs:flex flex-shrink-0 w-5 h-5 xs:w-6 xs:h-6 rounded-full bg-book-blue items-center justify-center">
+                  <Icon name="Check" size={14} className="xs:w-4 xs:h-4" />
                 </div>
-                <span className="text-sm sm:text-base md:text-lg">{item}</span>
+                <span className="text-xs xs:text-sm sm:text-base md:text-lg">{item}</span>
               </div>
             ))}
           </div>
@@ -166,19 +168,19 @@ export default function SocialProofSection({ scrollToSection }: SocialProofSecti
                 'Можно ли быть христианином-изгоем?'
               ].map((topic, i) => (
                 <div key={i} className="flex items-center gap-2 sm:gap-3 p-3 sm:p-4 bg-gradient-to-r from-book-red/20 to-transparent rounded-lg">
-                  <span className="text-xl sm:text-2xl flex-shrink-0">🔥</span>
-                  <span className="text-sm sm:text-base md:text-lg">{topic}</span>
+                  <span className="text-lg xs:text-xl sm:text-2xl flex-shrink-0">🔥</span>
+                  <span className="text-xs xs:text-sm sm:text-base md:text-lg">{topic}</span>
                 </div>
               ))}
             </div>
           </div>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-center text-gray-300 mb-6 sm:mb-8">
-            Нет табуированных тем. Нет готовых ответов. Есть честный разговор.
+          <p className="text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl text-center text-gray-300 mb-6 sm:mb-8">
+            Нет табуированных тем.<br className="xs:hidden" /> Нет готовых ответов.<br className="xs:hidden" /> Есть честный разговор.
           </p>
           <div className="text-center">
             <Button 
               size="lg" 
-              className="bg-book-blue hover:bg-book-gold text-white font-bold text-xs sm:text-sm md:text-base lg:text-lg px-6 sm:px-8 md:px-12 py-4 sm:py-5 md:py-6 w-full sm:w-auto"
+              className="bg-book-blue hover:bg-book-gold text-white font-bold text-[10px] xs:text-xs sm:text-sm md:text-base lg:text-lg px-2 xs:px-4 sm:px-8 md:px-12 py-4 sm:py-5 md:py-6 w-full sm:w-auto leading-tight"
               onClick={() => scrollToSection('formats')}
             >
               КУПИТЬ КНИГУ И ВОЙТИ В ЧАТ

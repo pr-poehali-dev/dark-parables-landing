@@ -60,28 +60,29 @@ export default function HeroProblemsSection({ isVisible, scrollToSection }: Hero
             </div>
             
             <div className="order-1 md:order-2 space-y-4 sm:space-y-6 md:space-y-8 animate-slide-up">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                Почему <span className="text-book-gold">«хорошие люди»</span> становятся палачами — <br />
-                и как не стать одним из них
+              <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                Почему <span className="text-book-gold">«хорошие люди»</span> <br className="sm:hidden" />становятся палачами — <br />
+                и как не стать <br className="sm:hidden" />одним из них
               </h1>
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-200 leading-relaxed">
+              <p className="text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl text-gray-200 leading-relaxed">
                 Книга о том, как отличить настоящее Евангелие от морали послушания, семейных ценностей и патриотизма
               </p>
               <div className="space-y-3">
                 <Button 
                   size="lg" 
-                  className="bg-book-red hover:bg-book-gold text-white font-bold text-xs sm:text-sm md:text-base lg:text-lg px-4 sm:px-6 md:px-8 lg:px-10 py-4 sm:py-5 md:py-6 transition-all hover:scale-105 shadow-lg hover:shadow-book-red/50 w-full sm:w-auto"
+                  className="bg-book-red hover:bg-book-gold text-white font-bold text-[10px] xs:text-xs sm:text-sm md:text-base lg:text-lg px-2 xs:px-3 sm:px-6 md:px-8 lg:px-10 py-4 sm:py-5 md:py-6 transition-all hover:scale-105 shadow-lg hover:shadow-book-red/50 w-full sm:w-auto leading-tight"
                   onClick={() => window.open('https://www.litres.ru/book/darya-serp/zapovedi-zla-bog-protiv-tradicionnyh-cennostey-72952082/chitat-onlayn/?utm_source=advcake&utm_medium=cpa&utm_campaign=affiliate&utm_content=06d2a99e&advcake_params=&utm_term=&erid=2VfnxyNkZrY&advcake_method=1&m=1', '_blank')}
                 >
-                  ЧИТАТЬ ПЕРВУЮ ГЛАВУ БЕСПЛАТНО
+                  <span className="hidden xs:inline">ЧИТАТЬ ПЕРВУЮ ГЛАВУ БЕСПЛАТНО</span>
+                  <span className="xs:hidden">СКАЧАТЬ ГЛАВУ БЕСПЛАТНО</span>
                 </Button>
                 <p className="text-xs sm:text-sm text-gray-400">Без регистрации. Откроется в новой вкладке</p>
               </div>
-              <div className="flex flex-wrap items-center gap-2 sm:gap-3 text-xs sm:text-sm text-gray-300 pt-2">
-                <div className="flex items-center gap-2">
+              <div className="flex flex-wrap items-center gap-2 sm:gap-3 text-[10px] xs:text-xs sm:text-sm text-gray-300 pt-2">
+                <div className="flex items-center gap-1 xs:gap-2">
                   <div className="flex gap-0.5">
                     {[...Array(5)].map((_, i) => (
-                      <span key={i} className="text-yellow-400">⭐</span>
+                      <span key={i} className="text-yellow-400 text-xs xs:text-sm">⭐</span>
                     ))}
                   </div>
                   <span className="font-semibold">4.9/5</span>
@@ -89,14 +90,14 @@ export default function HeroProblemsSection({ isVisible, scrollToSection }: Hero
                 <span className="text-gray-500 hidden sm:inline">|</span>
                 <span>70+ отзывов</span>
                 <span className="text-gray-500 hidden sm:inline">|</span>
-                <div className="flex items-center gap-2">
-                  <Icon name="Users" size={16} className="text-book-blue" />
-                  <span>70+ читателей в чате</span>
+                <div className="flex items-center gap-1 xs:gap-2">
+                  <Icon name="Users" size={14} className="text-book-blue flex-shrink-0 xs:w-4 xs:h-4" />
+                  <span>70+ в чате</span>
                 </div>
               </div>
-              <div className="flex items-center gap-2 sm:gap-3 text-xs sm:text-sm text-gray-400 animate-bounce pt-2 sm:pt-4">
-                <Icon name="ArrowDown" size={20} className="flex-shrink-0" />
-                <span>Узнайте, почему священники и атеисты читают эту книгу</span>
+              <div className="flex items-center gap-2 sm:gap-3 text-[10px] xs:text-xs sm:text-sm text-gray-400 animate-bounce pt-2 sm:pt-4">
+                <Icon name="ArrowDown" size={16} className="flex-shrink-0 xs:w-5 xs:h-5" />
+                <span>Узнайте, почему священники<br className="xs:hidden" /> и атеисты читают эту книгу</span>
               </div>
             </div>
           </div>
@@ -105,7 +106,7 @@ export default function HeroProblemsSection({ isVisible, scrollToSection }: Hero
 
       <section id="problem" className="py-12 md:py-20 px-4 bg-black/50">
         <div className="container mx-auto max-w-5xl">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
+          <h2 className="text-3xl xs:text-4xl md:text-5xl font-bold text-center mb-12 sm:mb-16">
             Вас тоже учили, что...
           </h2>
           <div className="grid sm:grid-cols-2 gap-3 md:gap-6 mb-8 md:mb-12">
@@ -117,17 +118,17 @@ export default function HeroProblemsSection({ isVisible, scrollToSection }: Hero
               'Страдания возвышают душу',
               'Нужно терпеть и смиряться'
             ].map((item, i) => (
-              <div key={i} className="flex items-start gap-3 sm:gap-4 p-4 sm:p-6 bg-white/5 rounded-lg border border-gray-800">
-                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-book-red flex items-center justify-center">
-                  <Icon name="Check" size={16} />
+              <div key={i} className="flex items-start gap-2 xs:gap-3 sm:gap-4 p-3 xs:p-4 sm:p-6 bg-white/5 rounded-lg border border-gray-800">
+                <div className="hidden xs:flex flex-shrink-0 w-5 h-5 xs:w-6 xs:h-6 rounded-full bg-book-red items-center justify-center">
+                  <Icon name="Check" size={14} className="xs:w-4 xs:h-4" />
                 </div>
-                <span className="text-sm sm:text-base md:text-lg">{item}</span>
+                <span className="text-xs xs:text-sm sm:text-base md:text-lg">{item}</span>
               </div>
             ))}
           </div>
           <div className="space-y-4 sm:space-y-6 text-center">
-            <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-book-gold">
-              А что если всё это — НЕ христианство?
+            <h3 className="text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-book-gold">
+              А что если всё это —<br className="xs:hidden" /> НЕ христианство?
             </h3>
             <div className="space-y-3 sm:space-y-4 text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
               <p>
@@ -145,10 +146,11 @@ export default function HeroProblemsSection({ isVisible, scrollToSection }: Hero
             </div>
             <Button 
               size="lg" 
-              className="bg-book-red hover:bg-book-gold text-white font-bold text-xs sm:text-sm md:text-base lg:text-lg px-6 sm:px-8 md:px-12 py-4 sm:py-5 md:py-6 mt-6 sm:mt-8 w-full sm:w-auto"
+              className="bg-book-red hover:bg-book-gold text-white font-bold text-[10px] xs:text-xs sm:text-sm md:text-base lg:text-lg px-2 xs:px-3 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 mt-6 sm:mt-8 w-full sm:w-auto leading-tight"
               onClick={() => window.open('https://www.litres.ru/book/darya-serp/zapovedi-zla-bog-protiv-tradicionnyh-cennostey-72952082/chitat-onlayn/?utm_source=advcake&utm_medium=cpa&utm_campaign=affiliate&utm_content=06d2a99e&advcake_params=&utm_term=&erid=2VfnxyNkZrY&advcake_method=1&m=1', '_blank')}
             >
-              СКАЧАТЬ ГЛАВУ И РАЗОБРАТЬСЯ
+              <span className="hidden xs:inline">СКАЧАТЬ ГЛАВУ И РАЗОБРАТЬСЯ</span>
+              <span className="xs:hidden">СКАЧАТЬ ГЛАВУ</span>
             </Button>
           </div>
         </div>
@@ -165,10 +167,10 @@ export default function HeroProblemsSection({ isVisible, scrollToSection }: Hero
               { icon: '⚡', title: 'ФИЛОСОФИЯ', text: 'Что общего у Ницше и «традиционных ценностей» — и почему Христос их противоположность' },
               { icon: '🔬', title: 'ПСИХОЛОГИЯ', text: 'Как нормальные люди творят зло: от домашнего насилия до Холокоста' }
             ].map((item, i) => (
-              <div key={i} className="p-4 sm:p-6 md:p-8 bg-gradient-to-br from-white/5 to-white/10 rounded-xl border border-gray-800 hover:border-book-gold transition-colors">
-                <div className="text-3xl sm:text-4xl md:text-5xl mb-3 sm:mb-4">{item.icon}</div>
-                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-book-gold mb-3 sm:mb-4">{item.title}</h3>
-                <p className="text-sm sm:text-base text-gray-300 leading-relaxed">{item.text}</p>
+              <div key={i} className="p-3 xs:p-4 sm:p-6 md:p-8 bg-gradient-to-br from-white/5 to-white/10 rounded-xl border border-gray-800 hover:border-book-gold transition-colors">
+                <div className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl mb-2 xs:mb-3 sm:mb-4">{item.icon}</div>
+                <h3 className="text-base xs:text-lg sm:text-xl md:text-2xl font-bold text-book-gold mb-2 xs:mb-3 sm:mb-4">{item.title}</h3>
+                <p className="text-xs xs:text-sm sm:text-base text-gray-300 leading-relaxed">{item.text}</p>
               </div>
             ))}
           </div>
@@ -181,11 +183,11 @@ export default function HeroProblemsSection({ isVisible, scrollToSection }: Hero
               { title: '"Продавцы страдания"', text: 'Как религия учит жертв любить мучителей' },
               { title: 'Заповедь предательства', text: 'Почему Христос — враг семейных ценностей' }
             ].map((item, i) => (
-              <div key={i} className="flex items-start gap-3 sm:gap-4 p-4 sm:p-5 md:p-6 bg-white/5 rounded-lg border border-gray-700 hover:border-book-gold transition-colors">
-                <div className="flex-shrink-0 text-xl sm:text-2xl">📌</div>
+              <div key={i} className="flex items-start gap-2 xs:gap-3 sm:gap-4 p-3 xs:p-4 sm:p-5 md:p-6 bg-white/5 rounded-lg border border-gray-700 hover:border-book-gold transition-colors">
+                <div className="flex-shrink-0 text-lg xs:text-xl sm:text-2xl">📌</div>
                 <div>
-                  <h4 className="text-base sm:text-lg md:text-xl font-bold mb-1 sm:mb-2 text-book-gold">{item.title}</h4>
-                  <p className="text-sm sm:text-base text-gray-300">{item.text}</p>
+                  <h4 className="text-sm xs:text-base sm:text-lg md:text-xl font-bold mb-1 sm:mb-2 text-book-gold">{item.title}</h4>
+                  <p className="text-xs xs:text-sm sm:text-base text-gray-300">{item.text}</p>
                 </div>
               </div>
             ))}
